@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+}
+#facebook, #instagram , #twitter , #whatsapp {
+    fill: #fa4252;
+}
+#whatsapp {
+    position: absolute;
+    left: 350px;
+    
+}
+
+#twitter {
+    position: absolute;
+    left: 310px;
+    
+}
+
+#instagram {
+    position: absolute;
+    left: 270px;
+    
+}
+
+#facebook {
+    position: absolute;
+    left: 230px;
+    
+}
+
+.para {
+    color: white;
+    position: relative;
+    left: 15px;
+    top: 25px;
+
+
+}
