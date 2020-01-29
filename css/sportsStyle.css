@@ -1,5 +1,17 @@
-
-
+/*universal Styling*/
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Domine', serif;
+     
+}
+/* didnt want html have the x-axis*/
+html{
+    overflow-x: none;
+    max-width: 100%; 
+}
 
 .grid{
     background-color: blue;
@@ -7,78 +19,120 @@
 
 .container{
     display: grid;
-    grid-template-rows: 10vh 5vh
-    20vh 5vh 5vh 20vh 5vh 5vh 5vh 20vh 20vh 20vh 20vh;
-    grid-template-columns: 5vw 18vw  18vw 18vw 18vw 18vw 5vw;
+    grid-template-columns: 5vw 20.5vw  20.5vw 8vw 20.5vw 20.5vw 5vw;
+    grid-template-rows: 10vh 5vh 3vh 22vh 3vh 22vh 3vh 5vh 32vh 2vh 5vh 2vh 13vh 2vh 13vh 2vh 13vh 2vh 13vh;
+    
 }
 
 .logo{
-    grid-area: 1/1 span 1/ span 2;
+    grid-area: 1/3/span 1/ span 2;
 }
-
-h1{
-    grid-area: 2/3 span 3/ span 2;
-    font-size: 64px;
-    position: relative;
-    left: 100px;
+.section{
+    grid-area: 2/3/ span 1/span 2;
+    font-family: 'Domine', serif;
 }
 .soccer{
-    grid-area: 3/2 span 1/ span 2;
-    width: 200px;
-    position: relative;
-    left:5px;
-    
-
+     grid-area: 4/2/span 1 /span 2;  
+     font-family: 'Domine', serif;
 }
-.soccerText{
-    grid-area: 4/2 span 1/ span 2;
-    font-size: 15px;
-    position: relative;
-    bottom: 20px;
-    left: 5px;
-
+.soccer:hover{
+    color: #fe6845;
 }
 .swim{
-    grid-area: 3/5 span 1/ span 2;
-    width: 170px;
-    height:100px;
-    position: relative;
-    bottom: 170px;
-    left: 220px;
+    grid-area: 4/5/span 1/ span 2;
+    font-family: 'Domine', serif;
 }
-.swimText{
-    grid-area: 4/5 span 1/ span 2;
-    font-size: 15px;
-    position: relative;
-    bottom: 175px;
-    left: 220px;
-
+.swim:hover{
+    color: #fe6845;
 }
 .basketball{
-    width: 210px;
-    position: relative;
-    bottom: 150px;
-    left: 190px;
+    grid-area: 6/2/span 1 / span 2;
+    font-family: 'Domine', serif;
 }
-
-.basketText{
-    width: 150px;
-    height:200px;
-    font-size: 15px;
-    position: relative;
-    bottom: 150px;
-    left: 220px;
+.basketball:hover{
+    color: #fe6845;
 }
 .cricket{
-    width: 200px;
-    height:200px;
-    position: relative;
-    bottom: 500px;
+    grid-area: 6/5/span 1 / span 2;
+    font-family: 'Domine', serif;
+
 }
-.cricketText{
-    width: 150px;
-    height:200px;
-    font-size: 15px;
+.cricket:hover{
+    color: #fe6845;
+}
+.fixtureT{
+    grid-area: 8/3/span 1 / span 5;
+}
+.BG{
+    grid-area: 9/2/span 1 / span 5;
+}
+.fix{
     position: relative;
-    bottom: 600px;
+    top: 625px;
+    left: 220px;
+    height: 50px;
+    border-radius: 25%;
+    text-transform: uppercase;
+    background-color: #fe6845;
+    font-family: 'Domine', serif;
+}
+.soc{
+    position: relative;
+    top:625px;
+    left: 75px;
+    height: 50px;
+    width:90px;
+    border-radius: 25%;
+    text-transform: uppercase;
+    background-color: #fe6845;
+    font-family: 'Domine', serif;
+
+
+}
+.otherNews{
+    grid-area: 11/4/span 1 / span 5;
+    font-family: 'Domine', serif;
+}
+.img1{
+    grid-area: 13/2/span 1 / span 2;
+
+}
+.img1t{
+    grid-area: 13/5/span 1 / span 2;
+    font-family: 'Roboto', sans-serif;
+}
+.img1t:hover{
+    color: #fe6845;
+}
+.img2{
+    grid-area: 15/2/span 1 / span 2;
+}
+    
+.img2t{
+    grid-area: 15/5/span 1 / span 2;
+    font-family: 'Roboto', sans-serif;
+}
+.img2t:hover{
+    color: #fe6845;
+}
+.img3{
+    grid-area: 17/2/span 1 / span 2;
+}
+.img3t{
+    grid-area: 17/5/span 1 / span 2;
+    font-family: 'Roboto', sans-serif;
+}
+.img3t:hover{
+    color: #fe6845;
+}
+
+.img4{
+    grid-area: 19/2/span 1 / span 2;
+}
+.img4t{
+    grid-area: 19/5/span 1 / span 2;
+    font-family: 'Roboto', sans-serif;
+}
+.img4t:hover{
+    color: #fe6845;
 }
