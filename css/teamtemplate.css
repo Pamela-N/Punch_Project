@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     overflow-x: hidden;
@@ -80,6 +81,11 @@
     user-select: none;
     transition: 0.24s;
   }
+
+  .expandSearch i:hover{
+    color: #0bf;
+  }
+
   .expandSearch input{
     border:none;
     background: transparent;
@@ -104,6 +110,7 @@
     color: #ddd;
     pointer-events: none;
   }
+
 
   #update {
       color: white;
@@ -174,6 +181,7 @@
     stroke: currentColor;
     fill: currentColor;
   }
+
   .search{
       position: absolute;
       right: 25px;
@@ -227,4 +235,7 @@
 
 }
 
-
+  .fixtureSection{
+    position: relative;
+    bottom: 350px;
+  }
