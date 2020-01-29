@@ -1,0 +1,84 @@
+
+
+
+.grid{
+    background-color: blue;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 10vh 5vh
+    20vh 5vh 5vh 20vh 5vh 5vh 5vh 20vh 20vh 20vh 20vh;
+    grid-template-columns: 5vw 18vw  18vw 18vw 18vw 18vw 5vw;
+}
+
+.logo{
+    grid-area: 1/1 span 1/ span 2;
+}
+
+h1{
+    grid-area: 2/3 span 3/ span 2;
+    font-size: 64px;
+    position: relative;
+    left: 100px;
+}
+.soccer{
+    grid-area: 3/2 span 1/ span 2;
+    width: 200px;
+    position: relative;
+    left:5px;
+    
+
+}
+.soccerText{
+    grid-area: 4/2 span 1/ span 2;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    left: 5px;
+
+}
+.swim{
+    grid-area: 3/5 span 1/ span 2;
+    width: 170px;
+    height:100px;
+    position: relative;
+    bottom: 170px;
+    left: 220px;
+}
+.swimText{
+    grid-area: 4/5 span 1/ span 2;
+    font-size: 15px;
+    position: relative;
+    bottom: 175px;
+    left: 220px;
+
+}
+.basketball{
+    width: 210px;
+    position: relative;
+    bottom: 150px;
+    left: 190px;
+}
+
+.basketText{
+    width: 150px;
+    height:200px;
+    font-size: 15px;
+    position: relative;
+    bottom: 150px;
+    left: 220px;
+}
+.cricket{
+    width: 200px;
+    height:200px;
+    position: relative;
+    bottom: 500px;
+}
+.cricketText{
+    width: 150px;
+    height:200px;
+    font-size: 15px;
+    position: relative;
+    bottom: 600px;
+}
