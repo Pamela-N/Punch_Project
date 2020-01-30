@@ -1,13 +1,7 @@
 *{
     margin: 0;
     overflow-x: hidden;
-    padding: 0px;
-  
-  }
-
-  body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    padding: 0;
   }
   
   #navbar{
@@ -15,14 +9,12 @@
     height: 10vh;
     position: fixed;
     background-color: white;
-    z-index: 1;
   
   }
   
   #logo{
-    position: fixed;
-    left: 125px;
-    top: 10px;
+    padding: 0 0 5px 50px;
+  
   }
   
   .sidenav {
@@ -44,7 +36,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: white;
+    color:white;
     display: block;
     transition: 0.3s;
   
@@ -82,6 +74,7 @@
     height: 5px;
     background-color: #333;
     margin: 6px 0 0 6px;
+  
   }
   
   .expandSearch{
@@ -89,8 +82,9 @@
     position: relative;
     overflow: hidden;
   
-    }
-    .expandSearch i{
+  }
+  
+  .expandSearch i{
     position: absolute;
     top: 0;
     left: 0;
@@ -99,12 +93,8 @@
     cursor: pointer;
     user-select: none;
     transition: 0.24s;
-    }
   
-    .expandSearch i:hover{
-    color: #0bf;
-  
-    }
+  }
   
   .expandSearch input{
     border:none;
@@ -119,6 +109,7 @@
     padding: 8px 0px 8px 34px;
   
   }
+  
   .expandSearch input:focus{
     border-color: #aaa;
     outline: none;
@@ -127,6 +118,7 @@
     border-color: #0bf;
   
   }
+  
   .expandSearch input:focus + i{
     /*padding: 8px 4px 8px 8px ;*/
     color: #ddd;
@@ -134,45 +126,29 @@
   
   }
   
-  
   #update {
-      color: white;
+    color: white;
   
-  }
-
-  h1 , h2 {
-    font-family: 'Domine', serif;
-    font-size: 26px;
-    text-align: center;
-  }
-
-  a {
-    color: #fa4252;
-  }
-
-  #paraTwo {
-    padding: 10px;
   }
   
   #submit {
-      height: 44.5px;
-      width: 100px;
-      font-size: 13px;
-      font-weight: bold;
-      background-color: #91bd3a;
-      border: none;
+    height: 41px;
+    width: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #91bd3a;
+    border: none;
   
   }
   
   #privacy {
-      color: #91bd3a ;
-      text-align: left;
-      padding-left: 15px ;
+    color: #91bd3a ;
+    text-align: left;
+    padding-left: 15px ;
   
   }
   
-    /*new icons*/
-  
+  /*new icons*/
   label {
     position: relative;
   
@@ -193,8 +169,7 @@
     padding: 10px 30px;
   
   }
-    
-    
+   
   label > .icon {
     position: absolute;
     top: 50%;
@@ -210,10 +185,7 @@
   
   }
     
-    /*
-      SVG SpriteSheet
-    */
-    
+  /* SVG SpriteSheet */
   .spritesheet {
     display: none;
   
@@ -230,20 +202,24 @@
   }
   
   .search{
-      position: absolute;
-      right: 25px;
-      top: 15px;
+    position: absolute;
+    right: 25px;
+    top: 15px;
   
   }
   
+  .one {
+    width: 100vw;
+    height: 90vh;
+  
+  }
   
   #footer {
     background-color: black;
     width: 100vw;
     height: 10vh;
-    padding-bottom: 15px;
-
-    }
+    
+  }
   
   #facebook, #instagram , #twitter , #whatsapp {
     fill: #fa4252;
@@ -275,84 +251,13 @@
   }
   
   .para {
+    font-family: 'Roboto', sans-serif;
     color: white;
     position: relative;
     left: 15px;
     top: 25px;
-
-  
   
   }
-
-  /* scroller code supported by create */
-  .scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    
+  h1{
+      text-align: center;
   }
-  
-    .card {
-      display: inline-block;
-      width: 60vw;
-      height: 60vw;
-      overflow: hidden;
-    }
-  
-
-  
-
-
-    /* PopUp code inspired by W3Schools and edited */
-
-/* The popup form - hidden by default*/
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 150px;
-  right: 50px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: #91bd3a;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=cellphone] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-} 
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-
- .form-container .btn {
-  background-color: #ffa259;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: none;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-} 
-
-/* close button option */
-#close {
-  position: absolute;
-  left: 285px;
-  top: 08px;
-}
-
