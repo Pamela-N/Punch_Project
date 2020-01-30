@@ -1,3 +1,7 @@
+let slideIndex = 1;
+showSlides(slideIndex);
+let line= document.querySelector("hr");
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
 
@@ -7,9 +11,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 
 }
-
-var slideIndex = 1;
-showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -33,4 +34,11 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+
 }
+
+
+window.scroll({
+  top: 80, 
+  left: 0, 
+});
