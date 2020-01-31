@@ -262,7 +262,11 @@ html{
   
   }
 
-
+  a{
+    text-decoration: none;
+    color: #fe6845;
+    font-size: 14px;
+  }
 
 .section{
     grid-area: 2/4/ span 1/span 5;
@@ -387,12 +391,58 @@ html{
 .img4t:hover{
     color: #fe6845;
 }
+#notification{
+  fill: white;
+  position: fixed;
+  top: 580px;
+  left: 330px;
+  background-color: #fa4252;
+  padding: 10px;
+  border-radius: 50%;
+}
+/*made it in a way that when you click on it, it allows you to fill in your infomation*/
+.sign{
+  align-items: center;
+  font-weight: 700;
+ background-color:#91bd3a;
+ border: 3px solid black;
+ position: relative;
+ top: 350px;
+ left: -190px;
+ width: 80vw;
+ height: 30vh;
+ display: none;
+}
+
+.not{
+  position: relative;
+  left: 50px;
+  top:10px;
+}
+
+.sign input{
+  align-items: center;
+  margin-left: 50px;
+
+}
+/*when you click on the button it automatically hides back the info*/
+.signB{
+  background-color: #ffa259;
+  padding:16px 20px;
+  color: white;
+  border: none;
+  cursor: none;
+  width:60%;
+  opacity: 0.8;
+  position: relative;
+  left: 68px;
+}
 
 #footer {
     background-color: black;
     width: 100vw;
     height: 10vh;
-    grid-area: 21/2/span 1 / span 5;
+    grid-area: 21/1/span 1 / span 5;
     
   }
   
