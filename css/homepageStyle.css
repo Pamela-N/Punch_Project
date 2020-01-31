@@ -24,6 +24,44 @@
     left: 125px;
     top: 10px;
   }
+
+  .sign{
+    align-items: center;
+    font-weight: 700;
+   background-color:#91bd3a;
+   border: 3px solid black;
+   position: relative;
+   top: 350px;
+   left: -190px;
+   width: 80vw;
+   height: 30vh;
+   border-radius: 25%;
+   display: none;
+  }
+ 
+  .not{
+    position: relative;
+    left: 50px;
+    top:10px;
+  }
+ 
+  .sign input{
+    align-items: center;
+    margin-left: 50px;
+ 
+  }
+  /*when you click on the button it automatically hides back the info*/
+  .signB{
+    background-color: #ffa259;
+    padding:16px 20px;
+    color: white;
+    border: none;
+    cursor: none;
+    width:60%;
+    opacity: 0.8;
+    position: relative;
+    left: 68px;
+  }
   
   .sidenav {
     height: 100%;
@@ -133,6 +171,16 @@
     pointer-events: none;
   
   }
+
+  #notification{
+    fill: white;
+    position: fixed;
+    top: 580px;
+    left: 330px;
+    background-color: #fa4252;
+    padding: 10px;
+    border-radius: 50%;
+}
   
   
   #update {
