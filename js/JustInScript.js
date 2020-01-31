@@ -20,6 +20,3 @@ function openForm() {
     document.getElementsByClassName("one").style.display = "block";
 
   }
-
-
-

@@ -1,8 +1,7 @@
 *{
     margin: 0;
     overflow-x: hidden;
-    padding: 0px;
-  
+    padding: 0;
   }
 
   body{
@@ -10,19 +9,41 @@
     font-size: 14px;
   }
   
+  #justOne{
+    padding: 0px 10px;
+  }
+
+  h1 , h3 {
+    font-family: 'Domine', serif;
+    font-size: 26px;
+    text-align: center;
+  }
+/* code on how to position withouth using position:, flex method off w3schools */
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  a {
+    color: #fa4252;
+    text-decoration: none;
+  }
+  
   #navbar{
     width: 100vw;
     height: 10vh;
     position: fixed;
     background-color: white;
-    z-index: 1;
   
   }
   
   #logo{
-    position: fixed;
-    left: 125px;
-    top: 10px;
+    padding: 0 0 5px 50px;
+  
   }
   
   .sidenav {
@@ -139,24 +160,9 @@
       color: white;
   
   }
-
-  h1 , h2 {
-    font-family: 'Domine', serif;
-    font-size: 26px;
-    text-align: center;
-  }
-
-  a {
-    color: #fa4252;
-    text-decoration: none;
-  }
-
-  #paraTwo {
-    padding: 10px;
-  }
   
   #submit {
-      height: 44.5px;
+      height: 41px;
       width: 100px;
       font-size: 13px;
       font-weight: bold;
@@ -172,6 +178,7 @@
   
   }
   
+    /*new icons*/
   
   label {
     position: relative;
@@ -184,9 +191,151 @@
     left: 10px;
     top: 0;
     bottom: 0;
-    width: 20px;  
+    width: 20px;
+  
   }
- 
+
+  label.expandSearch:before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+  }
+    
+  input {
+    padding: 10px 30px;
+
+  }
+    
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+  
+  }
+    
+  .sidenav a:hover{
+    color: #fa4252;
+  
+  }
+    
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  
+  }
+    
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  
+  }
+  
+  /* sidenav bar */
+  .container {
+    display: inline-block;
+    margin: 15px;
+  
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0 0 6px;
+  
+  }
+  
+  .expandSearch{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  
+  }
+  
+  .expandSearch i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 4px 8px 8px ;
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.24s;
+  
+  }
+  
+  .expandSearch input{
+    border:none;
+    background: transparent;
+    font:14px/1.4 sans-serif;
+    padding-left: 26px;
+    background:#fff;
+    border: 2px solid white;
+    border-radius: 4px;
+    transition: 0.24s;
+    width: 0px;
+    padding: 8px 0px 8px 34px;
+  
+  }
+  
+  .expandSearch input:focus{
+    border-color: #aaa;
+    outline: none;
+    width:200px;
+    padding: 8px 12px 8px 34px;
+    border-color: #0bf;
+  
+  }
+  
+  .expandSearch input:focus + i{
+    /*padding: 8px 4px 8px 8px ;*/
+    color: #ddd;
+    pointer-events: none;
+  
+  }
+  
+  #update {
+    color: white;
+  
+  }
+  
+  #submit {
+    height: 41px;
+    width: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #91bd3a;
+    border: none;
+  
+  }
+  
+  #privacy {
+    color: #91bd3a ;
+    text-align: left;
+    padding-left: 15px ;
+  
+  }
+  
+  /*new icons*/
+  label {
+    position: relative;
+  
+  }
+    
+  label:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+   
+  
+  }
 
   label.expandSearch:before {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
@@ -196,8 +345,7 @@
     padding: 10px 30px;
   
   }
-    
-    
+   
   label > .icon {
     position: absolute;
     top: 50%;
@@ -213,9 +361,11 @@
   
   }
     
-    /*
-      SVG SpriteSheet
-    */
+  /* SVG SpriteSheet */
+  .spritesheet {
+    display: none;
+  
+  }
     
   .spritesheet {
     display: none;
@@ -239,14 +389,48 @@
   
   }
   
+  .one {
+      width: 100vw;
+      height: 90vh;
+  
+  }
   
   #footer {
     background-color: black;
     width: 100vw;
     height: 10vh;
-    /* padding-bottom: 10px; */
 
-    }
+  }
+    
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  
+  }
+  
+  .search{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  
+  }
+  
+  .one {
+    width: 100vw;
+    height: 90vh;
+  
+  }
+  
+  #footer {
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    
+  }
   
   #facebook, #instagram , #twitter , #whatsapp {
     fill: #fa4252;
@@ -282,31 +466,17 @@
     position: relative;
     left: 15px;
     top: 25px;
-
   
   
   }
-
-  /* scroller code supported by create */
-  .scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    
+  
+  .fixtureSection{
+    position: relative;
+    bottom: 350px;
+  
   }
-  
-    .card {
-      display: inline-block;
-      width: 60vw;
-      height: 70vw;
-      overflow: hidden;
-    }
-  
 
-  
-
-
-    /* PopUp code inspired by W3Schools and edited */
+  /* PopUp code inspired by W3Schools and edited */
 
 /* The popup form - hidden by default*/
 .form-popup {
@@ -358,4 +528,3 @@
   left: 285px;
   top: 08px;
 }
-
