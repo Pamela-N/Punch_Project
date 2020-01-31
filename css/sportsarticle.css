@@ -14,15 +14,12 @@ html{
     max-width: 100%;
 }
 
-
-
 .art{
-    
-    display: grid;
-    grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
-    grid-template-rows: 10vh 2vh 5vh 2vh 30vh 2vh 61vh 2vh 20vh 2vh 5vh 2vh 20vh;
+  display: grid;
+  grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
+  grid-template-rows: 10vh 2vh 5vh 2vh 30vh 2vh 61vh 2vh 3vh 5vh 19vh 2vh 20vh 2vh 5vh 2vh 5vh 0.2vh 20vh 2vh 
+  10vh 0vh 20vh 20vh 10vh;
 }
-
   
   #navbar{
     width: 100vw;
@@ -100,7 +97,7 @@ html{
     position: relative;
     overflow: hidden;
   
-    }
+    } /*here is where the search icon is created, it is inline because it has to open from the left to right and the icon with the search have to be inline*/
     .expandSearch i{
     position: absolute;
     top: 0;
@@ -110,11 +107,11 @@ html{
     cursor: pointer;
     user-select: none;
     transition: 0.24s;
-    }
+    } /*position is zero as the input shouldnt be showing, only when clicked the transition will be 0.24s to open*/
   
     .expandSearch i:hover{
     color: #0bf;
-  
+  /*wanted that when you hover on the search ir changes to the color*/
     }
   
   .expandSearch input{
@@ -129,7 +126,7 @@ html{
     width: 0px;
     padding: 8px 0px 8px 34px;
   
-  }
+  } /*this for the border around the the icon which is optional, but in this case, we dont want it*/
   .expandSearch input:focus{
     border-color: #aaa;
     outline: none;
@@ -261,7 +258,7 @@ html{
       top: 15px;
   
   }
-
+  
   .heading{
       grid-area: 3/2/span 1/span 3;
   }  
@@ -275,22 +272,60 @@ html{
     width: 358px;
     height: 30px;
   }
+
+  .com9{
+      grid-area: 9/2/span 1/ span 4;
+      background-color:#91bd3a;
+      width: 92%;
+  }
+  .mosa{
+      grid-area: 11/2/ span 1/ span 4;
+  }
+  .pamela{
+      grid-area: 13/2/span 1 /span 4;
+  }
+  .round{
+      grid-area: 15/3/span 1 / span 4;
+      width:25px;
+      height:25px;
+      border-radius: 50%;
+      background-color: #fe6845 ;
+  }
+  .own{
+      grid-area: 17/2/span 2 / span 4;
+      background-color:#91bd3a;
+      width: 92%;
+  }
   .comment{
-    grid-area: 9/2/span1/span4 ;
+    grid-area: 19/2/span 1/span 4 ;
   }
 
-  h3{
-      grid-area: 11/2/span 1/span 2;
+  .light{
+      grid-area: 21/2/span 1/span 4;
+      background-color:#91bd3a;
+      width: 92%;
   }
   .Os{
-      grid-area: 13/2/span 1/span 1;
+      grid-area: 23/2/span 1/span 1;
   }
   .Ost{
-      grid-area: 13/4/span 1/ span 1;
+      grid-area: 23/4/span 1/ span 1;
   }
+  .Oc{
+    grid-area: 24/2/span 1/span 1;
+}
+.Oct{
+    grid-area: 24/4/span 1/ span 1;
+}
+.Ob{  
+  grid-area: 25/2/span 1/ span 1;
+}
+.Obt{
+  grid-area: 25/4/span 1/ span 1;
+}
 
 
- button{
+ .send{
     width:25px;
     height:25px;
     border-radius: 50%;
@@ -301,15 +336,13 @@ html{
 
   }
   
-
-  
   #footer {
     background-color: black;
     width: 100vw;
     height: 10vh;
     position: relative;
-    top: 650px;
-    
+    top: 25px;
+    grid-area: 26/2/span 1/ span 5;
   }
   
   #facebook, #instagram , #twitter , #whatsapp {

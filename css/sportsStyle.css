@@ -262,7 +262,11 @@ html{
   
   }
 
-
+  a{
+    text-decoration: none;
+    color: #fe6845;
+    font-size: 14px;
+  }
 
 .section{
     grid-area: 2/4/ span 1/span 5;
