@@ -13,17 +13,14 @@ html{
     overflow-x: hidden;
     max-width: 100%;
 }
-
-
-
+/*made some of my work a grid as its managable that way*/
 .art{
-    
-    display: grid;
-    grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
-    grid-template-rows: 10vh 2vh 5vh 2vh 30vh 2vh 61vh 2vh 20vh 2vh 5vh 2vh 20vh;
+  display: grid;
+  grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
+  grid-template-rows: 10vh 2vh 5vh 2vh 30vh 2vh 61vh 2vh 3vh 5vh 19vh 2vh 20vh 2vh 5vh 2vh 5vh 0.2vh 20vh 2vh 
+  10vh 0vh 20vh 20vh 10vh;
 }
-
-  
+  /*nav bar section*/
   #navbar{
     width: 100vw;
     height: 10vh;
@@ -100,7 +97,7 @@ html{
     position: relative;
     overflow: hidden;
   
-    }
+    } /*here is where the search icon is created, it is inline because it has to open from the left to right and the icon with the search have to be inline*/
     .expandSearch i{
     position: absolute;
     top: 0;
@@ -110,11 +107,11 @@ html{
     cursor: pointer;
     user-select: none;
     transition: 0.24s;
-    }
+    } /*position is zero as the input shouldnt be showing, only when clicked the transition will be 0.24s to open*/
   
     .expandSearch i:hover{
     color: #0bf;
-  
+  /*wanted that when you hover on the search ir changes to the color*/
     }
   
   .expandSearch input{
@@ -129,13 +126,13 @@ html{
     width: 0px;
     padding: 8px 0px 8px 34px;
   
-  }
+  } /*this for the border around the the icon which is optional, but in this case, we dont want it*/
   .expandSearch input:focus{
     border-color: #aaa;
     outline: none;
     width:200px;
     padding: 8px 12px 8px 34px;
-    border-color: #0bf;
+    border-color: #91bd3a;
   
   }
   .expandSearch input:focus + i{
@@ -261,7 +258,9 @@ html{
       top: 15px;
   
   }
+  /*end of navbar*/
 
+  /*working on the sport section*/
   .heading{
       grid-area: 3/2/span 1/span 3;
   }  
@@ -275,32 +274,118 @@ html{
     width: 358px;
     height: 30px;
   }
-  .comment{
-    grid-area: 9/2/span1/span4 ;
+/*second section for already given comments*/
+  .com9{
+      grid-area: 9/2/span 1/ span 4;
+      background-color:#91bd3a;
+      width: 92%;
   }
+  .mosa{
+      grid-area: 11/2/ span 1/ span 4;
+  }
+  .pamela{
+      grid-area: 13/2/span 1 /span 4;
+  }
+  /*its pointing to down, showing that theres still more when you scroll*/
+  .round{
+      grid-area: 15/3/span 1 / span 4;
+      width:25px;
+      height:25px;
+      border-radius: 50%;
+      background-color: #fe6845 ;
+  }
+  /*goven permission or an option to put your own comments if any*/
+  .own{
+      grid-area: 17/2/span 2 / span 4;
+      background-color:#91bd3a;
+      width: 92%;
+  }
+  .comment{
+    grid-area: 19/2/span 1/span 4 ;
+  }
+  /*send button on the comment section*/
+ .send{
+  width:25px;
+  height:25px;
+  border-radius: 50%;
+  position: relative;
+  left: -35px;
+  bottom:10px;
+  background-color: #fe6845 ;
+ }
 
-  h3{
-      grid-area: 11/2/span 1/span 2;
+ /*bell notifications section*/
+  #notification{
+    fill: white;
+    position: fixed;
+    top: 580px;
+    left: 330px;
+    background-color: #fa4252;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  /*made it in a way that when you click on it, it allows you to fill in your infomation*/
+ .sign{
+   align-items: center;
+   font-weight: 700;
+  background-color:#91bd3a;
+  border: 3px solid black;
+  position: relative;
+  top: 350px;
+  left: -190px;
+  width: 80vw;
+  height: 30vh;
+  border-radius: 25%;
+  display: none;
+ }
+
+ .not{
+   position: relative;
+   left: 50px;
+   top:10px;
+ }
+
+ .sign input{
+   align-items: center;
+   margin-left: 50px;
+
+ }
+ /*when you click on the button it automatically hides back the info*/
+ .signB{
+   background-color: #ffa259;
+   padding:16px 20px;
+   color: white;
+   border: none;
+   cursor: none;
+   width:60%;
+   opacity: 0.8;
+   position: relative;
+   left: 68px;
+ }
+/*more news section*/
+  .light{
+      grid-area: 21/2/span 1/span 4;
+      background-color:#91bd3a;
+      width: 92%;
   }
   .Os{
-      grid-area: 13/2/span 1/span 1;
+      grid-area: 23/2/span 1/span 1;
   }
   .Ost{
-      grid-area: 13/4/span 1/ span 1;
+      grid-area: 23/4/span 1/ span 1;
   }
-
-
- button{
-    width:25px;
-    height:25px;
-    border-radius: 50%;
-    position: relative;
-    left: -35px;
-    bottom:10px;
-    background-color: #fe6845 ;
-
-  }
-  
+  .Oc{
+    grid-area: 24/2/span 1/span 1;
+}
+.Oct{
+    grid-area: 24/4/span 1/ span 1;
+}
+.Ob{  
+  grid-area: 25/2/span 1/ span 1;
+}
+.Obt{
+  grid-area: 25/4/span 1/ span 1;
+}
 
   
   #footer {
@@ -308,8 +393,8 @@ html{
     width: 100vw;
     height: 10vh;
     position: relative;
-    top: 650px;
-    
+    top: 25px;
+    grid-area: 26/1/span 1/ span 5;
   }
   
   #facebook, #instagram , #twitter , #whatsapp {
