@@ -4,11 +4,13 @@
     padding: 0;
 
 }
+
 body{
-    
     font-family: 'Roboto', sans-serif;
+
 }
 
+/* this is the navigation bar */
 #navbar{
     width: 100vw;
     height: 10vh;
@@ -68,7 +70,7 @@ body{
 
 }
 
-/* sidenav bar */
+/* sidenav bars */
 .container {
     display: inline-block;
     margin: 15px;
@@ -83,12 +85,12 @@ body{
 
 }
 
-
+/* search icon */
 .expandSearch{
     display: inline-block;
     position: relative;
     overflow: hidden;
-
+    
 }
 
 .expandSearch i{
@@ -133,6 +135,7 @@ body{
 
 }
 
+/* input in the manue */
 #update {
     color: white;
 
@@ -168,6 +171,7 @@ label:before {
     top: 0;
     bottom: 0;
     width: 20px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
 
 }
 
@@ -224,6 +228,7 @@ label > input {
     border-radius: 50%;
 }
 
+/* this is the footer */
 #footer {
     background-color: black;
     width: 100vw;
@@ -416,9 +421,9 @@ img {vertical-align: middle;}
     /* PopUp code inspired by W3Schools and edited */
 
 /* The popup form - hidden by default*/
-label.expandsearch:before{
+/* label.expandsearch:before{
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
-}
+} */
 .form-popup {
     display: none;
     position: fixed;
@@ -426,32 +431,32 @@ label.expandsearch:before{
     right: 50px;
     border: 3px solid #f1f1f1;
     z-index: 9;
-  }
+}
   
   /* Add styles to the form container */
-  .form-container {
+.form-container {
     max-width: 300px;
     padding: 10px;
     background-color: #91bd3a;
-  }
+}
   
   /* Full-width input fields */
-  .form-container input[type=text], .form-container input[type=cellphone] {
+.form-container input[type=text], .form-container input[type=cellphone] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
-  } 
+} 
   
   /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
+.form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
     background-color: #ddd;
     outline: none;
-  }
+}
   
   
-   .form-container .btn {
+.form-container .btn {
     background-color: #ffa259;
     color: white;
     padding: 16px 20px;
@@ -460,11 +465,11 @@ label.expandsearch:before{
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
-  } 
+} 
   
   /* close button option */
-  #close {
+#close {
     position: absolute;
     left: 285px;
     top: 08px;
-  }
+}

@@ -10,6 +10,7 @@
     height: 10vh;
     position: fixed;
     background-color: white;
+    z-index: 1;
   
   }
   
@@ -353,4 +354,5 @@ p{
   background-color: #fa4252;
   padding: 10px;
   border-radius: 50%;
+ 
 }
