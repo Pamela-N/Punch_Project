@@ -18,7 +18,7 @@ html{
 .grid{
     display: grid;
     grid-template-columns: 5vw 20.5vw  20.5vw 8vw 20.5vw 20.5vw 5vw;
-    grid-template-rows: 10vh 5vh 3vh 22vh 3vh 22vh 3vh 5vh 32vh 2vh 5vh 2vh 13vh 2vh 13vh 2vh 13vh 2vh 13vh 2vh 10vh;
+    grid-template-rows: 1vh 2vh 4vh 25vh 3vh 30vh 3vh 5vh 32vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 10vh;
     
 }
 
@@ -29,6 +29,7 @@ html{
     top: 0;
     left: 0;
     background-color: white;
+    z-index: 10;
   
   }
   
@@ -225,6 +226,7 @@ html{
       stroke-width: 0;
       stroke: currentColor;
       fill: currentColor;
+      z-index: 1;
     }
     
   
@@ -264,37 +266,40 @@ html{
 
   a{
     text-decoration: none;
-    color: #fe6845;
+    color: #fa4252;
     font-size: 14px;
   }
 
 .section{
     grid-area: 2/4/ span 1/span 5;
     font-family: 'Domine', serif;
+    position: relative;
+    right: 40px;
   
 }
 .soccer{
      grid-area: 4/2/span 1 /span 2;  
      font-family: 'Domine', serif;
+     height: 50vh;
      
 
 }
 .soccer:hover{
-    color: #fe6845;
+  color: #fa4252;
 }
 .swim{
     grid-area: 4/5/span 1/ span 2;
     font-family: 'Domine', serif;
 }
 .swim:hover{
-    color: #fe6845;
+  color: #fa4252;
 }
 .basketball{
     grid-area: 6/2/span 1 / span 2;
     font-family: 'Domine', serif;
 }
 .basketball:hover{
-    color: #fe6845;
+  color: #fa4252;
 }
 .cricket{
     grid-area: 6/5/span 1 / span 2;
@@ -302,7 +307,7 @@ html{
 
 }
 .cricket:hover{
-    color: #fe6845;
+  color: #fa4252;
 }
 .fixtureT{
     grid-area: 8/2/span 1 / span 5;
@@ -312,6 +317,7 @@ html{
 }
 .BG{
     grid-area: 9/2/span 1 / span 5;
+    z-index: -10;
   
 }
 .fix{
@@ -323,6 +329,7 @@ html{
     text-transform: uppercase;
     background-color: #fe6845;
     font-family: 'Domine', serif;
+    z-index: 1;
  
 }
 .soc{
@@ -335,6 +342,7 @@ html{
     text-transform: uppercase;
     background-color: #fe6845;
     font-family: 'Domine', serif;
+    z-index: 1;
    
 
 
@@ -394,8 +402,10 @@ html{
 #notification{
   fill: white;
   position: fixed;
-  top: 580px;
-  left: 330px;
+  top: 530px;
+  left: 310px;
+  width:60px;
+    height: 60px;
   background-color: #fa4252;
   padding: 10px;
   border-radius: 50%;
