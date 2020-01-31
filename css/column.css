@@ -1,13 +1,10 @@
 *{
     margin: 0;
     overflow-x: hidden;
-    padding: 0px;
-  
+    padding: 0;
   }
-
   body{
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
   }
   
   #navbar{
@@ -20,9 +17,8 @@
   }
   
   #logo{
-    position: fixed;
-    left: 125px;
-    top: 10px;
+    padding: 0 0 5px 50px;
+  
   }
   
   .sidenav {
@@ -41,10 +37,11 @@
   }
     
   .sidenav a {
+    font-family: 'Roboto', sans-serif;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: white;
+    color:white;
     display: block;
     transition: 0.3s;
   
@@ -82,6 +79,7 @@
     height: 5px;
     background-color: #333;
     margin: 6px 0 0 6px;
+  
   }
   
   .expandSearch{
@@ -89,8 +87,9 @@
     position: relative;
     overflow: hidden;
   
-    }
-    .expandSearch i{
+  }
+  
+  .expandSearch i{
     position: absolute;
     top: 0;
     left: 0;
@@ -99,12 +98,8 @@
     cursor: pointer;
     user-select: none;
     transition: 0.24s;
-    }
   
-    .expandSearch i:hover{
-    color: #0bf;
-  
-    }
+  }
   
   .expandSearch input{
     border:none;
@@ -119,14 +114,16 @@
     padding: 8px 0px 8px 34px;
   
   }
+  
   .expandSearch input:focus{
     border-color: #aaa;
     outline: none;
     width:200px;
     padding: 8px 12px 8px 34px;
-    border-color: #91bd3a;
+    border-color: #0bf;
   
   }
+  
   .expandSearch input:focus + i{
     /*padding: 8px 4px 8px 8px ;*/
     color: #ddd;
@@ -134,45 +131,29 @@
   
   }
   
-  
   #update {
-      color: white;
+    color: white;
   
-  }
-
-  h1 , h2 {
-    font-family: 'Domine', serif;
-    font-size: 26px;
-    text-align: center;
-  }
-
-  a {
-    color: #fa4252;
-    text-decoration: none;
-  }
-
-  #paraTwo {
-    padding: 10px;
   }
   
   #submit {
-      height: 44.5px;
-      width: 100px;
-      font-size: 13px;
-      font-weight: bold;
-      background-color: #91bd3a;
-      border: none;
+    height: 41px;
+    width: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #91bd3a;
+    border: none;
   
   }
   
   #privacy {
-      color: #91bd3a ;
-      text-align: left;
-      padding-left: 15px ;
+    color: #91bd3a ;
+    text-align: left;
+    padding-left: 15px ;
   
   }
   
-  
+  /*new icons*/
   label {
     position: relative;
   
@@ -184,20 +165,16 @@
     left: 10px;
     top: 0;
     bottom: 0;
-    width: 20px;  
-  }
- 
-
-  label.expandSearch:before {
+    width: 20px;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+  
   }
     
   input {
     padding: 10px 30px;
   
   }
-    
-    
+   
   label > .icon {
     position: absolute;
     top: 50%;
@@ -213,10 +190,7 @@
   
   }
     
-    /*
-      SVG SpriteSheet
-    */
-    
+  /* SVG SpriteSheet */
   .spritesheet {
     display: none;
   
@@ -233,20 +207,27 @@
   }
   
   .search{
-      position: absolute;
-      right: 25px;
-      top: 15px;
+    position: absolute;
+    right: 25px;
+    top: 15px;
   
   }
   
+  .one {
+    width: 100vw;
+    height: 90vh;
+  
+  }
   
   #footer {
     background-color: black;
     width: 100vw;
     height: 10vh;
-    /* padding-bottom: 10px; */
-
-    }
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    
+  }
   
   #facebook, #instagram , #twitter , #whatsapp {
     fill: #fa4252;
@@ -282,80 +263,31 @@
     position: relative;
     left: 15px;
     top: 25px;
-
-  
   
   }
-
-  /* scroller code supported by create */
-  .scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    
+  h1, h2{
+    text-align: center;
+    font-family: 'Domine', serif;
   }
-  
-    .card {
-      display: inline-block;
-      width: 60vw;
-      height: 70vw;
-      overflow: hidden;
-    }
-  
+.column1{
+    position: absolute;
+    left: 210px;
+    top: 185px;
 
-  
-
-
-    /* PopUp code inspired by W3Schools and edited */
-
-/* The popup form - hidden by default*/
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 150px;
-  right: 50px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
+  }
+#margin{
+    margin: 10px;
+    margin-right: 10px;
 }
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: #91bd3a;
+.second-picture{
+    float: right;
 }
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=cellphone] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-} 
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
-  background-color: #ddd;
-  outline: none;
+#notification{
+    fill: white;
+    position: fixed;
+    top: 580px;
+    left: 330px;
+    background-color: #fa4252;
+    padding: 10px;
+    border-radius: 50%;
 }
-
-
- .form-container .btn {
-  background-color: #ffa259;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: none;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-} 
-
-/* close button option */
-#close {
-  position: absolute;
-  left: 285px;
-  top: 08px;
-}
-
