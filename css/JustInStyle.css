@@ -9,14 +9,28 @@
     font-size: 14px;
   }
   
-  #articleOne{
+  #justOne{
     padding: 0px 10px;
   }
 
-  h1 , h2 {
+  h1 , h3 {
     font-family: 'Domine', serif;
     font-size: 26px;
     text-align: center;
+  }
+/* code on how to position withouth using position:, flex method off w3schools */
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  a {
+    color: #fa4252;
+    text-decoration: none;
   }
   
   #navbar{
