@@ -6,6 +6,9 @@
   body{
     font-family: 'Roboto', sans-serif;
   }
+  a:hover{
+    color: #fa4252;
+}
   
   #navbar{
     width: 100vw;
@@ -77,7 +80,7 @@
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: black;
     margin: 6px 0 0 6px;
   
   }
@@ -120,7 +123,7 @@
     outline: none;
     width:200px;
     padding: 8px 12px 8px 34px;
-    border-color: #0bf;
+    border-color: #91bd3a;
   
   }
   
@@ -223,8 +226,8 @@
     background-color: black;
     width: 100vw;
     height: 10vh;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -100;
     z-index: 1;
     
   }
@@ -290,4 +293,65 @@
     background-color: #fa4252;
     padding: 10px;
     border-radius: 50%;
+}
+    /* PopUp code inspired by W3Schools and edited */
+
+/* The popup form - hidden by default*/
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #91bd3a;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=cellphone] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+} 
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+ .form-container .btn {
+  background-color: #ffa259;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: none;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+} 
+
+/* close button option */
+#close {
+  position: absolute;
+  left: 285px;
+  top: 08px;
+}
+#notification{
+  fill: white;
+  position: fixed;
+  top: 580px;
+  left: 330px;
+  background-color: #fa4252;
+  padding: 10px;
+  border-radius: 50%;
 }
