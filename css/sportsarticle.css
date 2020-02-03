@@ -18,7 +18,7 @@ html{
   display: grid;
   grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
   grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 61vh 2vh 3vh 5vh 19vh 2vh 20vh 2vh 5vh 2vh 5vh 0.2vh 20vh 2vh 
-  10vh 0vh 20vh 20vh 15vh;
+  10vh 0vh 20vh 20vh 15vh 15vh ;
 }
   /*nav bar section*/
   #navbar{
@@ -32,6 +32,7 @@ html{
   
   #logo{
     padding: 0 0 5px 50px;
+    width: 200px;
   }
   
   .sidenav {
@@ -237,21 +238,7 @@ html{
     display: none;
   
   }
-    
-  .spritesheet {
-    display: none;
   
-  }
-    
-  .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  
-  }
   
   .search{
       position: absolute;
@@ -260,6 +247,59 @@ html{
   
   }
   /*end of navbar*/
+
+      /* PopUp code inspired by W3Schools and edited */
+
+/* The popup form - hidden by default*/
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #91bd3a;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=cellphone] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+} 
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+ .form-container .btn {
+  background-color: #ffa259;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: none;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+} 
+
+/* close button option */
+#close {
+  position: absolute;
+  left: 285px;
+  top: 08px;
+}
 
   /*working on the sport section*/
   .heading{
@@ -343,13 +383,12 @@ html{
    align-items: center;
    font-weight: 700;
   background-color:#91bd3a;
-  border: 3px solid black;
+  border: 3px solid white;
   position: relative;
   top: 350px;
   left: -190px;
   width: 80vw;
   height: 30vh;
-  border-radius: 25%;
   display: none;
  }
 
