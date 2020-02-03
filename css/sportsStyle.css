@@ -18,7 +18,7 @@ html{
 .grid{
     display: grid;
     grid-template-columns: 5vw 20.5vw  20.5vw 8vw 20.5vw 20.5vw 5vw;
-    grid-template-rows: 1vh 2vh 4vh 25vh 3vh 30vh 3vh 5vh 32vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 10vh;
+    grid-template-rows: 1vh 2vh 4vh 25vh 3vh 30vh 3vh 5vh 32vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 15vh;
     
 }
 

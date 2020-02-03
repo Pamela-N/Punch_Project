@@ -18,7 +18,7 @@ html{
   display: grid;
   grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
   grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 61vh 2vh 3vh 5vh 19vh 2vh 20vh 2vh 5vh 2vh 5vh 0.2vh 20vh 2vh 
-  10vh 0vh 20vh 20vh 10vh;
+  10vh 0vh 20vh 20vh 15vh;
 }
   /*nav bar section*/
   #navbar{
