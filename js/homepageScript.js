@@ -20,3 +20,13 @@ function openForm() {
     document.getElementsByClassName("one").style.display = "block";
 
   }
+
+  // notification popup
+
+  const form = document.querySelector('.sign');
+const notification = document.querySelector("#notification");
+
+  notification.addEventListener('click', e =>{
+    e.preventDefault();
+    form.style.display = "block";
+})
