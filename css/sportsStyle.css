@@ -18,7 +18,7 @@ html{
 .grid{
     display: grid;
     grid-template-columns: 5vw 20.5vw  20.5vw 8vw 20.5vw 20.5vw 5vw;
-    grid-template-rows: 10vh 5vh 3vh 22vh 3vh 22vh 3vh 5vh 32vh 2vh 5vh 2vh 13vh 2vh 13vh 2vh 13vh 2vh 13vh 2vh 10vh;
+    grid-template-rows: 1vh 2vh 4vh 25vh 3vh 30vh 3vh 5vh 32vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 13vh;
     
 }
 
@@ -29,11 +29,13 @@ html{
     top: 0;
     left: 0;
     background-color: white;
+    z-index: 10;
   
   }
   
   #logo{
     padding: 0 0 5px 50px;
+    width: 200px;
   }
   
   .sidenav {
@@ -99,8 +101,8 @@ html{
     display: inline-block;
     position: relative;
     overflow: hidden;
-  
     }
+
     .expandSearch i{
     position: absolute;
     top: 0;
@@ -182,7 +184,7 @@ html{
     top: 0;
     bottom: 0;
     width: 20px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+    
   
   }
     
@@ -191,20 +193,8 @@ html{
   
   }
     
-  label:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    width: 20px;
+  label.expandSearch:before {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
-  
-  }
-    
-  input {
-    padding: 10px 30px;
-  
   }
    
   
@@ -225,6 +215,7 @@ html{
       stroke-width: 0;
       stroke: currentColor;
       fill: currentColor;
+      z-index: 1;
     }
     
   
@@ -239,21 +230,7 @@ html{
     display: none;
   
   }
-    
-  .spritesheet {
-    display: none;
-  
-  }
-    
-  .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  
-  }
+
   
   .search{
       position: absolute;
@@ -261,40 +238,95 @@ html{
       top: 15px;
   
   }
+      /* PopUp code inspired by W3Schools and edited */
+
+/* The popup form - hidden by default*/
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #91bd3a;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=cellphone] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+} 
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+ .form-container .btn {
+  background-color: #ffa259;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: none;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+} 
+
+/* close button option */
+#close {
+  position: absolute;
+  left: 275px;
+  top: 08px;
+}
 
   a{
     text-decoration: none;
-    color: #fe6845;
+    color: #fa4252;
     font-size: 14px;
   }
 
 .section{
     grid-area: 2/4/ span 1/span 5;
     font-family: 'Domine', serif;
+    position: relative;
+    right: 40px;
   
 }
 .soccer{
      grid-area: 4/2/span 1 /span 2;  
      font-family: 'Domine', serif;
+     height: 50vh;
      
 
 }
 .soccer:hover{
-    color: #fe6845;
+  color: #fa4252;
 }
 .swim{
     grid-area: 4/5/span 1/ span 2;
     font-family: 'Domine', serif;
 }
 .swim:hover{
-    color: #fe6845;
+  color: #fa4252;
 }
 .basketball{
     grid-area: 6/2/span 1 / span 2;
     font-family: 'Domine', serif;
 }
 .basketball:hover{
-    color: #fe6845;
+  color: #fa4252;
 }
 .cricket{
     grid-area: 6/5/span 1 / span 2;
@@ -302,7 +334,7 @@ html{
 
 }
 .cricket:hover{
-    color: #fe6845;
+  color: #fa4252;
 }
 .fixtureT{
     grid-area: 8/2/span 1 / span 5;
@@ -312,6 +344,7 @@ html{
 }
 .BG{
     grid-area: 9/2/span 1 / span 5;
+    z-index: -10;
   
 }
 .fix{
@@ -323,6 +356,7 @@ html{
     text-transform: uppercase;
     background-color: #fe6845;
     font-family: 'Domine', serif;
+    z-index: 1;
  
 }
 .soc{
@@ -335,6 +369,7 @@ html{
     text-transform: uppercase;
     background-color: #fe6845;
     font-family: 'Domine', serif;
+    z-index: 1;
    
 
 
@@ -394,8 +429,10 @@ html{
 #notification{
   fill: white;
   position: fixed;
-  top: 580px;
-  left: 330px;
+  top: 600px;
+  left: 320px;
+  width:60px;
+    height: 60px;
   background-color: #fa4252;
   padding: 10px;
   border-radius: 50%;
@@ -405,7 +442,7 @@ html{
   align-items: center;
   font-weight: 700;
  background-color:#91bd3a;
- border: 3px solid black;
+ border: 3px solid white;
  position: relative;
  top: 350px;
  left: -190px;
@@ -416,8 +453,9 @@ html{
 
 .not{
   position: relative;
-  left: 50px;
+  left: 80px;
   top:10px;
+  font-size: 1em;
 }
 
 .sign input{

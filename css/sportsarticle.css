@@ -17,8 +17,8 @@ html{
 .art{
   display: grid;
   grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
-  grid-template-rows: 10vh 2vh 5vh 2vh 30vh 2vh 61vh 2vh 3vh 5vh 19vh 2vh 20vh 2vh 5vh 2vh 5vh 0.2vh 20vh 2vh 
-  10vh 0vh 20vh 20vh 10vh;
+  grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 61vh 2vh 3vh 5vh 19vh 2vh 20vh 2vh 5vh 2vh 5vh 0.2vh 20vh 2vh 
+  10vh 0vh 20vh 20vh 15vh 15vh ;
 }
   /*nav bar section*/
   #navbar{
@@ -26,11 +26,13 @@ html{
     height: 10vh;
     position: fixed;
     background-color: white;
+    z-index: 1;
   
   }
   
   #logo{
     padding: 0 0 5px 50px;
+    width: 200px;
   }
   
   .sidenav {
@@ -236,21 +238,7 @@ html{
     display: none;
   
   }
-    
-  .spritesheet {
-    display: none;
   
-  }
-    
-  .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  
-  }
   
   .search{
       position: absolute;
@@ -260,15 +248,71 @@ html{
   }
   /*end of navbar*/
 
+      /* PopUp code inspired by W3Schools and edited */
+
+/* The popup form - hidden by default*/
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #91bd3a;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=cellphone] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+} 
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+ .form-container .btn {
+  background-color: #ffa259;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: none;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+} 
+
+/* close button option */
+#close {
+  position: absolute;
+  left: 285px;
+  top: 08px;
+}
+
   /*working on the sport section*/
   .heading{
       grid-area: 3/2/span 1/span 3;
+      font-family: 'Domine', serif;
   }  
   img{
     grid-area: 5/2/span 1/span 3;
   }
   .write{
     grid-area: 7/2/span 1/span 3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
   }
   .name{
     width: 358px;
@@ -282,9 +326,13 @@ html{
   }
   .mosa{
       grid-area: 11/2/ span 1/ span 4;
+      font-family: 'Roboto', sans-serif;
+      font-size:14px;
   }
   .pamela{
       grid-area: 13/2/span 1 /span 4;
+      font-family: 'Roboto', sans-serif;
+      font-size:14px;
   }
   /*its pointing to down, showing that theres still more when you scroll*/
   .round{
@@ -294,14 +342,18 @@ html{
       border-radius: 50%;
       background-color: #fe6845 ;
   }
-  /*goven permission or an option to put your own comments if any*/
+  /*gives permission or an option to put your own comments if any*/
   .own{
       grid-area: 17/2/span 2 / span 4;
       background-color:#91bd3a;
       width: 92%;
+      font-family: 'Domine', serif;
+      font-size:20px;
   }
   .comment{
     grid-area: 19/2/span 1/span 4 ;
+    font-family: 'Domine', serif;
+    font-size:20px;
   }
   /*send button on the comment section*/
  .send{
@@ -322,6 +374,8 @@ html{
     left: 330px;
     background-color: #fa4252;
     padding: 10px;
+    width:60px;
+    height: 60px;
     border-radius: 50%;
   }
   /*made it in a way that when you click on it, it allows you to fill in your infomation*/
@@ -329,13 +383,12 @@ html{
    align-items: center;
    font-weight: 700;
   background-color:#91bd3a;
-  border: 3px solid black;
+  border: 3px solid white;
   position: relative;
   top: 350px;
   left: -190px;
   width: 80vw;
   height: 30vh;
-  border-radius: 25%;
   display: none;
  }
 
@@ -367,24 +420,31 @@ html{
       grid-area: 21/2/span 1/span 4;
       background-color:#91bd3a;
       width: 92%;
+      height: 40px;
   }
   .Os{
       grid-area: 23/2/span 1/span 1;
   }
   .Ost{
       grid-area: 23/4/span 1/ span 1;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
   }
   .Oc{
     grid-area: 24/2/span 1/span 1;
 }
 .Oct{
     grid-area: 24/4/span 1/ span 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 .Ob{  
   grid-area: 25/2/span 1/ span 1;
 }
 .Obt{
   grid-area: 25/4/span 1/ span 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
   
