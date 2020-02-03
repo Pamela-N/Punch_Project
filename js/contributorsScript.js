@@ -58,3 +58,8 @@ function closeForm() {
   document.getElementsByClassName("one").style.display = "block";
 
 }
+
+notification.addEventListener('click', e =>{
+  e.preventDefault();
+  form.style.display = "block";
+})
