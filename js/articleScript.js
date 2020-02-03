@@ -21,7 +21,6 @@ function openForm() {
 
   }
 
-   // notification popup
 
    const form = document.querySelector('.sign');
 const notification = document.querySelector("#notification");

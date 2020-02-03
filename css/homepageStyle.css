@@ -7,7 +7,7 @@
 
   body{
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 1em;
   }
   
   #navbar{
@@ -30,9 +30,9 @@
     font-weight: 700;
    background-color:#91bd3a;
    border: 3px solid black;
-   position: relative;
-   top: 350px;
-   left: -190px;
+   position: fixed;
+   bottom: 150px;
+   right: 50px;
    width: 80vw;
    height: 30vh;
    border-radius: 25%;
@@ -41,8 +41,9 @@
  
   .not{
     position: relative;
-    left: 50px;
+    left: 80px;
     top:10px;
+    font-size: 1em;
   }
  
   .sign input{
