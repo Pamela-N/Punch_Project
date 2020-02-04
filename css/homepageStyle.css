@@ -8,6 +8,7 @@
   body{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
+    overflow-x: hidden;
   }
   
   #navbar{
@@ -21,8 +22,13 @@
   
   #logo{
     position: fixed;
-    left: 125px;
+    left: 110px;
     top: 10px;
+  }
+
+  .search {
+    position: relative;
+    left: 310px;
   }
 
   .sign{
@@ -35,7 +41,6 @@
    right: 50px;
    width: 80vw;
    height: 30vh;
-   border-radius: 25%;
    display: none;
   }
  
@@ -48,20 +53,20 @@
  
   .sign input{
     align-items: center;
-    margin-left: 50px;
+    margin-left: 35px;
  
   }
   /*when you click on the button it automatically hides back the info*/
   .signB{
     background-color: #ffa259;
-    padding:16px 20px;
+    padding:8px 16px;
     color: white;
     border: none;
     cursor: none;
     width:60%;
     opacity: 0.8;
     position: relative;
-    left: 68px;
+    left: 60px;
   }
   
   .sidenav {
@@ -176,8 +181,8 @@
   #notification{
     fill: white;
     position: fixed;
-    top: 580px;
-    left: 330px;
+    top: 530px;
+    left: 290px;
     background-color: #fa4252;
     padding: 10px;
     border-radius: 50%;
@@ -304,25 +309,25 @@
   
   #whatsapp {
     position: absolute;
-    left: 350px;
+    left: 330px;
       
   }
   
   #twitter {
     position: absolute;
-    left: 310px;
+    left: 290px;
       
   }
   
   #instagram {
     position: absolute;
-    left: 270px;
+    left: 250px;
       
   }
   
   #facebook {
     position: absolute;
-    left: 230px;
+    left: 210px;
       
   }
   

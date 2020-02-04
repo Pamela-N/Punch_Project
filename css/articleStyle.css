@@ -21,8 +21,13 @@ body{
 
 #logo{
   position: fixed;
-  left: 125px;
-  top: 10px;
+    left: 110px;
+    top: 10px;
+}
+
+.search {
+  position: relative;
+  left: 310px;
 }
 
 .sign{
@@ -35,7 +40,6 @@ body{
   right: 50px;
   width: 80vw;
   height: 30vh;
-  border-radius: 25%;
   display: none;
 }
 
@@ -53,14 +57,14 @@ body{
 /*when you click on the button it automatically hides back the info*/
 .signB{
   background-color: #ffa259;
-  padding:16px 20px;
+  padding:8px 16px;
   color: white;
   border: none;
   cursor: none;
   width:60%;
   opacity: 0.8;
   position: relative;
-  left: 68px;
+  left: 60px;
 }
 
 .sidenav {
@@ -175,8 +179,8 @@ body{
 #notification{
   fill: white;
   position: fixed;
-  top: 580px;
-  left: 330px;
+  top: 530px;
+  left: 290px;
   background-color: #fa4252;
   padding: 10px;
   border-radius: 50%;
@@ -303,25 +307,25 @@ label > input {
 
 #whatsapp {
   position: absolute;
-  left: 350px;
+  left: 330px;
     
 }
 
 #twitter {
   position: absolute;
-  left: 310px;
+  left: 290px;
     
 }
 
 #instagram {
   position: absolute;
-  left: 270px;
+  left: 250px;
     
 }
 
 #facebook {
   position: absolute;
-  left: 230px;
+  left: 210px;
     
 }
 
