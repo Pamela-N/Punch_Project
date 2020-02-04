@@ -24,7 +24,7 @@ p{
 
 #logo{
     position: fixed;
-    left: 125px;
+    left: 100px;
     top: 10px;
 
 }
@@ -217,15 +217,15 @@ label > input {
 
 .search{
     position: absolute;
-    right: 25px;
+    right: 15px;
     top: 15px;
 
 }
 #notification{
     fill: white;
     position: fixed;
-    top: 580px;
-    left: 330px;
+    top: 500px;
+    left: 290px;
     background-color: #fa4252;
     padding: 10px;
     border-radius: 50%;
@@ -274,8 +274,7 @@ label > input {
     width: 100vw;
     height: 10vh;
     position: absolute;
-    bottom: -650px;
-    z-index: 1;
+    bottom: -660px;
 }
 
 #facebook, #instagram , #twitter , #whatsapp {
@@ -285,25 +284,25 @@ label > input {
 
 #whatsapp {
     position: absolute;
-    left: 350px;
+    left: 315px;
     
 }
 
 #twitter {
     position: absolute;
-    left: 310px;
+    left: 275px;
     
 }
 
 #instagram {
     position: absolute;
-    left: 270px;
+    left: 235px;
     
 }
 
 #facebook {
     position: absolute;
-    left: 230px;
+    left: 195px;
     
 }
   
@@ -333,14 +332,14 @@ label > input {
 .writer-name{
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    top: 760px;
+    top: 745px;
     left: 190px;
     padding-right: 10px;
 
 }
 .writer-name2{
     position: absolute;
-    top: 960px;
+    top: 910px;
     left: 190px;
     padding-right: 10px;
 
@@ -354,14 +353,13 @@ a:hover{
 }
 .writer-name3{
     position: absolute;
-    top: 1150px;
+    top: 1080px;
     left: 190px;
     font-size: 1em;
     padding-right: 10px; 
 
 }
 
-/* ksbhxvxbas */
 .mySlides {display: none}
 img {vertical-align: middle;}
 
