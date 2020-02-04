@@ -13,15 +13,6 @@ html{
     max-width: 100%;
 }
 
-
-
-.grid{
-    display: grid;
-    grid-template-columns: 5vw 20.5vw  20.5vw 8vw 20.5vw 20.5vw 5vw;
-    grid-template-rows: 1vh 2vh 4vh 25vh 3vh 30vh 3vh 5vh 32vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 13vh;
-    
-}
-
 #navbar{
     width: 100vw;
     height: 10vh;
@@ -290,7 +281,12 @@ html{
   left: 275px;
   top: 08px;
 }
-
+.grid{
+  display: grid;
+  grid-template-columns: 5vw 20.5vw  20.5vw 8vw 20.5vw 20.5vw 5vw;
+  grid-template-rows: 1vh 2vh 6vh 30vh 3vh 32vh 3vh 5vh 32vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 10vh;
+  
+}
   a{
     text-decoration: none;
     color: #fa4252;
@@ -340,7 +336,7 @@ html{
     grid-area: 8/2/span 1 / span 5;
     font-size: 20px;
     position: relative;
-    left: 30px;
+    left: 10px;
 }
 .BG{
     grid-area: 9/2/span 1 / span 5;
@@ -349,9 +345,9 @@ html{
 }
 .fix{
     position: relative;
-    top: 625px;
-    left: 140px;
-    height: 50px;
+    top: 620px;
+    left: 120px;
+    height: 30px;
     border-radius: 25%;
     text-transform: uppercase;
     background-color: #fe6845;
@@ -361,10 +357,10 @@ html{
 }
 .soc{
     position: relative;
-    top:625px;
-    left: 65px;
-    height: 50px;
-    width:90px;
+    top:620px;
+    left: 55px;
+    height: 30px;
+    width:80px;
     border-radius: 25%;
     text-transform: uppercase;
     background-color: #fe6845;
@@ -388,9 +384,7 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
-.img1t:hover{
-    color: #fe6845;
-}
+
 .img2{
     grid-area: 15/2/span 1 / span 2;
 }
@@ -400,9 +394,7 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
-.img2t:hover{
-    color: #fe6845;
-}
+
 .img3{
     grid-area: 17/2/span 1 / span 2;
 }
@@ -411,9 +403,7 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
-.img3t:hover{
-    color: #fe6845;
-}
+
 
 .img4{
     grid-area: 19/2/span 1 / span 2;
@@ -423,19 +413,18 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
-.img4t:hover{
-    color: #fe6845;
-}
+
 #notification{
   fill: white;
   position: fixed;
-  top: 600px;
-  left: 320px;
+  top: 520px;
+  left: 280px;
   width:60px;
     height: 60px;
   background-color: #fa4252;
   padding: 10px;
   border-radius: 50%;
+  opacity: 0.8;
 }
 /*made it in a way that when you click on it, it allows you to fill in your infomation*/
 .sign{
@@ -445,7 +434,7 @@ html{
  border: 3px solid white;
  position: relative;
  top: 350px;
- left: -190px;
+ left: 10px;
  width: 80vw;
  height: 30vh;
  display: none;
@@ -453,20 +442,22 @@ html{
 
 .not{
   position: relative;
-  left: 80px;
+  left: 50px;
   top:10px;
   font-size: 1em;
 }
 
 .sign input{
   align-items: center;
-  margin-left: 50px;
+  margin-left: 30px;
+  position: relative;
+  bottom:10px;
 
 }
 /*when you click on the button it automatically hides back the info*/
 .signB{
   background-color: #ffa259;
-  padding:16px 20px;
+  padding:16px 25px;
   color: white;
   border: none;
   cursor: none;
@@ -474,6 +465,8 @@ html{
   opacity: 0.8;
   position: relative;
   left: 68px;
+  bottom: 15px;
+  
 }
 
 #footer {
@@ -491,25 +484,25 @@ html{
   
   #whatsapp {
     position: absolute;
-    left: 350px;
+    left: 330px;
       
   }
   
   #twitter {
     position: absolute;
-    left: 310px;
+    left: 290px;
       
   }
   
   #instagram {
     position: absolute;
-    left: 270px;
+    left: 250px;
       
   }
   
   #facebook {
     position: absolute;
-    left: 230px;
+    left: 210px;
       
   }
   

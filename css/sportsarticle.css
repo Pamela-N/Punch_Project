@@ -13,13 +13,7 @@ html{
     overflow-x: hidden;
     max-width: 100%;
 }
-/*made some of my work a grid as its managable that way*/
-.art{
-  display: grid;
-  grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
-  grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 61vh 2vh 3vh 5vh 19vh 2vh 20vh 2vh 5vh 2vh 5vh 0.2vh 20vh 2vh 
-  10vh 0vh 20vh 20vh 15vh 15vh ;
-}
+
   /*nav bar section*/
   #navbar{
     width: 100vw;
@@ -301,6 +295,14 @@ html{
   top: 08px;
 }
 
+/*made some of my work a grid as its managable that way*/
+.art{
+  display: grid;
+  grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
+  grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 80vh 2vh 5vh 2vh 23vh 2vh 23vh 2vh 5vh 2vh 5vh 2vh 25vh 2vh 
+  5vh 2vh 18vh 18vh 18vh 10vh ;
+}
+
   /*working on the sport section*/
   .heading{
       grid-area: 3/2/span 1/span 3;
@@ -315,14 +317,14 @@ html{
     font-size: 14px;
   }
   .name{
-    width: 358px;
+    width: 320px;
     height: 30px;
   }
 /*second section for already given comments*/
   .com9{
       grid-area: 9/2/span 1/ span 4;
       background-color:#91bd3a;
-      width: 92%;
+      width: 95%;
   }
   .mosa{
       grid-area: 11/2/ span 1/ span 4;
@@ -344,9 +346,9 @@ html{
   }
   /*gives permission or an option to put your own comments if any*/
   .own{
-      grid-area: 17/2/span 2 / span 4;
+      grid-area: 17/2/span 1 / span 4;
       background-color:#91bd3a;
-      width: 92%;
+      width: 95%;
       font-family: 'Domine', serif;
       font-size:20px;
   }
@@ -370,8 +372,9 @@ html{
   #notification{
     fill: white;
     position: fixed;
-    top: 580px;
-    left: 330px;
+    top: 510px;
+    left: 280px;
+    opacity: 0.8;
     background-color: #fa4252;
     padding: 10px;
     width:60px;
@@ -386,7 +389,7 @@ html{
   border: 3px solid white;
   position: relative;
   top: 350px;
-  left: -190px;
+  left: 10px;
   width: 80vw;
   height: 30vh;
   display: none;
@@ -400,13 +403,15 @@ html{
 
  .sign input{
    align-items: center;
-   margin-left: 50px;
+   margin-left: 30px;
+   position: relative;
+   bottom:10px;
 
  }
  /*when you click on the button it automatically hides back the info*/
  .signB{
    background-color: #ffa259;
-   padding:16px 20px;
+   padding:16px 25px;
    color: white;
    border: none;
    cursor: none;
@@ -414,13 +419,15 @@ html{
    opacity: 0.8;
    position: relative;
    left: 68px;
+   bottom: 15px;
+   
  }
 /*more news section*/
   .light{
       grid-area: 21/2/span 1/span 4;
       background-color:#91bd3a;
-      width: 92%;
-      height: 40px;
+      width: 95%;
+      height: 35px;
   }
   .Os{
       grid-area: 23/2/span 1/span 1;
@@ -464,25 +471,25 @@ html{
   
   #whatsapp {
     position: absolute;
-    left: 350px;
+    left: 330px;
       
   }
   
   #twitter {
     position: absolute;
-    left: 310px;
+    left: 290px;
       
   }
   
   #instagram {
     position: absolute;
-    left: 270px;
+    left: 250px;
       
   }
   
   #facebook {
     position: absolute;
-    left: 230px;
+    left: 210px;
       
   }
   
