@@ -23,7 +23,7 @@
   }
   
   #logo{
-    padding: 0 0 5px 50px;
+    padding: 5px 0 0 25px;
   
   }
   
@@ -213,7 +213,7 @@
   
   .search{
     position: absolute;
-    right: 25px;
+    right: 15px;
     top: 15px;
   
   }
@@ -228,35 +228,38 @@
     background-color: black;
     width: 100vw;
     height: 10vh;
-    margin-left: 0px;
+    position: absolute;
+    bottom: -720px;
   }
   
   #facebook, #instagram , #twitter , #whatsapp {
     fill: #fa4252;
+    top: 18px;
   
   }
   
   #whatsapp {
     position: absolute;
-    left: 350px;
+    left: 315px;
+
       
   }
   
   #twitter {
     position: absolute;
-    left: 310px;
+    left: 275px;
       
   }
   
   #instagram {
     position: absolute;
-    left: 270px;
+    left: 235px;
       
   }
   
   #facebook {
     position: absolute;
-    left: 230px;
+    left: 195px;
       
   }
   
@@ -265,7 +268,7 @@
     color: white;
     position: relative;
     left: 15px;
-    top: 25px;
+    top: 15px;
   
   }
   h1{
@@ -358,8 +361,8 @@ p{
 #notification{
   fill: white;
   position: fixed;
-  top: 580px;
-  left: 330px;
+  top: 500px;
+  left: 290px;
   background-color: #fa4252;
   padding: 10px;
   border-radius: 50%;
