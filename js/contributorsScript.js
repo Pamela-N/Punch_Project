@@ -1,6 +1,8 @@
 let slideIndex = 1;
 showSlides(slideIndex);
-let line= document.querySelector("hr");
+let notification = document.querySelector('#notification');
+let sbmit = document.querySelector(".signB");
+const form = document.querySelector('.sign');
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
@@ -38,10 +40,7 @@ function showSlides(n) {
 }
 
 
-// window.scroll({
-//   top: 80, 
-//   left: 0, 
-// });
+
 
 // PopUp code inspired by W3Schools and edited
 
@@ -59,16 +58,13 @@ function closeForm() {
 
 }
 
+// notification bell comands
 notification.addEventListener('click', e =>{
   e.preventDefault();
   form.style.display = "block";
 })
 
-// sign popup
-const form = document.querySelector('.sign');
-const notification = document.querySelector("#notification");
-
-  notification.addEventListener('click', e =>{
+  sbmit.addEventListener('click', e =>{
     e.preventDefault();
-    form.style.display = "block";
+    form.style.display = "none";
 })
