@@ -281,21 +281,23 @@
   display: none;
   position: fixed;
   bottom: 150px;
-  right: 50px;
+  right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
 
-/* Add styles to the form container */
-.form-container {
+ /* Add styles to the form container */
+ .form-container {
   max-width: 300px;
   padding: 10px;
   background-color: #91bd3a;
 }
-
+.form-container label::before{
+  display: none;
+}
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=cellphone] {
-  width: 100%;
+  width: 90%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
@@ -309,7 +311,7 @@
 }
 
 
- .form-container .btn {
+.form-container .btn {
   background-color: #ffa259;
   color: white;
   padding: 16px 20px;
@@ -367,4 +369,40 @@ p{
   padding: 10px;
   border-radius: 50%;
  
+}
+/* signup popup bell */
+.sign{
+  font-weight: 700;
+  background-color:#91bd3a;
+  border: 3px solid black;
+  position: fixed;
+  bottom: 250px;
+  right: 35px;
+  width: 80vw;
+  height: 40vh;
+  display: none;
+}
+
+.not{
+  position: relative;
+  left: 60px;
+  top:10px;
+}
+
+.sign input{
+  align-items: center;
+  margin-left: 35px;
+
+}
+/*when you click on the button it automatically hides back the info*/
+.signB{
+  background-color: #ffa259;
+  padding:16px 20px;
+  color: white;
+  border: none;
+  cursor: none;
+  width:60%;
+  opacity: 0.8;
+  position: relative;
+  left: 60px;
 }

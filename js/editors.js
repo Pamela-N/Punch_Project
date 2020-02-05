@@ -1,3 +1,7 @@
+let notification = document.querySelector('#notification');
+let sbmit = document.querySelector(".signB");
+const form = document.querySelector('.sign');
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
 }
@@ -19,3 +23,14 @@ function openForm() {
     document.getElementsByClassName("one").style.display = "block";
 
   }
+
+  // notification bell comands
+notification.addEventListener('click', e =>{
+  e.preventDefault();
+  form.style.display = "block";
+})
+
+  sbmit.addEventListener('click', e =>{
+    e.preventDefault();
+    form.style.display = "none";
+})
