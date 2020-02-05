@@ -368,13 +368,14 @@ p{
   background-color: #fa4252;
   padding: 10px;
   border-radius: 50%;
+  opacity: 0.8;
  
 }
 /* signup popup bell */
 .sign{
   font-weight: 700;
   background-color:#91bd3a;
-  border: 3px solid black;
+  border: 3px solid rgb(255, 255, 255);
   position: fixed;
   bottom: 250px;
   right: 35px;
