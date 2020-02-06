@@ -35,6 +35,7 @@ notification.addEventListener('click', e =>{
 submit.addEventListener('click', e =>{
     e.preventDefault();
     form.style.display="none";
+    prompt('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
 })
 
 // PopUp code inspired by W3Schools and edited
