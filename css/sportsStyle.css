@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-family: 'Domine', serif;
+    overflow-x: none;
      
 }
 /* didnt want html have the x-axis*/
@@ -56,6 +57,7 @@ html{
     
   .sidenav a:hover{
     color: #fa4252;
+    cursor: pointer;
   
   }
     
@@ -291,6 +293,7 @@ html{
     text-decoration: none;
     color: #fa4252;
     font-size: 14px;
+    cursor: pointer;
   }
 
 .section{
@@ -304,34 +307,23 @@ html{
      grid-area: 4/2/span 1 /span 2;  
      font-family: 'Domine', serif;
      height: 50vh;
-     
+     }
 
-}
-.soccer:hover{
-  color: #fa4252;
-}
 .swim{
     grid-area: 4/5/span 1/ span 2;
     font-family: 'Domine', serif;
 }
-.swim:hover{
-  color: #fa4252;
-}
+
 .basketball{
     grid-area: 6/2/span 1 / span 2;
     font-family: 'Domine', serif;
-}
-.basketball:hover{
-  color: #fa4252;
 }
 .cricket{
     grid-area: 6/5/span 1 / span 2;
     font-family: 'Domine', serif;
 
 }
-.cricket:hover{
-  color: #fa4252;
-}
+
 .fixtureT{
     grid-area: 8/2/span 1 / span 5;
     font-size: 20px;
@@ -366,14 +358,12 @@ html{
     background-color: #fe6845;
     font-family: 'Domine', serif;
     z-index: 1;
-   
-
 
 }
 .otherNews{
     grid-area: 11/3/span 1 / span 5;
     font-family: 'Domine', serif;
-    font-size: 26px;
+    font-size: 20px;
 }
 .img1{
     grid-area: 13/2/span 1 / span 2;
@@ -425,6 +415,7 @@ html{
   padding: 10px;
   border-radius: 50%;
   opacity: 0.8;
+  cursor: pointer ;
 }
 /*made it in a way that when you click on it, it allows you to fill in your infomation*/
 .sign{
@@ -433,10 +424,10 @@ html{
  background-color:#91bd3a;
  border: 3px solid white;
  position: relative;
- top: 350px;
- left: 10px;
+ top: 35px;
+ left: 25px;
  width: 80vw;
- height: 30vh;
+ height: 40vh;
  display: none;
 }
 
@@ -450,8 +441,6 @@ html{
 .sign input{
   align-items: center;
   margin-left: 30px;
-  position: relative;
-  bottom:10px;
 
 }
 /*when you click on the button it automatically hides back the info*/
@@ -465,15 +454,13 @@ html{
   opacity: 0.8;
   position: relative;
   left: 68px;
-  bottom: 15px;
-  
 }
 
 #footer {
     background-color: black;
     width: 100vw;
     height: 10vh;
-    grid-area: 21/1/span 1 / span 5;
+    grid-area: 21/1/span 1 / span 7;
     
   }
   
