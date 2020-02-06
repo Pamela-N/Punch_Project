@@ -31,33 +31,32 @@ body{
 }
 
 .sign{
-  align-items: center;
   font-weight: 700;
   background-color:#91bd3a;
-  border: 3px solid black;
+  border: 3px solid white;
   position: fixed;
-  bottom: 150px;
-  right: 50px;
+  bottom: 250px;
+  right: 35px;
   width: 80vw;
-  height: 30vh;
+  height: 40vh;
   display: none;
 }
 
 .not{
   position: relative;
-  left: 80px;
+  left: 60px;
   top:10px;
 }
 
 .sign input{
   align-items: center;
-  margin-left: 50px;
+  margin-left: 35px;
 
 }
 /*when you click on the button it automatically hides back the info*/
 .signB{
   background-color: #ffa259;
-  padding:8px 16px;
+  padding:16px 20px;
   color: white;
   border: none;
   cursor: none;
@@ -184,6 +183,7 @@ body{
   background-color: #fa4252;
   padding: 10px;
   border-radius: 50%;
+  opacity: 0.8;
 }
 
 
@@ -208,7 +208,7 @@ a {
 }
 
 #submit {
-    height: 44.5px;
+    height: 42px;
     width: 100px;
     font-size: 13px;
     font-weight: bold;
@@ -219,6 +219,8 @@ a {
 
 #privacy {
     color: #91bd3a ;
+    position: relative;
+    bottom: 10px;
     text-align: left;
     padding-left: 15px ;
 
