@@ -96,10 +96,7 @@
   transition: 0.24s;
   }
 
-  .expandSearch i:hover{
-  color: #0bf;
 
-  }
 
 .expandSearch input{
   border:none;
@@ -119,7 +116,7 @@
   outline: none;
   width:200px;
   padding: 8px 12px 8px 34px;
-  border-color: #0bf;
+  border-color: #91bd3a;
 
 }
 .expandSearch input:focus + i{
@@ -296,5 +293,49 @@ label > input {
 
 }
 
+.colour1{
+  width: 50px;
+  height: 50px;
+  background-color: #91bd3a;
 
-
+}
+.colour2{
+  width: 50px;
+  height: 50px;
+  background-color: #fa4252;
+  position: absolute;
+  top: 237.5px;
+  left: 50px;
+}
+.colour3{
+  width: 50px;
+  height: 50px;
+  background-color: #fe6845;
+  position: absolute;
+  top: 237.5px;
+  left: 100px;
+}
+.colour4{
+  width: 50px;
+  height: 50px;
+  background-color: #ffa259;
+  position: absolute;
+  top: 237.5px;
+  left: 150px;
+}
+.colour5{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  top: 237.5px;
+  left: 200px;
+}
+.colour6{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  top: 237.5px;
+  left: 250px;
+}
