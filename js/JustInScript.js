@@ -25,8 +25,14 @@ function openForm() {
 
    const form = document.querySelector('.sign');
 const notification = document.querySelector("#notification");
+const submit = document.querySelector(".signB")
 
   notification.addEventListener('click', e =>{
     e.preventDefault();
     form.style.display = "block";
+})
+submit.addEventListener('click', e =>{
+  e.preventDefault();
+  form.style.display="none";
+  alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
 })
