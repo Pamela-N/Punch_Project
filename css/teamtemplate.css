@@ -8,6 +8,7 @@
 
 body{
   font-family: 'Roboto', sans-serif;
+  
 }
 
 h1 , h2{
@@ -354,4 +355,17 @@ label > input {
   position: absolute;
   top: 279.5px;
   left: 250px;
+}
+
+button {
+  background-color: #ffa259;
+    padding:16px 20px;
+    color: white;
+    font-size: 26px;
+    border: none;
+    cursor: none;
+    width:60%;
+    opacity: 0.9;
+    position: relative;
+    left: 60px;
 }
