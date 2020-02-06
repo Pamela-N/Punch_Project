@@ -17,27 +17,26 @@
     background-color: #fa4252;
     padding: 10px;
     border-radius: 50%;
+    opacity: 0.8;
     
 }
 
 .sign{
-  align-items: center;
   font-weight: 700;
- background-color:#91bd3a;
- border: 3px solid black;
- position: fixed;
- bottom: 150px;
- right: 50px;
- width: 80vw;
- height: 30vh;
- display: none;
+  background-color:#91bd3a;
+  border: 3px solid white;
+  position: fixed;
+  bottom: 250px;
+  right: 35px;
+  width: 80vw;
+  height: 40vh;
+  display: none;
 }
 
 .not{
   position: relative;
-  left: 50px;
-  top: 10px;
-  font-size: 1em;
+  left: 60px;
+  top:10px;
 }
 
 .sign input{
@@ -48,7 +47,7 @@
 /*when you click on the button it automatically hides back the info*/
 .signB{
   background-color: #ffa259;
-  padding:8px 16px;
+  padding:16px 20px;
   color: white;
   border: none;
   cursor: none;
@@ -215,6 +214,8 @@
   
   #update {
       color: white;
+      font-size: 17px;
+
   
   }
   
@@ -230,6 +231,8 @@
   
   #privacy {
       color: #91bd3a ;
+      position: relative;
+      bottom: 15px;
       text-align: left;
       padding-left: 15px ;
   
