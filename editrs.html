@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/editors.css">
+    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900&display=swap" rel="stylesheet">
     <title>Editors</title>
 </head>
 <body>
+<!-- nav bar -->
     <div id="navbar">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -20,6 +22,8 @@
                 </label>
                 <?xml version="1.0" encoding="UTF-8"?>
             </a>
+
+<!-- manue options -->
             <a href="#">Sign in</a>
             <a href="#myForm" onclick="openForm()">Subscribe</a>
             <a href="homepage.html">Home</a>
@@ -36,25 +40,34 @@
             <br>
         
             <input type="text"><button id="submit">Submit</button>
+            <br>
 
+<!-- the privacy text in the nav bar -->
             <p id="privacy">privacy policy</p>
         
         </div>
+
+<!-- the way i put the burger nav -->
         <span onclick="openNav()">
-        <div class="container">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
+            <div class="container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </span>
+
+<!-- the logo of the page -->
         <a href="homepage.html">
             <img id="logo" src="assets/images/logo/punch colour@2x.png" width="165px" height="50px" alt="newspaper logo">
         </a>
- <!-- this is the search icon        -->
+
+ <!-- this is the search icon-->
         <svg class="search" enable-background="new 0 0 503.532 503.532" version="1.1" viewBox="0 0 503.53 503.53" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px">
             <path d="m456.9 46.66c-30.092-30.096-70.087-46.66-112.65-46.66-42.552 0-82.56 16.568-112.65 46.66-54.644 54.64-61.188 139.42-19.696 201.32l-2.952 2.944c-8.244 8.256-10.4 20.328-6.476 30.608l-29.828 29.824-3.432-3.424c-1.508-1.508-3.92-1.548-5.48-0.084l-155.17 145.94c-11.356 11.36-11.356 29.84 0 41.196 5.508 5.504 12.812 8.54 20.6 8.54 7.772 0 15.084-3.036 20.672-8.624l145.87-155.08c1.452-1.552 1.416-3.98-0.084-5.48l-3.436-3.432 29.832-29.82c3.304 1.256 6.792 1.916 10.276 1.916 7.364 0 14.728-2.792 20.328-8.4l2.916-2.92c26.024 17.52 56.636 26.94 88.708 26.94 42.56 0 82.556-16.576 112.65-46.664 62.12-62.12 62.12-163.19-1e-3 -225.3zm-27.771 197.52c-22.672 22.66-52.816 35.152-84.876 35.152-32.064 0-62.208-12.492-84.872-35.152-46.8-46.792-46.8-122.94 0-169.74 22.664-22.676 52.808-35.152 84.88-35.152 32.06 0 62.204 12.476 84.868 35.144 46.804 46.792 46.804 122.94 0 169.75z"/>
         </svg>
     </div>
+
+<!-- the subscrib form -->
     <div class="form-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
             <h3>Subscribe to <em>PUNCH</em></h3>
@@ -83,6 +96,8 @@
 
     <hr>
     <br>
+
+<!-- this is where the page starts -->
     <h1>Columnist</h1>
 
     <br>
@@ -97,56 +112,59 @@
 
     </div>
 
-    <br><br>
+    <br>
 
     <div>
 
-    <h2>All work</h2>
+        <h2>All work</h2>
 
-    <br>
-
-    <a href="SportsArticle.html">
-        <h2>Bafana Bafana Wins</h2>
-        <img id="writer-work1"src="assets/images/Articles/soccer 3.jpeg" width="50%" height="120px" alt="">
-    </a>
-    <p id="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, excepturi eaque accusamus illum sapiente in vel cum.</p>
-
-    <br><br>
-
-    <a href="#">
-        <h2>Penny And Olympics</h2>
-    </a>
-    <img id="writer-work1"src="Assets/images/Articles/swimming.jpeg" width="50%" alt="">
-    <p id="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, excepturi eaque accusamus illum sapiente in vel cum.</p>
-    <br><br>
-
-    <a href="#">
-        <h2>Swizerland Overcomes West Indies</h2>
-    </a>
-    <img id="writer-work1"src="assets/images/Articles/cricket 2.jpeg" width="50%" height="120px" alt="">
-    <p id="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, excepturi eaque accusamus illum sapiente in vel cum.</p>
-        
-
-<!-- this is the sign-up for notification   -->
-<div>
-    <?xml version="1.0" encoding="UTF-8"?>
-    <svg id="notification" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px">
-        <path d="m450.2 407.45c-1.505-0.977-12.832-8.912-24.174-32.917-20.829-44.082-25.201-106.18-25.201-150.51 0-0.193-4e-3 -0.384-0.011-0.576-0.227-58.589-35.31-109.1-85.514-131.76v-34.657c0-31.45-25.544-57.036-56.942-57.036h-4.719c-31.398 0-56.942 25.586-56.942 57.036v34.655c-50.372 22.734-85.525 73.498-85.525 132.33 0 44.331-4.372 106.43-25.201 150.51-11.341 24.004-22.668 31.939-24.174 32.917-6.342 2.935-9.469 9.715-8.01 16.586 1.473 6.939 7.959 11.723 15.042 11.723h109.95c0.614 42.141 35.008 76.238 77.223 76.238s76.609-34.097 77.223-76.238h109.95c7.082 0 13.569-4.784 15.042-11.723 1.457-6.871-1.669-13.652-8.011-16.586zm-223.5-350.42c0-14.881 12.086-26.987 26.942-26.987h4.719c14.856 0 26.942 12.106 26.942 26.987v24.917c-9.468-1.957-19.269-2.987-29.306-2.987-10.034 0-19.832 1.029-29.296 2.984v-24.914zm29.301 424.92c-25.673 0-46.614-20.617-47.223-46.188h94.445c-0.608 25.57-21.549 46.188-47.222 46.188zm60.4-76.239h-213.38c2.595-4.044 5.236-8.623 7.861-13.798 20.104-39.643 30.298-96.129 30.298-167.89 0-63.417 51.509-115.01 114.82-115.01s114.82 51.593 114.82 115.06c0 0.185 3e-3 0.369 0.01 0.553 0.057 71.472 10.25 127.76 30.298 167.29 2.625 5.176 5.267 9.754 7.861 13.798z"/>
-    </svg>
-</div>
-
-<div class="sign">
-    <form>
-        <p class="not">Sign-up for notifications</p>
-        <br><br>
-        <input type="text" name="firstname"  placeholder="Name">
         <br>
-        <input type="text" name="contact" placeholder="Cell Number">
-        <br><br>
-        <button class="signB">SUBMIT</button>
-    </form>
-</div>
 
+        <a href="SportsArticle.html">
+            <h2>Bafana Bafana Wins</h2>
+            <img id="writer-work1"src="assets/images/Articles/soccer 3.jpeg" width="50%" height="120px" alt="">
+        </a>
+        <p id="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, excepturi eaque accusamus illum sapiente in vel cum.</p>
+
+        <br>
+
+        <a href="#">
+            <h2>Penny And Olympics</h2>
+        </a>
+        
+        <img id="writer-work1"src="Assets/images/Articles/swimming.jpeg" width="50%" alt="">
+        <p id="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, excepturi eaque accusamus illum sapiente in vel cum.</p>
+        <br>
+
+        <a href="#">
+            <h2>Swizerland Overcomes West Indies</h2>
+        </a>
+        <img id="writer-work1"src="assets/images/Articles/cricket 2.jpeg" width="50%" height="120px" alt="">
+        <p id="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, excepturi eaque accusamus illum sapiente in vel cum.</p>
+    </div>
+    
+<!-- this is the sign-up for notification   -->
+    <div>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg id="notification" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px">
+            <path d="m450.2 407.45c-1.505-0.977-12.832-8.912-24.174-32.917-20.829-44.082-25.201-106.18-25.201-150.51 0-0.193-4e-3 -0.384-0.011-0.576-0.227-58.589-35.31-109.1-85.514-131.76v-34.657c0-31.45-25.544-57.036-56.942-57.036h-4.719c-31.398 0-56.942 25.586-56.942 57.036v34.655c-50.372 22.734-85.525 73.498-85.525 132.33 0 44.331-4.372 106.43-25.201 150.51-11.341 24.004-22.668 31.939-24.174 32.917-6.342 2.935-9.469 9.715-8.01 16.586 1.473 6.939 7.959 11.723 15.042 11.723h109.95c0.614 42.141 35.008 76.238 77.223 76.238s76.609-34.097 77.223-76.238h109.95c7.082 0 13.569-4.784 15.042-11.723 1.457-6.871-1.669-13.652-8.011-16.586zm-223.5-350.42c0-14.881 12.086-26.987 26.942-26.987h4.719c14.856 0 26.942 12.106 26.942 26.987v24.917c-9.468-1.957-19.269-2.987-29.306-2.987-10.034 0-19.832 1.029-29.296 2.984v-24.914zm29.301 424.92c-25.673 0-46.614-20.617-47.223-46.188h94.445c-0.608 25.57-21.549 46.188-47.222 46.188zm60.4-76.239h-213.38c2.595-4.044 5.236-8.623 7.861-13.798 20.104-39.643 30.298-96.129 30.298-167.89 0-63.417 51.509-115.01 114.82-115.01s114.82 51.593 114.82 115.06c0 0.185 3e-3 0.369 0.01 0.553 0.057 71.472 10.25 127.76 30.298 167.29 2.625 5.176 5.267 9.754 7.861 13.798z"/>
+        </svg>
+    </div>
+
+<!-- the bell signup form -->
+    <div class="sign">
+        <form>
+            <p class="not">Sign-up for notifications</p>
+            <br><br>
+            <input type="text" name="firstname"  placeholder="Name">
+            <br>
+            <input type="text" name="contact" placeholder="Cell Number">
+            <br><br>
+            <button class="signB">SUBMIT</button>
+        </form>
+    </div>
+
+<!-- this is the footer of all the pages -->
     <div id="footer">
         <p class="para">	&copy; 1971 - 2020</p>
         <?xml version="1.0" encoding="UTF-8"?>

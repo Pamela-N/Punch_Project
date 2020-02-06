@@ -1,11 +1,27 @@
 *{
   margin: 0;
   padding: 0;
-
-
   overflow-x: hidden;
   padding: 0;
 
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 , h2{
+  font-family: 'Domine', serif;
+}
+
+
+h3{
+  font-size:bold;
+  font-family: 'Domine', serif;
+}
+
+p{
+  font-size: 1em;
 }
 
 #navbar{
@@ -304,7 +320,7 @@ label > input {
   height: 50px;
   background-color: #fa4252;
   position: absolute;
-  top: 237.5px;
+  top: 279.5px;
   left: 50px;
 }
 .colour3{
@@ -312,7 +328,7 @@ label > input {
   height: 50px;
   background-color: #fe6845;
   position: absolute;
-  top: 237.5px;
+  top: 279.5px;
   left: 100px;
 }
 .colour4{
@@ -320,7 +336,7 @@ label > input {
   height: 50px;
   background-color: #ffa259;
   position: absolute;
-  top: 237.5px;
+  top: 279.5px;
   left: 150px;
 }
 .colour5{
@@ -328,7 +344,7 @@ label > input {
   height: 50px;
   background-color: white;
   position: absolute;
-  top: 237.5px;
+  top: 279.5px;
   left: 200px;
 }
 .colour6{
@@ -336,6 +352,6 @@ label > input {
   height: 50px;
   background-color: black;
   position: absolute;
-  top: 237.5px;
+  top: 279.5px;
   left: 250px;
 }

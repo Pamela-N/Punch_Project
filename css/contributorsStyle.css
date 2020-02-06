@@ -2,18 +2,31 @@
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-
 }
+h1{
+    font-family: 'Domine', serif; 
+}
+
 h3{
     font-size:bold;
     font-family: 'Domine', serif;
 }
+
 body{
     font-family: 'Roboto', sans-serif;
-
 }
+
 p{
     font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #fa4252;
 }
 
 /* this is the navigation bar */
@@ -25,11 +38,23 @@ p{
     z-index: 1;
 }
 
+/* sidenav bars */
+.container {
+    display: inline-block;
+    margin: 15px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0 0 6px;
+}
+
 #logo{
     position: fixed;
     left: 100px;
     top: 10px;
-
 }
 
 .sidenav {
@@ -44,7 +69,6 @@ p{
     transition: 0.5s;
     padding-top: 60px;
     text-align:center;
-
 }
 
 .sidenav a {
@@ -53,12 +77,10 @@ p{
     font-size: 25px;
     color:white;
     display: block;
-
 }
 
 .sidenav a:hover{
     color: #fa4252;
-
 }
 
 .sidenav .closebtn {
@@ -67,36 +89,18 @@ p{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-
 }
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-
-}
-
-/* sidenav bars */
-.container {
-    display: inline-block;
-    margin: 15px;
-
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: rgb(0, 0, 0);
-    margin: 6px 0 0 6px;
-
 }
 
 /* search icon */
 .expandSearch{
     display: inline-block;
     position: relative;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 
 .expandSearch i{
@@ -108,7 +112,6 @@ p{
     cursor: pointer;
     user-select: none;
     transition: 0.24s;
-
 }
 
 .expandSearch input{
@@ -122,7 +125,6 @@ p{
     transition: 0.24s;
     width: 0px;
     padding: 8px 0px 8px 34px;
-
 }
 
 .expandSearch input:focus{
@@ -131,20 +133,16 @@ p{
     width:200px;
     padding: 8px 12px 8px 34px;
     border-color: #91bd3a;
-
 }
 
 .expandSearch input:focus + i{
-/*padding: 8px 4px 8px 8px ;*/
     color: #ddd;
     pointer-events: none;
-
 }
 
 /* input in the manue */
 #update {
     color: white;
-
 }
 
 #submit {
@@ -154,20 +152,17 @@ p{
     font-weight: bold;
     background-color: #91bd3a;
     border: none;
-
 }
 
 #privacy {
     color: #91bd3a ;
     text-align: left;
     padding-left: 20px ;
-
 }
 
 /*new icons*/
 label {
     position: relative;
-
 }
 
 label:before {
@@ -178,12 +173,10 @@ label:before {
     bottom: 0;
     width: 20px;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
-
 }
 
 input {
     padding: 10px 30px;
-
 }
 
 label > .icon {
@@ -192,19 +185,16 @@ label > .icon {
     left: 10px;
     transform: translateY(-50%);
     color: silver;
-
 }
 
 label > input {
-    padding-left: calc(1em + 10px + 8px); /* icon width + icon padding-left + desired separation*/
+    padding-left: calc(1em + 10px + 8px);
     height: 2em;
-
 }
 
 /* SVG SpriteSheet */
 .spritesheet {
     display: none;
-
 }
 
 .icon {
@@ -215,118 +205,79 @@ label > input {
     stroke: currentColor;
     fill: currentColor;
     z-index: -5;
-
 }
 
 .search{
     position: absolute;
     right: 15px;
     top: 15px;
-
 }
-#notification{
-    fill: white;
+
+/* PopUp code inspired by W3Schools and edited */
+
+/* The popup form - hidden by default*/
+
+.form-popup {
+    display: none;
     position: fixed;
-    top: 500px;
-    left: 290px;
-    background-color: #fa4252;
-    padding: 10px;
-    border-radius: 50%;
-    opacity: 0.8;
-}
-
-/* this is the footer */
-#footer {
-    background-color: black;
-    width: 100vw;
-    height: 10vh;
-    position: absolute;
-    bottom: -690px;
-}
-
-#facebook, #instagram , #twitter , #whatsapp {
-    fill: #fa4252;
-
-}
-
-#whatsapp {
-    position: absolute;
-    left: 315px;
-    
-}
-
-#twitter {
-    position: absolute;
-    left: 275px;
-    
-}
-
-#instagram {
-    position: absolute;
-    left: 235px;
-    
-}
-
-#facebook {
-    position: absolute;
-    left: 195px;
-    
+    bottom: 150px;
+    right: 20px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
 }
   
-.para {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    position: relative;
-    left: 15px;
-    top: 25px;
-
+  /* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #91bd3a;
 }
+
+.form-container label::before{
+    display: none;
+}
+
+  /* Full-width input fields */
+.form-container input[type=text], .form-container input[type=cellphone] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+} 
+  
+  /* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+  
+.form-container .btn {
+    background-color: #ffa259;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: none;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+} 
+  
+  /* close button option */
+#close {
+    position: absolute;
+    left: 285px;
+    top: 08px;
+}
+
+/* first heading of the page */
 .contributors{
     font-family: 'Domine', serif;
     text-align: center; 
-
-}
-.columnist{
-    font-family: 'Domine', serif;
-    text-align: center;
-    
-}
-.editer{
-    margin-left: 10px;
-    border-radius: 50%;
-
-}
-.writer-name{
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    top: 775px;
-    left: 180px;
-    padding-right: 10px;
-
-}
-.writer-name2{
-    position: absolute;
-    top: 945px;
-    left: 180px;
-    padding-right: 10px;
-
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-a:hover{
-    color: #fa4252;
-}
-.writer-name3{
-    position: absolute;
-    top: 1110px;
-    left: 180px;
-    font-size: 1em;
-    padding-right: 10px; 
-
 }
 
+/* this is the slide of the page taken fron w3 schools edited a few things */
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -425,61 +376,52 @@ img {vertical-align: middle;}
     .prev, .next,.text {font-size: 11px}
 }
 
-    /* PopUp code inspired by W3Schools and edited */
+/* the columnist section starts */
+.columnist{
+    font-family: 'Domine', serif;
+    text-align: center;
+}
 
-/* The popup form - hidden by default*/
+.editer{
+    margin-left: 10px;
+    border-radius: 50%;
+}
 
-.form-popup {
-    display: none;
-    position: fixed;
-    bottom: 150px;
-    right: 20px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-}
-  
-  /* Add styles to the form container */
-.form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: #91bd3a;
-}
-.form-container label::before{
-    display: none;
-}
-  /* Full-width input fields */
-.form-container input[type=text], .form-container input[type=cellphone] {
-    width: 90%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-} 
-  
-  /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-  
-  
-.form-container .btn {
-    background-color: #ffa259;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: none;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-} 
-  
-  /* close button option */
-#close {
+.writer-name{
+    font-family: 'Roboto', sans-serif;
     position: absolute;
-    left: 285px;
-    top: 08px;
+    top: 775px;
+    left: 180px;
+    padding-right: 10px;
 }
+
+.writer-name2{
+    position: absolute;
+    top: 945px;
+    left: 180px;
+    padding-right: 10px;
+}
+
+.writer-name3{
+    position: absolute;
+    top: 1110px;
+    left: 180px;
+    font-size: 1em;
+    padding-right: 10px; 
+}
+
+/* this is the bell */
+#notification{
+    fill: white;
+    position: fixed;
+    top: 500px;
+    left: 290px;
+    background-color: #fa4252;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
 /* signup popup bell */
 .sign{
     font-weight: 700;
@@ -491,21 +433,21 @@ img {vertical-align: middle;}
     width: 80vw;
     height: 40vh;
     display: none;
-  }
+}
   
-  .not{
+.not{
     position: relative;
     left: 60px;
     top:10px;
-  }
+}
   
-  .sign input{
+.sign input{
     align-items: center;
     margin-left: 35px;
-  
-  }
+}
+
   /*when you click on the button it automatically hides back the info*/
-  .signB{
+.signB{
     background-color: #ffa259;
     padding:16px 20px;
     color: white;
@@ -515,4 +457,45 @@ img {vertical-align: middle;}
     opacity: 0.8;
     position: relative;
     left: 60px;
-  }
+}
+
+/* this is the footer and the icons*/
+#footer {
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    bottom: -690px;
+}
+
+#facebook, #instagram , #twitter , #whatsapp {
+    fill: #fa4252;
+}
+
+#whatsapp {
+    position: absolute;
+    left: 315px; 
+}
+
+#twitter {
+    position: absolute;
+    left: 275px; 
+}
+
+#instagram {
+    position: absolute;
+    left: 235px;   
+}
+
+#facebook {
+    position: absolute;
+    left: 195px;   
+}
+  
+.para {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    position: relative;
+    left: 15px;
+    top: 25px;
+}
