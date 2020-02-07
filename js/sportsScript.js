@@ -1,9 +1,9 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+    document.getElementById("mySidenav").style.left = "0vw";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.left = "-100vw";
+  }
 
 const soccer = document.querySelector(".soccer")
 const swim = document.querySelector(".swim")
@@ -53,5 +53,11 @@ function openForm() {
     document.getElementsByClassName("one").style.display = "block";
 
   }
+
+  const bell = document.querySelector("#notification");
+
+  setTimeout( () => {
+    bell.style.display = "none";
+  }, 10000 )
 
 

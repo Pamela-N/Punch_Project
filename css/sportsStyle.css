@@ -11,7 +11,6 @@
 /* didnt want html have the x-axis*/
 html{
     overflow-x: hidden;
-    max-width: 100%;
 }
 
 #navbar{
@@ -32,17 +31,17 @@ html{
   
   .sidenav {
     height: 100%;
-    width: 0;
+    width: 100vw;
     position: fixed;
+    z-index: 1;
     top: 0;
-    left: 0;
+    left: -100vw;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     text-align:center;
     
-  
   }
     
   .sidenav a {
@@ -95,8 +94,8 @@ html{
     position: relative;
     overflow: hidden;
     }
-
-    .expandSearch i{
+    /*here is where the search icon is created, it is inline because it has to open from the left to right and the icon with the search have to be inline*/
+  .expandSearch i{
     position: absolute;
     top: 0;
     left: 0;
@@ -105,12 +104,12 @@ html{
     cursor: pointer;
     user-select: none;
     transition: 0.24s;
-    }
+    }/*position is zero as the input shouldnt be showing, only when clicked the transition will be 0.24s to open*/
   
-    .expandSearch i:hover{
+  .expandSearch i:hover{
     color: #0bf;
   
-    }
+    }/*wanted that when you hover on the search ir changes to the color*/
   
   .expandSearch input{
     border:none;
@@ -124,7 +123,8 @@ html{
     width: 0px;
     padding: 8px 0px 8px 34px;
   
-  }
+  }/*this for the border around the the icon which is optional, but in this case, we dont want it*/
+
   .expandSearch input:focus{
     border-color: #aaa;
     outline: none;
@@ -133,14 +133,14 @@ html{
     border-color:#91bd3a;
   
   }
+
   .expandSearch input:focus + i{
     /*padding: 8px 4px 8px 8px ;*/
     color: #ddd;
     pointer-events: none;
   
   }
-  
-  
+
   #update {
       color: white;
   
@@ -157,9 +157,9 @@ html{
   }
   
   #privacy {
-      color: #91bd3a ;
-      text-align: left;
-      padding-left: 15px ;
+    color: #91bd3a ;
+    text-align: left;
+    padding-left: 15px ;
   
   }
   
@@ -201,15 +201,15 @@ html{
   }
     
   
-    .icon {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      stroke-width: 0;
-      stroke: currentColor;
-      fill: currentColor;
-      z-index: 1;
-    }
+  .icon {
+     display: inline-block;
+     width: 1em;
+     height: 1em;
+     stroke-width: 0;
+     stroke: currentColor;
+     fill: currentColor;
+     z-index: 1;
+   }
     
   
   label > input {
@@ -226,12 +226,13 @@ html{
 
   
   .search{
-      position: absolute;
-      right: 25px;
-      top: 15px;
+    position: absolute;
+    right: 25px;
+    top: 15px;
   
   }
-      /* PopUp code inspired by W3Schools and edited */
+
+/* PopUp code inspired by W3Schools and edited */
 
 /* The popup form - hidden by default*/
 .form-popup {
@@ -283,96 +284,98 @@ html{
   left: 275px;
   top: 08px;
 }
+
 .grid{
   display: grid;
   grid-template-columns: 5vw 20.5vw  20.5vw 8vw 20.5vw 20.5vw 5vw;
   grid-template-rows: 1vh 2vh 6vh 30vh 3vh 32vh 3vh 5vh 32vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 10vh;
   
 }
-  a{
-    text-decoration: none;
-    color: #fa4252;
-    font-size: 14px;
-    cursor: pointer;
-  }
+
+a{
+  text-decoration: none;
+  color: #fa4252;
+  font-size: 14px;
+  cursor: pointer;
+}
 
 .section{
-    grid-area: 2/4/ span 1/span 5;
-    font-family: 'Domine', serif;
-    position: relative;
-    right: 40px;
+  grid-area: 2/4/ span 1/span 5;
+  font-family: 'Domine', serif;
+  position: relative;
+  right: 40px;
   
 }
 .soccer{
-     grid-area: 4/2/span 1 /span 2;  
-     font-family: 'Domine', serif;
-     height: 50vh;
-     }
+  grid-area: 4/2/span 1 /span 2;  
+  font-family: 'Domine', serif;
+  height: 50vh;
+}
 
 .swim{
-    grid-area: 4/5/span 1/ span 2;
-    font-family: 'Domine', serif;
+grid-area: 4/5/span 1/ span 2;
+font-family: 'Domine', serif;
 }
 
 .basketball{
-    grid-area: 6/2/span 1 / span 2;
-    font-family: 'Domine', serif;
+  grid-area: 6/2/span 1 / span 2;
+  font-family: 'Domine', serif;
 }
-.cricket{
-    grid-area: 6/5/span 1 / span 2;
-    font-family: 'Domine', serif;
 
+.cricket{
+  grid-area: 6/5/span 1 / span 2;
+  font-family: 'Domine', serif;
 }
 
 .fixtureT{
-    grid-area: 8/2/span 1 / span 5;
-    font-size: 20px;
-    position: relative;
-    left: 10px;
+  grid-area: 8/2/span 1 / span 5;
+  font-size: 20px;
+  position: relative;
+  left: 10px;
 }
 .BG{
-    grid-area: 9/2/span 1 / span 5;
-    z-index: -10;
+  grid-area: 9/2/span 1 / span 5;
+  z-index: -10;
   
 }
 .fix{
-    position: relative;
-    top: 620px;
-    left: 120px;
-    height: 30px;
-    border-radius: 25%;
-    text-transform: uppercase;
-    background-color: #fe6845;
-    font-family: 'Domine', serif;
-    z-index: 1;
+  position: relative;
+  top: 620px;
+  left: 120px;
+  height: 30px;
+  border-radius: 25%;
+  text-transform: uppercase;
+  background-color: #fe6845;
+  font-family: 'Domine', serif;
+  z-index: 1;
  
 }
 .soc{
-    position: relative;
-    top:620px;
-    left: 55px;
-    height: 30px;
-    width:80px;
-    border-radius: 25%;
-    text-transform: uppercase;
-    background-color: #fe6845;
-    font-family: 'Domine', serif;
-    z-index: 1;
+  position: relative;
+  top:620px;
+  left: 55px;
+  height: 30px;
+   width:80px;
+  border-radius: 25%;
+  text-transform: uppercase;
+  background-color: #fe6845;
+  font-family: 'Domine', serif;
+  z-index: 1;
 
 }
 .otherNews{
-    grid-area: 11/3/span 1 / span 5;
-    font-family: 'Domine', serif;
-    font-size: 20px;
+  grid-area: 11/3/span 1 / span 5;
+  font-family: 'Domine', serif;
+  font-size: 20px;
 }
 .img1{
-    grid-area: 13/2/span 1 / span 2;
+  grid-area: 13/2/span 1 / span 2;
 
 }
 .img1t{
-    grid-area: 13/5/span 1 / span 2;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+  grid-area: 13/5/span 1 / span 2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .img2{
@@ -421,14 +424,14 @@ html{
 .sign{
   align-items: center;
   font-weight: 700;
- background-color:#91bd3a;
- border: 3px solid white;
- position: relative;
- top: 35px;
- left: 25px;
- width: 80vw;
- height: 40vh;
- display: none;
+  background-color:#91bd3a;
+  border: 3px solid white;
+  position: relative;
+  top: 35px;
+  left: 25px;
+  width: 80vw;
+  height: 40vh;
+  display: none;
 }
 
 .not{
@@ -457,49 +460,49 @@ html{
 }
 
 #footer {
-    background-color: black;
-    width: 100vw;
-    height: 10vh;
-    grid-area: 21/1/span 1 / span 7;
+  background-color: black;
+  width: 100vw;
+  height: 10vh;
+  grid-area: 21/1/span 1 / span 7;
     
-  }
+}
   
-  #facebook, #instagram , #twitter , #whatsapp {
-    fill: #fa4252;
+#facebook, #instagram , #twitter , #whatsapp {
+ fill: #fa4252;
   
-  }
+}
   
-  #whatsapp {
-    position: absolute;
-    left: 330px;
+#whatsapp {
+  position: absolute;
+  left: 330px;
       
-  }
+}
   
-  #twitter {
-    position: absolute;
-    left: 290px;
+#twitter {
+  position: absolute;
+  left: 290px;
       
-  }
+}
   
-  #instagram {
-    position: absolute;
-    left: 250px;
+#instagram {
+  position: absolute;
+  left: 250px;
       
-  }
+}
   
-  #facebook {
-    position: absolute;
-    left: 210px;
+#facebook {
+  position: absolute;
+  left: 210px;
       
-  }
+}
   
-  .para {
-    color: white;
-    position: relative;
-    left: 15px;
-    top: 25px;
+.para {
+  color: white;
+  position: relative;
+  left: 15px;
+  top: 25px;
   
-  }
+}
   
 
  

@@ -14,206 +14,206 @@ html{
     max-width: 100%;
 }
 
-  /*nav bar section*/
-  #navbar{
-    width: 100vw;
-    height: 10vh;
-    position: fixed;
-    background-color: white;
-    z-index: 1;
+/*navbar section*/
+#navbar{
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
   
-  }
+}
   
-  #logo{
-    padding: 0 0 5px 50px;
-    width: 200px;
-  }
+#logo{
+  padding: 0 0 5px 50px;
+  width: 200px;
+}
   
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    text-align:center;
+.sidenav {
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -100vw;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
   
-  }
+}
     
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
   
-  }
+}
     
-  .sidenav a:hover{
-    color: #fa4252;
-    cursor: pointer;
+.sidenav a:hover{
+  color: #fa4252;
+  cursor: pointer;
   
-  }
+}
     
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
   
-  }
+}
     
-  @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   
-  }
+}
   
-  /* sidenav bar */
-  .container {
+/* Sidenav bar */
+.container {
     display: inline-block;
     margin: 15px;
   
-  }
+}
+/*The burger nav icon*/
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0 0 6px;
+}
+/*the icon that expands when clicked, inspired by w3s*/
+.expandSearch{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
   
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0 0 6px;
-  }
+} /*here is where the search icon is created, it is inline because it has to open from the left to right and the icon with the search have to be inline*/
+.expandSearch i{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 4px 8px 8px ;
+  color: #777;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.24s;
+} /*position is zero as the input shouldnt be showing, only when clicked the transition will be 0.24s to open*/
   
-  .expandSearch{
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
+.expandSearch i:hover{
+  color: #0bf;
   
-    } /*here is where the search icon is created, it is inline because it has to open from the left to right and the icon with the search have to be inline*/
-    .expandSearch i{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 8px 4px 8px 8px ;
-    color: #777;
-    cursor: pointer;
-    user-select: none;
-    transition: 0.24s;
-    } /*position is zero as the input shouldnt be showing, only when clicked the transition will be 0.24s to open*/
+}/*wanted that when you hover on the search ir changes to the color*/
   
-    .expandSearch i:hover{
-    color: #0bf;
-  /*wanted that when you hover on the search ir changes to the color*/
-    }
+.expandSearch input{
+  border:none;
+  background: transparent;
+  font:14px/1.4 sans-serif;
+  padding-left: 26px;
+  background:#fff;
+  border: 2px solid white;
+  border-radius: 4px;
+  transition: 0.24s;
+  width: 0px;
+  padding: 8px 0px 8px 34px;
   
-  .expandSearch input{
-    border:none;
-    background: transparent;
-    font:14px/1.4 sans-serif;
-    padding-left: 26px;
-    background:#fff;
-    border: 2px solid white;
-    border-radius: 4px;
-    transition: 0.24s;
-    width: 0px;
-    padding: 8px 0px 8px 34px;
+} /*this for the border around the the icon which is optional, but in this case, we dont want it*/
+.expandSearch input:focus{
+  border-color: #aaa;
+  outline: none;
+  width:200px;
+  padding: 8px 12px 8px 34px;
+  border-color: #91bd3a;
   
-  } /*this for the border around the the icon which is optional, but in this case, we dont want it*/
-  .expandSearch input:focus{
-    border-color: #aaa;
-    outline: none;
-    width:200px;
-    padding: 8px 12px 8px 34px;
-    border-color: #91bd3a;
+}
+.expandSearch input:focus + i{
+  /*padding: 8px 4px 8px 8px ;*/
+  color: #ddd;
+  pointer-events: none;
   
-  }
-  .expandSearch input:focus + i{
-    /*padding: 8px 4px 8px 8px ;*/
-    color: #ddd;
-    pointer-events: none;
-  
-  }
+}
   
   
-  #update {
-      color: white;
+#update {
+  color: white;
   
-  }
+}
   
-  #submit {
-      height: 41px;
-      width: 100px;
-      font-size: 13px;
-      font-weight: bold;
-      background-color: #91bd3a;
-      border: none;
+#submit {
+  height: 41px;
+  width: 100px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #91bd3a;
+  border: none;
   
-  }
+}
   
-  #privacy {
-      color: #91bd3a ;
-      text-align: left;
-      padding-left: 15px ;
+#privacy {
+  color: #91bd3a ;
+  text-align: left;
+  padding-left: 15px ;
   
-  }
+}
   
-    /*new icons*/
+/*new icons*/
   
-  label {
-    position: relative;
+label {
+  position: relative;
   
-  }
-  .form-popup label::before{
-    display: none;
-  }
+}
+
+.form-popup label::before{
+  display: none;
+}
     
-  label:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+label:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
   
-  }
+  
+}
     
-  input {
-    padding: 10px 30px;
   
-  }
+input {
+  padding: 10px 30px;
+  
+}
    
+label > .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: silver;
   
-  label > .icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: silver;
-  
-  }
+}
     
-  
-    .icon {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      stroke-width: 0;
-      stroke: currentColor;
-      fill: currentColor;
-    }
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
     
+label > input {
+  padding-left: calc(1em + 10px + 8px); /* icon width + icon padding-left + desired separation*/
+  height: 2em;
   
-  label > input {
-    padding-left: calc(1em + 10px + 8px); /* icon width + icon padding-left + desired separation*/
-    height: 2em;
-  
-  }
+}
     
   /* SVG SpriteSheet */
   .spritesheet {
@@ -287,8 +287,8 @@ html{
 .art{
   display: grid;
   grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
-  grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 80vh 2vh 5vh 2vh 23vh 2vh 23vh 2vh 5vh 2vh 5vh 2vh 25vh 2vh 
-  5vh 2vh 18vh 18vh 18vh 10vh ;
+  grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 80vh 2vh 5vh 2vh 23vh 4vh 23vh 2vh 0vh 1vh 5vh 2vh 25vh 0vh 
+  5vh 2vh 18vh 18vh 10vh 10vh ;
 }
 
   /*working on the sport section*/
@@ -305,54 +305,84 @@ html{
     font-size: 14px;
   }
   .name{
-    width: 320px;
+    width: 326.5px;
     height: 30px;
   }
 /*second section for already given comments*/
-  .com9{
-      grid-area: 9/2/span 1/ span 4;
-      background-color:#91bd3a;
-      width: 95%;
-  }
-  .mosa{
+.com9{
+  grid-area: 9/2/span 1/ span 4;
+  text-decoration: underline;
+  text-decoration-color: #91bd3a ;
+  position: relative;
+  left: 100px;
+  font-family: 'Domine', serif;
+  font-size:20px;
+}
+ /* .mosa{
       grid-area: 11/2/ span 1/ span 4;
       font-family: 'Roboto', sans-serif;
       font-size:14px;
       position: relative;
       left: 8px;
-  }
-  .pamela{
-      grid-area: 13/2/span 1 /span 4;
-      font-family: 'Roboto', sans-serif;
-      font-size:14px;
-      position: relative;
-      left: 8px;
-  }
-  /*its pointing to down, showing that theres still more when you scroll*/
-  .round{
-      grid-area: 15/3/span 1 / span 4;
-      width:25px;
-      height:25px;
-      border-radius: 50%;
-      background-color: #fe6845 ;
-  }
-  /*gives permission or an option to put your own comments if any*/
-  .own{
-      grid-area: 17/2/span 1 / span 4;
-      background-color:#91bd3a;
-      width: 95%;
-      font-family: 'Domine', serif;
-      font-size:20px;
-  }
-  .comment{
-    grid-area: 19/2/span 1/span 4 ;
-    font-family: 'Domine', serif;
-    font-size:20px;
-    position: relative;
-      left: 8px;
-  }
-  /*send button on the comment section*/
- .send{
+  }*/
+.mosa{
+  grid-area: 11/2/ span 1/ span 4;
+  width: 90vw;
+  height: 150px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;  
+  border: 0.1px solid black;
+  background-color:  rgba(221, 241, 176, 0.2);
+    
+}
+.mosa p{
+  padding-left: 5px;
+}
+.mos{
+  text-decoration: underline;
+  text-decoration-color: #91bd3a ;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+  
+.pamela{
+  grid-area: 13/2/span 1 /span 4;
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+  width: 90vw;
+  height: 150px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;  
+  border: 0.1px solid black;
+  background-color:  rgba(221, 241, 176, 0.2);
+}
+.pamela p{
+  padding-left: 5px;
+  
+}
+
+/*gives permission or an option to put your own comments if any*/
+.own{
+  grid-area: 17/2/span 1 / span 4;
+  text-decoration: underline;
+  text-decoration-color: #91bd3a ;
+  position: relative;
+  left: 30px;
+  font-family: 'Domine', serif;
+  font-size:20px;
+}
+.comment{
+  grid-area: 19/2/span 1/span 4 ;
+  font-family: 'Domine', serif;
+  font-size:20px;
+  position: relative;
+    
+      
+}
+/*send button on the comment section*/
+
+.send{
   width:25px;
   height:25px;
   border-radius: 50%;
@@ -360,26 +390,27 @@ html{
   left: -35px;
   bottom:10px;
   background-color: #fe6845 ;
- }
+}
 
- /*bell notifications section*/
-  #notification{
-    fill: white;
-    position: fixed;
-    top: 510px;
-    left: 280px;
-    opacity: 0.8;
-    background-color: #fa4252;
-    padding: 10px;
-    width:60px;
-    height: 60px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  /*made it in a way that when you click on it, it allows you to fill in your infomation*/
- .sign{
-   align-items: center;
-   font-weight: 700;
+/*bell notifications section*/
+#notification{
+  fill: white;
+  position: fixed;
+  top: 510px;
+  left: 280px;
+  opacity: 0.8;
+  background-color: #fa4252;
+  padding: 10px;
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*made it in a way that when you click on it, it allows you to fill in your infomation*/
+
+.sign{
+  align-items: center;
+  font-weight: 700;
   background-color:#91bd3a;
   border: 3px solid white;
   position: relative;
@@ -388,40 +419,43 @@ html{
   width: 80vw;
   height: 40vh;
   display: none;
- }
+}
 
- .not{
-   position: relative;
-   left: 50px;
-   top:20px;
- }
+.not{
+  position: relative;
+  left: 50px;
+  top:20px;
+}
 
- .sign input{
+.sign input{
   align-items: center;
   margin-left: 30px;
 
 }
- /*when you click on the button it automatically hides back the info and there is a pop-up that thanks you after you submit*/
- .signB{
-   background-color: #ffa259;
-   padding:16px 25px;
-   color: white;
-   border: none;
-   cursor: none;
-   width:60%;
-   opacity: 0.8;
-   position: relative;
-   left: 68px;
  
-   
- }
+/*when you click on the button it automatically hides back the info and there is a pop-up that thanks you after you submit*/
+.signB{
+  background-color: #ffa259;
+  padding:16px 25px;
+  color: white;
+  border: none;
+  cursor: none;
+  width:60%;
+  opacity: 0.8;
+  position: relative;
+  left: 68px;
+    
+}
 /*more news section*/
-  .light{
-      grid-area: 21/2/span 1/span 4;
-      background-color:#91bd3a;
-      width: 95%;
-      height: 35px;
-  }
+.light{
+  grid-area: 21/2/span 1/span 4;
+  text-decoration: underline;
+  text-decoration-color: #91bd3a ;
+  font-family: 'Domine', serif;
+  font-size:20px;
+  position: relative;
+  left: 100px;
+}
   .Os{
       grid-area: 23/2/span 1/span 1;
   }
