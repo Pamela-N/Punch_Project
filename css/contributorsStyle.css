@@ -3,7 +3,7 @@
     overflow-x: hidden;
     padding: 0;
 }
-h1{
+h1 , h2{
     font-family: 'Domine', serif; 
 }
 
@@ -29,7 +29,7 @@ a:hover{
     color: #fa4252;
 }
 
-/* this is the navigation bar */
+/* this is the navigation bar mobile */
 #navbar{
     width: 100vw;
     height: 10vh;
@@ -55,15 +55,17 @@ a:hover{
     position: fixed;
     left: 100px;
     top: 10px;
+    width: 165px;
+    height: 50px;
 }
 
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 100vw;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: -100vw;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -273,7 +275,6 @@ label > input {
 
 /* first heading of the page */
 .contributors{
-    font-family: 'Domine', serif;
     text-align: center; 
 }
 
@@ -317,7 +318,6 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-    font-family: 'Domine', serif;
     color:  #fa4252;
     font-size: 26px;
     padding: 8px 12px;
@@ -378,7 +378,6 @@ img {vertical-align: middle;}
 
 /* the columnist section starts */
 .columnist{
-    font-family: 'Domine', serif;
     text-align: center;
 }
 
@@ -388,7 +387,6 @@ img {vertical-align: middle;}
 }
 
 .writer-name{
-    font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 775px;
     left: 180px;
@@ -493,9 +491,9 @@ img {vertical-align: middle;}
 }
   
 .para {
-    font-family: 'Roboto', sans-serif;
     color: white;
     position: relative;
     left: 15px;
     top: 25px;
 }
+
