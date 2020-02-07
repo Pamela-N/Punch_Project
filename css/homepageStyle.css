@@ -69,11 +69,11 @@
   
   .sidenav {
     height: 100%;
-    width: 0;
+    width: 100vw;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: -100vw;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -131,7 +131,8 @@
     position: relative;
     overflow: hidden;
   
-    }
+  }
+
     .expandSearch i{
     position: absolute;
     top: 0;
@@ -176,7 +177,7 @@
   
   }
 
-  #notification{
+  .notification{
     fill: white;
     position: fixed;
     top: 530px;
@@ -186,6 +187,7 @@
     border-radius: 50%;
     opacity: 0.8;
 }
+ 
   
   
   #update {
@@ -323,7 +325,7 @@
   #instagram {
     position: absolute;
     left: 250px;
-      
+
   }
   
   #facebook {
@@ -338,8 +340,6 @@
     left: 15px;
     top: 25px;
 
-  
-  
   }
 
   /* scroller code supported by create */
@@ -350,50 +350,48 @@
     
   }
   
-    .card {
-      display: inline-block;
-      width: 60vw;
-      height: 70vw;
-      overflow: hidden;
-    }
+  .card {
+    display: inline-block;
+    width: 60vw;
+    height: 70vw;
+    overflow: hidden;
+
+  }
   
-
-  
-
-
     /* PopUp code inspired by W3Schools and edited */
 
 /* The popup form - hidden by default*/
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 150px;
-  right: 50px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 150px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
 
 /* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: #91bd3a;
-}
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #91bd3a;
+  }
 
 /* Full-width input fields */
-.form-container input[type=text], .form-container input[type=cellphone] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-} 
+  .form-container input[type=text], .form-container input[type=cellphone] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  } 
 
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
-  background-color: #ddd;
-  outline: none;
-}
+  .form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
 
 
  .form-container .btn {
@@ -408,9 +406,9 @@
 } 
 
 /* close button option */
-#close {
-  position: absolute;
-  left: 285px;
-  top: 08px;
-}
+  #close {
+    position: absolute;
+    left: 285px;
+    top: 08px;
+  }
 
