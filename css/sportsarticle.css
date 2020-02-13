@@ -13,6 +13,11 @@ html{
     overflow-x: hidden;
     max-width: 100%;
 }
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  
+}
 
 /*navbar section*/
 #navbar{
@@ -27,6 +32,8 @@ html{
 #logo{
   padding: 0 0 5px 50px;
   width: 200px;
+  position: relative;
+  left: -20px;
 }
   
 .sidenav {
@@ -283,14 +290,6 @@ label > input {
   top: 08px;
 }
 
-/*made some of my work a grid as its managable that way*/
-.art{
-  display: grid;
-  grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
-  grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 80vh 2vh 5vh 2vh 23vh 4vh 23vh 2vh 0vh 1vh 5vh 2vh 25vh 0vh 
-  5vh 2vh 18vh 18vh 10vh 10vh ;
-}
-
   /*working on the sport section*/
   .heading{
       grid-area: 3/2/span 1/span 3;
@@ -318,79 +317,200 @@ label > input {
   font-family: 'Domine', serif;
   font-size:20px;
 }
- /* .mosa{
-      grid-area: 11/2/ span 1/ span 4;
-      font-family: 'Roboto', sans-serif;
-      font-size:14px;
-      position: relative;
-      left: 8px;
-  }*/
-.mosa{
+
+/*changed the comments section to make it look more fun and modern*/
+.newCom{
+  width: 80px;
+  position: relative;
+  top: 23px;
+  border-radius: 25%;
+  
+  
+}
+.newie{
   grid-area: 11/2/ span 1/ span 4;
-  width: 90vw;
-  height: 150px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;  
-  border: 0.1px solid black;
-  background-color:  rgba(221, 241, 176, 0.2);
-    
+  overflow-y: hidden;
+  border-radius: 25%;
 }
-.mosa p{
-  padding-left: 5px;
-}
-.mos{
-  text-decoration: underline;
-  text-decoration-color: #91bd3a ;
+.Mpho{
+  position: relative;
+  left: 100px;
+  bottom: 120px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
-
-  
-.pamela{
-  grid-area: 13/2/span 1 /span 4;
-  font-family: 'Roboto', sans-serif;
-  font-size:14px;
-  width: 90vw;
-  height: 150px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;  
-  border: 0.1px solid black;
-  background-color:  rgba(221, 241, 176, 0.2);
-}
-.pamela p{
-  padding-left: 5px;
-  
-}
-
-/*gives permission or an option to put your own comments if any*/
-.own{
-  grid-area: 17/2/span 1 / span 4;
-  text-decoration: underline;
-  text-decoration-color: #91bd3a ;
+.MphoT{
   position: relative;
-  left: 30px;
-  font-family: 'Domine', serif;
-  font-size:20px;
+  left: 100px;
+  bottom: 100px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
 }
-.comment{
-  grid-area: 19/2/span 1/span 4 ;
-  font-family: 'Domine', serif;
-  font-size:20px;
+.time{
   position: relative;
-    
-      
-}
-/*send button on the comment section*/
+  left: 280px;
+  bottom: 205px;
 
-.send{
-  width:25px;
-  height:25px;
+}
+.numbre{
+  position: relative;
+  left: 280px;
+  bottom: 130px;
   border-radius: 50%;
-  position: relative;
-  left: -35px;
-  bottom:10px;
-  background-color: #fe6845 ;
+  width:30px;
+  height:30px;
+  border: 1px solid green;
+  text-align: center;
+  font-size: 20px;
+  background-color: #91bd3a
 }
+  
+  .newCom2{
+    width: 80px;
+    position: relative;
+    top: 23px; 
+    border-radius: 25%;
+  }
+
+  .newie2{
+    grid-area: 13/2/span 1 /span 4;
+    overflow-y: hidden;
+  }
+  .Bokang{
+    position: relative;
+    left: 100px;
+    bottom: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  .BokangT{
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .Nako{
+    position: relative;
+    left: 280px;
+    bottom: 175px;
+  
+  }
+  .number{
+    position: relative;
+    left: 280px;
+    bottom: 120px;
+    border-radius: 50%;
+    width:30px;
+    height:30px;
+    border: 1px solid green;
+    text-align: center;
+    font-size: 20px;
+    background-color: #91bd3a;
+  }
+  /*made some of my work a grid as its managable that way*/
+ 
+  .newCom3{
+    width: 80px;
+    position: relative;
+    top: 20px;
+    border-radius: 25%;
+    
+    
+    
+  }
+  .newie3{
+    grid-area: 15/2/span 1/span 4 ;
+    overflow-y: hidden;
+  }
+  .Us{
+    position: relative;
+    left: 100px;
+    bottom: 110px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  .UsT{
+    position: relative;
+    left: 100px;
+    bottom: 90px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .nako1{
+    position: relative;
+    left: 280px;
+    bottom: 195px;
+  
+  }
+  .addMore{
+    grid-area: 16/4/span 1/span 4 ;
+    position: relative;
+    left: 80px;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    border: 1px solid rgb(247, 250, 247);
+    text-align: center;
+    font-size: 30px;
+    background-color: #ffa259;
+    fill:#f5f4f4;
+    padding-top: 10px;
+  }
+/*this the is a pop-up for the plus icon to show option to comment*/
+  .popupWrapper{
+    background-color:rgb(0, 0, 0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: none;
+    z-index: 1;
+}
+
+.popUp{
+    background-color: white;
+    background: rgb(203,231,148);
+    background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    position: relative;
+    padding: 5%;
+    top:80px
+}
+
+.popUp a{
+    background: crimson;
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+
+}
+
+.vala{
+    position: absolute;
+    top:5px;
+    right: 8px;
+    cursor: pointer;
+    color:white;
+}
+.senda{
+  border-radius: 25%;
+  background-color: #ffa259;
+  font-weight: 900;
+  color: white;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.cam{
+  fill:white ;
+}
+/*end of the popup for comments*/
+
 
 /*bell notifications section*/
 #notification{
@@ -446,49 +566,62 @@ label > input {
   left: 68px;
     
 }
+
+.art{
+  display: grid;
+  grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
+  grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 78vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 8vh ;
+}
 /*more news section*/
+
+.moreon{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+}
 .light{
-  grid-area: 21/2/span 1/span 4;
+  grid-area: 18/2/span 1/span 4 ;
   text-decoration: underline;
   text-decoration-color: #91bd3a ;
   font-family: 'Domine', serif;
   font-size:20px;
   position: relative;
   left: 100px;
+
 }
-  .Os{
-      grid-area: 23/2/span 1/span 1;
-  }
+
   .Ost{
-      grid-area: 23/4/span 1/ span 1;
+      
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
   }
-  .Oc{
-    grid-area: 24/2/span 1/span 1;
-}
+
 .Oct{
-    grid-area: 24/4/span 1/ span 1;
+    
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
-.Ob{  
-  grid-area: 25/2/span 1/ span 1;
-}
+
 .Obt{
-  grid-area: 25/4/span 1/ span 1;
+  
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
   
   #footer {
+    grid-area: 22/2/span 1/span 4 ;
     background-color: black;
     width: 100vw;
     height: 10vh;
     position: relative;
     top: 25px;
-    grid-area: 26/1/span 1/ span 5;
+    
   }
   
   #facebook, #instagram , #twitter , #whatsapp {
