@@ -3,10 +3,16 @@ let sbmit = document.querySelector(".signB");
 const form = document.querySelector('.sign');
 
 function openNav() {
-    document.getElementById("mySidenav").style.left = "0vw";
+  document.getElementById("mySidenav").style.width = "260px";
+  document.querySelector(".main").style.marginLeft = "260px";
+  document.querySelector(".column1").style.display="none";
+
 }
 function closeNav() {
-    document.getElementById("mySidenav").style.left = "-100vw";
+  document.getElementById("mySidenav").style.width = "0";
+  document.querySelector(".main").style.marginLeft = "0px";
+  document.querySelector(".main").style.marginLeft = "0px";
+  document.querySelector(".column1").style.display="block";
 }
 
 // PopUp code inspired by W3Schools and edited
@@ -14,15 +20,13 @@ function closeNav() {
 function openForm() {
   document.getElementById("myForm").style.display = "block";
   document.getElementById("mySidenav").style.display = "none";
-  document.getElementsByClassName("one").style.display = "none";
-
+  document.querySelector(".main").style.marginLeft = "0px";
 }
   
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
   document.getElementById("mySidenav").style.display = "block";
-  document.getElementsByClassName("one").style.display = "block";
-
+  document.querySelector(".main").style.marginLeft = "260px";
 }
 
 

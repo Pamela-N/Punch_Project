@@ -1,41 +1,26 @@
 let slideIndex = 1;
-showSlides(slideIndex);
 let notification = document.querySelector('#notification');
 let sbmit = document.querySelector(".signB");
 const form = document.querySelector('.sign');
+const icon = document.querySelector('.search');
+
 
 // how the side nav opens and close
 function openNav() {
-  document.getElementById("mySidenav").style.left = "0vw";
+  document.getElementById("mySidenav").style.width = "260px";
+  document.querySelector(".main").style.marginLeft = "260px";
+  icon.style.display='none';
+  document.querySelector('.writer-name').style.display='none';
+  document.querySelector('.writer-name2').style.display='none';
+  document.querySelector('.writer-name3').style.display='none';
 }
 function closeNav() {
-  document.getElementById("mySidenav").style.left = "-100vw";
-}
-
-// this is how the slide moves from side to side taken from w3schools
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-
+  document.getElementById("mySidenav").style.width = "0";
+  document.querySelector(".main").style.marginLeft = "0px";
+  icon.style.display='block';
+  document.querySelector('.writer-name').style.display='block';
+  document.querySelector('.writer-name2').style.display='block';
+  document.querySelector('.writer-name3').style.display='block';
 }
 
 // PopUp code inspired by W3Schools and edited
@@ -43,14 +28,14 @@ function showSlides(n) {
 function openForm() {
   document.getElementById("myForm").style.display = "block";
   document.getElementById("mySidenav").style.display = "none";
-  document.getElementsByClassName("one").style.display = "none";
+  document.querySelector(".main").style.marginLeft = "0px";
 
 }
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
   document.getElementById("mySidenav").style.display = "block";
-  document.getElementsByClassName("one").style.display = "block";
+  document.querySelector(".main").style.marginLeft = "260px";
 
 }
 
