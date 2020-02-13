@@ -3,8 +3,10 @@
     overflow-x: hidden;
     padding: 0;
 }
+
 h1 , h2{
     font-family: 'Domine', serif; 
+    text-align: center;
 }
 
 h3{
@@ -27,6 +29,11 @@ a{
 
 a:hover{
     color: #fa4252;
+}
+
+.main{
+    width: 100vw;
+    transition: 0.5s;
 }
 
 /* this is the navigation bar mobile */
@@ -52,31 +59,39 @@ a:hover{
 }
 
 #logo{
-    position: fixed;
-    left: 100px;
-    top: 10px;
+    position: relative;
+    left: 25px;
+    top: 0px;
     width: 165px;
     height: 50px;
 }
 
 .sidenav {
-    height: 100%;
-    width: 100vw;
+    height: 100vh;
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -100vw;
+    left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    text-align:center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+.sidenav svg{
+    margin-right: 15px;
+    
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    font-family: 'Domine', serif; 
+    padding: 8px 8px 8px 25px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.2em;
     color:white;
     display: block;
 }
@@ -126,13 +141,13 @@ a:hover{
     border-radius: 4px;
     transition: 0.24s;
     width: 0px;
-    padding: 8px 0px 8px 34px;
+    padding: 0 0 0 34px;
 }
 
 .expandSearch input:focus{
     border-color: #aaa;
     outline: none;
-    width:200px;
+    width:160px;
     padding: 8px 12px 8px 34px;
     border-color: #91bd3a;
 }
@@ -145,21 +160,29 @@ a:hover{
 /* input in the manue */
 #update {
     color: white;
+    text-align: center;
+}
+.inputSub{
+    margin-left: 25px;
+    width: 80px;
+    padding-bottom: 8px;
+    border: none;
 }
 
 #submit {
-    height: 41px;
-    width: 100px;
-    font-size: 13px;
+    height: 34px;
+    width: 70px;
+    font-size: 1em;
     font-weight: bold;
     background-color: #91bd3a;
     border: none;
+    text-align: center;
 }
 
 #privacy {
     color: #91bd3a ;
     text-align: left;
-    padding-left: 20px ;
+    padding-left: 25px ;
 }
 
 /*new icons*/
@@ -215,8 +238,10 @@ label > input {
     top: 15px;
 }
 
-/* PopUp code inspired by W3Schools and edited */
-
+/* first section of the page */
+.story{
+    text-align: center;
+}
 /* The popup form - hidden by default*/
 
 .form-popup {
@@ -277,105 +302,10 @@ label > input {
 .contributors{
     text-align: center; 
 }
-
-/* this is the slide of the page taken fron w3 schools edited a few things */
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 500px;
-    height: 490px;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-    color:  #fa4252;
-    font-size: 26px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
+/* the somethin of the week */
+.heading {
     text-align: center;
-    background-color: black;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color:white;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-}
-
 /* the columnist section starts */
 .columnist{
     text-align: center;
@@ -388,24 +318,30 @@ img {vertical-align: middle;}
 
 .writer-name{
     position: absolute;
-    top: 775px;
+    top: 830px;
     left: 180px;
     padding-right: 10px;
+    width: 180px;
+    transition: 10s;
 }
 
 .writer-name2{
     position: absolute;
-    top: 945px;
+    top: 1000px;
     left: 180px;
     padding-right: 10px;
+    width: 180px;
+    transition: 5s;
 }
 
 .writer-name3{
     position: absolute;
-    top: 1110px;
+    top: 1170px;
     left: 180px;
     font-size: 1em;
-    padding-right: 10px; 
+    padding-right: 8px;
+    width: 180px;
+    transition: 1s; 
 }
 
 /* this is the bell */
@@ -462,8 +398,8 @@ img {vertical-align: middle;}
     background-color: black;
     width: 100vw;
     height: 10vh;
-    position: absolute;
-    bottom: -690px;
+    position: relative;
+    bottom: 0;
 }
 
 #facebook, #instagram , #twitter , #whatsapp {
