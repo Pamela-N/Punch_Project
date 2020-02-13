@@ -31,41 +31,97 @@
     left: 310px;
   }
 
+  .wrapper {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:50px;
+    left:0;
+    display: none;
+  }
+
   .sign{
     font-weight: 700;
-    background-color:#91bd3a;
-    border: 3px solid white;
+    background: rgb(203,231,148);
+    background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+    border: none;
     position: fixed;
-    bottom: 250px;
-    right: 35px;
+    bottom: 185px;
+    left: 32px;
     width: 80vw;
     height: 40vh;
     display: none;
+    color: whitesmoke;
+    text-align: left;
+    margin-left: 3px;
   }
   
   .not{
     position: relative;
-    left: 60px;
+    text-align: left;
+    margin-left: 10px;
     top:10px;
   }
-  
-  .sign input{
-    align-items: center;
-    margin-left: 35px;
-  
+
+  #q {
+    font-size: 26px;
+    font-weight: lighter;
+    margin-left: 10px;
   }
-  /*when you click on the button it automatically hides back the info*/
-  .signB{
-    background-color: #ffa259;
-    padding:16px 20px;
-    color: white;
-    border: none;
-    cursor: none;
-    width:60%;
-    opacity: 0.8;
+
+  #acc {
+    margin-left: 6px;
+    font-size: 14px;
+  }
+
+  #log{
+    font-weight: bolder;
     position: relative;
-    left: 60px;
+    left: 170px;
+    bottom: 18.3px;
   }
+  
+  input[type=number] {
+    background-color:#91bd3a;
+    background: rgb(203,231,148);
+    background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+    border: none;
+    border-bottom: 2px solid white;
+    text-align: left;
+    margin-left: 12px;
+    padding-left:70px;
+  }
+  
+  .mini {
+    background-color: white;
+    border: none;
+    color: #91bd3a;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 100px;
+    position: absolute;
+    right: 215px;
+    bottom: 90px;
+    width: 50px;
+    height: 25px;
+
+  }
+
+  .mini p {
+    padding-top: 4.5px;
+  }
+
+  #myForm {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:50px;
+    left:0;
+    display: none;
+  }
+
   
   .sidenav {
     height: 100%;
@@ -198,6 +254,12 @@
   h1 , h2 {
     font-family: 'Domine', serif;
     font-size: 26px;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: 'Domine', serif;
+    font-size: 14px;
     text-align: center;
   }
 
@@ -357,6 +419,96 @@
     overflow: hidden;
 
   }
+
+
+  .peach {
+    width: 80vw;
+    height: 30vh;
+    border-radius: 50px;
+    background-color: #ffa259;
+    background: rgb(145,189,58);
+background: linear-gradient(56deg, rgba(145,189,58,1) 0%, rgba(255,162,89,1) 50%, rgba(250,66,82,1) 96%);
+    opacity: 0.9;
+    text-align: center;
+    position: relative;
+    left: 35px;
+
+  }
+
+  #hero {
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    top: 20px;
+    padding: 5px;
+    color: whitesmoke;
+  }
+
+  #rytOne{
+    position: relative;
+    top: 30px;
+    left: 75px;
+    fill: whitesmoke;
+  }
+
+  .olive {
+    width: 80vw;
+    height: 30vh;
+    border-radius: 50px;
+    background-color: #91bd3a;
+    background: rgb(255,162,89);
+    background: linear-gradient(56deg, rgba(255,162,89,1) 4%, rgba(145,189,58,1) 50%, rgba(254,104,69,1) 81%);
+    opacity: 0.9;
+    position: relative;
+    left: 35px;
+  }
+
+  #pride{
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    top: 20px;
+    padding: 5px;
+    color: white;
+  }
+
+  #rytTwo{
+    position: relative;
+    top: 14.5px;
+    left: 200px;
+    fill: whitesmoke;
+  }
+
+  .oranjish {
+    width: 80vw;
+    height: 30vh;
+    border-radius: 50px;
+    /* background-color: #fe6845; */
+    background: rgb(255,162,89);
+    background: linear-gradient(56deg, rgba(255,162,89,1) 4%, rgba(145,189,58,1) 50%, rgba(254,104,69,1) 81%);
+    opacity: 0.9;
+    position: relative;
+    left: 35px;
+  }
+
+  #money {
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    top: 20px;
+    padding: 5px;
+    color: white;
+  }
+
+  #rytThree{
+    position: relative;
+    top: 14.5px;
+    left: 195px;
+    fill:  whitesmoke;
+  }
   
     /* PopUp code inspired by W3Schools and edited */
 
@@ -365,17 +517,23 @@
   .form-popup {
     display: none;
     position: fixed;
-    bottom: 150px;
+    top: 100px;
     right: 15px;
-    border: 3px solid #f1f1f1;
+    /* border: 3px solid #f1f1f1; */
     z-index: 9;
   }
 
 /* Add styles to the form container */
   .form-container {
     max-width: 300px;
+    position: fixed;
+    top: 115px;
+    left: 20px;
     padding: 10px;
     background-color: #91bd3a;
+    background: rgb(203,231,148);
+    background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+    color: white;
   }
 
 /* Full-width input fields */
@@ -393,6 +551,11 @@
     outline: none;
   }
 
+  .form-container h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 25px;
+  }
 
  .form-container .btn {
   background-color: #ffa259;
@@ -408,7 +571,24 @@
 /* close button option */
   #close {
     position: absolute;
-    left: 285px;
-    top: 08px;
+    left: 280px;
+    top: 07px;
+    fill: white;
   }
+
+  #female {
+    position: relative;
+    left: 200px; 
+    fill: white;
+    
+  }
+
+  #male {
+    position: relative;
+    fill: white;
+    
+  }
+
+
+  
 

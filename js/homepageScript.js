@@ -28,15 +28,18 @@ function closeForm() {
 
 const form = document.querySelector('.sign');
 const notification = document.querySelector(".notification");
-const submit = document.querySelector(".signB")
+const wrapper = document.querySelector(".wrapper")
+// const submit = document.querySelector(".signB")
 
   notification.addEventListener('click', e =>{
     e.preventDefault();
     form.style.display = "block";
+    wrapper.style.display = "block";
 })
-  submit.addEventListener('click', e =>{
+  form.addEventListener('sumbit', e =>{
   e.preventDefault();
   form.style.display="none";
+  wrapper.style.display = "none"; 
   alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
 })
 
@@ -48,4 +51,16 @@ const bell = document.querySelector(".notification");
     bell.style.display = "none";
   }, 10000 )
 
+  // selection of gender
+
+  let girl = document.querySelector("#female");
+  let boy = document.querySelector("#male");
+
+  girl.addEventListener('click', e =>{
+    girl.style.fill = "palevioletred";
+  })
+
+  boy.addEventListener('click', e =>{
+    boy.style.fill = "blue";
+  })
 
