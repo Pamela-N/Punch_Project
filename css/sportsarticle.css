@@ -1,662 +1,662 @@
 /*universal Styling*/
 *{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Domine', serif;
-    overflow-x: hidden;
-     
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Domine', serif;
+  overflow-x: hidden;
+   
 }
 /* didnt want html have the x-axis*/
 html{
-    overflow-x: hidden;
-    max-width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 p{
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+
 }
 
 /*navbar section*/
 #navbar{
-  width: 100vw;
-  height: 10vh;
-  position: fixed;
-  background-color: white;
-  z-index: 1;
-  
+width: 100vw;
+height: 10vh;
+position: fixed;
+background-color: white;
+z-index: 1;
+
 }
-  
+
 #logo{
-  padding: 0 0 5px 50px;
-  width: 200px;
-  position: relative;
-  left: -20px;
+padding: 0 0 5px 50px;
+width: 200px;
+position: relative;
+left: -20px;
 }
-  
+
 .sidenav {
-  height: 100%;
-  width: 100vw;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -100vw;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  text-align:center;
-  
+height: 100%;
+width: 100vw;
+position: fixed;
+z-index: 1;
+top: 0;
+left: -100vw;
+background-color: #111;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+text-align:center;
+
 }
-    
+  
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-  
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: white;
+display: block;
+transition: 0.3s;
+
 }
-    
+  
 .sidenav a:hover{
-  color: #fa4252;
-  cursor: pointer;
-  
+color: #fa4252;
+cursor: pointer;
+
 }
-    
+  
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+
 }
-    
+  
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
 }
-  
+
 /* Sidenav bar */
 .container {
-    display: inline-block;
-    margin: 15px;
-  
+  display: inline-block;
+  margin: 15px;
+
 }
 /*The burger nav icon*/
 .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0 0 6px;
+width: 35px;
+height: 5px;
+background-color: #333;
+margin: 6px 0 0 6px;
 }
 /*the icon that expands when clicked, inspired by w3s*/
 .expandSearch{
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  
+display: inline-block;
+position: relative;
+overflow: hidden;
+
 } /*here is where the search icon is created, it is inline because it has to open from the left to right and the icon with the search have to be inline*/
 .expandSearch i{
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 8px 4px 8px 8px ;
-  color: #777;
-  cursor: pointer;
-  user-select: none;
-  transition: 0.24s;
+position: absolute;
+top: 0;
+left: 0;
+padding: 8px 4px 8px 8px ;
+color: #777;
+cursor: pointer;
+user-select: none;
+transition: 0.24s;
 } /*position is zero as the input shouldnt be showing, only when clicked the transition will be 0.24s to open*/
-  
+
 .expandSearch i:hover{
-  color: #0bf;
-  
+color: #0bf;
+
 }/*wanted that when you hover on the search ir changes to the color*/
-  
+
 .expandSearch input{
-  border:none;
-  background: transparent;
-  font:14px/1.4 sans-serif;
-  padding-left: 26px;
-  background:#fff;
-  border: 2px solid white;
-  border-radius: 4px;
-  transition: 0.24s;
-  width: 0px;
-  padding: 8px 0px 8px 34px;
-  
+border:none;
+background: transparent;
+font:14px/1.4 sans-serif;
+padding-left: 26px;
+background:#fff;
+border: 2px solid white;
+border-radius: 4px;
+transition: 0.24s;
+width: 0px;
+padding: 8px 0px 8px 34px;
+
 } /*this for the border around the the icon which is optional, but in this case, we dont want it*/
 .expandSearch input:focus{
-  border-color: #aaa;
-  outline: none;
-  width:200px;
-  padding: 8px 12px 8px 34px;
-  border-color: #91bd3a;
-  
+border-color: #aaa;
+outline: none;
+width:200px;
+padding: 8px 12px 8px 34px;
+border-color: #91bd3a;
+
 }
 .expandSearch input:focus + i{
-  /*padding: 8px 4px 8px 8px ;*/
-  color: #ddd;
-  pointer-events: none;
-  
+/*padding: 8px 4px 8px 8px ;*/
+color: #ddd;
+pointer-events: none;
+
 }
-  
-  
+
+
 #update {
-  color: white;
-  
+color: white;
+
 }
-  
+
 #submit {
-  height: 41px;
-  width: 100px;
-  font-size: 13px;
-  font-weight: bold;
-  background-color: #91bd3a;
-  border: none;
-  
+height: 41px;
+width: 100px;
+font-size: 13px;
+font-weight: bold;
+background-color: #91bd3a;
+border: none;
+
 }
-  
+
 #privacy {
-  color: #91bd3a ;
-  text-align: left;
-  padding-left: 15px ;
-  
+color: #91bd3a ;
+text-align: left;
+padding-left: 15px ;
+
 }
-  
+
 /*new icons*/
-  
+
 label {
-  position: relative;
-  
+position: relative;
+
 }
 
 .form-popup label::before{
-  display: none;
+display: none;
 }
-    
+  
 label:before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 0;
-  bottom: 0;
-  width: 20px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
-  
-  
-}
-    
-  
-input {
-  padding: 10px 30px;
-  
-}
-   
-label > .icon {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  color: silver;
-  
-}
-    
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-    
-label > input {
-  padding-left: calc(1em + 10px + 8px); /* icon width + icon padding-left + desired separation*/
-  height: 2em;
-  
-}
-    
-  /* SVG SpriteSheet */
-  .spritesheet {
-    display: none;
-  
-  }
-  
-  
-  .search{
-      position: absolute;
-      right: 25px;
-      top: 15px;
-  
-  }
-  /*end of navbar*/
+content: "";
+position: absolute;
+left: 10px;
+top: 0;
+bottom: 0;
+width: 20px;
+background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
 
-      /* PopUp code inspired by W3Schools and edited */
+
+}
+  
+
+input {
+padding: 10px 30px;
+
+}
+ 
+label > .icon {
+position: absolute;
+top: 50%;
+left: 10px;
+transform: translateY(-50%);
+color: silver;
+
+}
+  
+.icon {
+display: inline-block;
+width: 1em;
+height: 1em;
+stroke-width: 0;
+stroke: currentColor;
+fill: currentColor;
+}
+  
+label > input {
+padding-left: calc(1em + 10px + 8px); /* icon width + icon padding-left + desired separation*/
+height: 2em;
+
+}
+  
+/* SVG SpriteSheet */
+.spritesheet {
+  display: none;
+
+}
+
+
+.search{
+    position: absolute;
+    right: 25px;
+    top: 15px;
+
+}
+/*end of navbar*/
+
+    /* PopUp code inspired by W3Schools and edited */
 
 /* The popup form - hidden by default*/
 .form-popup {
-  display: none;
-  position: fixed;
-  bottom: 150px;
-  right: 30px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
+display: none;
+position: fixed;
+bottom: 150px;
+right: 30px;
+border: 3px solid #f1f1f1;
+z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: #91bd3a;
+max-width: 300px;
+padding: 10px;
+background-color: #91bd3a;
 }
 
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=cellphone] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
 } 
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
-  background-color: #ddd;
-  outline: none;
+background-color: #ddd;
+outline: none;
 }
 
 
- .form-container .btn {
-  background-color: #ffa259;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: none;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
+.form-container .btn {
+background-color: #ffa259;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: none;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
 } 
 
 /* close button option */
 #close {
-  position: absolute;
-  left: 270px;
-  top: 08px;
+position: absolute;
+left: 270px;
+top: 08px;
 }
 
-  /*working on the sport section*/
-  .heading{
-      grid-area: 3/2/span 1/span 3;
-      font-family: 'Domine', serif;
-  }  
-  img{
-    grid-area: 5/2/span 1/span 3;
-  }
-  .write{
-    grid-area: 7/2/span 1/span 3;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-  }
-  .name{
-    width: 326.5px;
-    height: 30px;
-  }
+/*working on the sport section*/
+.heading{
+    grid-area: 3/2/span 1/span 3;
+    font-family: 'Domine', serif;
+}  
+img{
+  grid-area: 5/2/span 1/span 3;
+}
+.write{
+  grid-area: 7/2/span 1/span 3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+.name{
+  width: 326.5px;
+  height: 30px;
+}
 /*second section for already given comments*/
 .com9{
-  grid-area: 9/2/span 1/ span 4;
-  text-decoration: underline;
-  text-decoration-color: #91bd3a ;
-  position: relative;
-  left: 100px;
-  font-family: 'Domine', serif;
-  font-size:20px;
+grid-area: 9/2/span 1/ span 4;
+text-decoration: underline;
+text-decoration-color: #91bd3a ;
+position: relative;
+left: 100px;
+font-family: 'Domine', serif;
+font-size:20px;
 }
 
 /*changed the comments section to make it look more fun and modern*/
 .newCom{
-  width: 80px;
-  position: relative;
-  top: 23px;
-  border-radius: 25%;
-  
-  
+width: 80px;
+position: relative;
+top: 23px;
+border-radius: 25%;
+
+
 }
 .newie{
-  grid-area: 11/2/ span 1/ span 4;
-  overflow-y: hidden;
-  border-radius: 25%;
+grid-area: 11/2/ span 1/ span 4;
+overflow-y: hidden;
+border-radius: 25%;
 }
 .Mpho{
-  position: relative;
-  left: 100px;
-  bottom: 120px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+position: relative;
+left: 100px;
+bottom: 120px;
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
 }
 .MphoT{
-  position: relative;
-  left: 100px;
-  bottom: 100px;
-  font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+position: relative;
+left: 100px;
+bottom: 100px;
+font-size: 14px;
+font-family: 'Roboto', sans-serif;
 }
 .time{
-  position: relative;
-  left: 280px;
-  bottom: 205px;
+position: relative;
+left: 280px;
+bottom: 205px;
 
 }
 .numbre{
+position: relative;
+left: 280px;
+bottom: 130px;
+border-radius: 50%;
+width:30px;
+height:30px;
+border: 1px solid green;
+text-align: center;
+font-size: 20px;
+background-color: #91bd3a
+}
+
+.newCom2{
+  width: 80px;
+  position: relative;
+  top: 23px; 
+  border-radius: 25%;
+}
+
+.newie2{
+  grid-area: 13/2/span 1 /span 4;
+  overflow-y: hidden;
+}
+.Bokang{
+  position: relative;
+  left: 100px;
+  bottom: 90px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+.BokangT{
+  position: relative;
+  left: 100px;
+  bottom: 70px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+.Nako{
   position: relative;
   left: 280px;
-  bottom: 130px;
+  bottom: 175px;
+
+}
+.number{
+  position: relative;
+  left: 280px;
+  bottom: 120px;
   border-radius: 50%;
   width:30px;
   height:30px;
   border: 1px solid green;
   text-align: center;
   font-size: 20px;
-  background-color: #91bd3a
+  background-color: #91bd3a;
 }
-  
-  .newCom2{
-    width: 80px;
-    position: relative;
-    top: 23px; 
-    border-radius: 25%;
-  }
+/*made some of my work a grid as its managable that way*/
 
-  .newie2{
-    grid-area: 13/2/span 1 /span 4;
-    overflow-y: hidden;
-  }
-  .Bokang{
-    position: relative;
-    left: 100px;
-    bottom: 90px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-  }
-  .BokangT{
-    position: relative;
-    left: 100px;
-    bottom: 70px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-  }
-  .Nako{
-    position: relative;
-    left: 280px;
-    bottom: 175px;
+.newCom3{
+  width: 80px;
+  position: relative;
+  top: 20px;
+  border-radius: 25%;
   
-  }
-  .number{
-    position: relative;
-    left: 280px;
-    bottom: 120px;
-    border-radius: 50%;
-    width:30px;
-    height:30px;
-    border: 1px solid green;
-    text-align: center;
-    font-size: 20px;
-    background-color: #91bd3a;
-  }
-  /*made some of my work a grid as its managable that way*/
- 
-  .newCom3{
-    width: 80px;
-    position: relative;
-    top: 20px;
-    border-radius: 25%;
-    
-    
-    
-  }
-  .newie3{
-    grid-area: 15/2/span 1/span 4 ;
-    overflow-y: hidden;
-  }
-  .Us{
-    position: relative;
-    left: 100px;
-    bottom: 110px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-  }
-  .UsT{
-    position: relative;
-    left: 100px;
-    bottom: 90px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-  }
-  .nako1{
-    position: relative;
-    left: 280px;
-    bottom: 195px;
   
-  }
-  .addMore{
-    grid-area: 16/4/span 1/span 4 ;
-    position: relative;
-    left: 80px;
-    border-radius: 50%;
-    width:50px;
-    height:50px;
-    border: 1px solid rgb(247, 250, 247);
-    text-align: center;
-    font-size: 30px;
-    background-color: #ffa259;
-    fill:#f5f4f4;
-    padding-top: 10px;
-  }
+  
+}
+.newie3{
+  grid-area: 15/2/span 1/span 4 ;
+  overflow-y: hidden;
+}
+.Us{
+  position: relative;
+  left: 100px;
+  bottom: 110px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+.UsT{
+  position: relative;
+  left: 100px;
+  bottom: 90px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+.nako1{
+  position: relative;
+  left: 280px;
+  bottom: 195px;
+
+}
+.addMore{
+  grid-area: 16/4/span 1/span 4 ;
+  position: relative;
+  left: 80px;
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  border: 1px solid rgb(247, 250, 247);
+  text-align: center;
+  font-size: 30px;
+  background-color: #ffa259;
+  fill:#f5f4f4;
+  padding-top: 10px;
+}
 /*this the is a pop-up for the plus icon to show option to comment*/
-  .popupWrapper{
-    background-color:rgb(0, 0, 0,0.5);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-    display: none;
-    z-index: 1;
+.popupWrapper{
+  background-color:rgb(0, 0, 0,0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  display: none;
+  z-index: 1;
 }
 
 .popUp{
-    background-color: white;
-    background: rgb(203,231,148);
-    background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-    margin: 10% auto;
-    position: relative;
-    padding: 5%;
-    top:80px
+  background-color: white;
+  background: rgb(203,231,148);
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10% auto;
+  position: relative;
+  padding: 5%;
+  top:80px
 }
 
 .popUp a{
-    background: crimson;
-    color: white;
-    text-decoration: none;
-    padding: 6px 10px;
+  background: crimson;
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
 
 }
 
 .vala{
-    position: absolute;
-    top:5px;
-    right: 8px;
-    cursor: pointer;
-    color:white;
+  position: absolute;
+  top:5px;
+  right: 8px;
+  cursor: pointer;
+  color:white;
 }
 .senda{
-  border-radius: 25%;
-  background-color: #ffa259;
-  font-weight: 900;
-  color: white;
-  font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+border-radius: 25%;
+background-color: #ffa259;
+font-weight: 900;
+color: white;
+font-size: 15px;
+font-family: 'Roboto', sans-serif;
 }
 .cam{
-  fill:white ;
+fill:white ;
 }
 /*end of the popup for comments*/
 
 
 /*bell notifications section*/
 #notification{
-  fill: white;
-  position: fixed;
-  top: 510px;
-  left: 280px;
-  opacity: 0.8;
-  background-color: #fa4252;
-  padding: 10px;
-  width:60px;
-  height: 60px;
-  border-radius: 50%;
-  cursor: pointer;
+fill: white;
+position: fixed;
+top: 510px;
+left: 280px;
+opacity: 0.8;
+background-color: #fa4252;
+padding: 10px;
+width:60px;
+height: 60px;
+border-radius: 50%;
+cursor: pointer;
 }
 /*made it in a way that when you click on it, it allows you to fill in your infomation*/
 
 .sign{
-  align-items: center;
-  font-weight: 700;
-  background-color:#91bd3a;
-  border: 3px solid white;
-  position: relative;
-  top: 40px;
-  left: -310px;
-  width: 80vw;
-  height: 40vh;
-  display: none;
+align-items: center;
+font-weight: 700;
+background-color:#91bd3a;
+border: 3px solid white;
+position: relative;
+top: 40px;
+left: -310px;
+width: 80vw;
+height: 40vh;
+display: none;
 }
 
 .not{
-  position: relative;
-  left: 50px;
-  top:20px;
+position: relative;
+left: 50px;
+top:20px;
 }
 
 .sign input{
-  align-items: center;
-  margin-left: 30px;
+align-items: center;
+margin-left: 30px;
 
 }
- 
+
 /*when you click on the button it automatically hides back the info and there is a pop-up that thanks you after you submit*/
 .signB{
-  background-color: #ffa259;
-  padding:16px 25px;
-  color: white;
-  border: none;
-  cursor: none;
-  width:60%;
-  opacity: 0.8;
-  position: relative;
-  left: 68px;
-    
+background-color: #ffa259;
+padding:16px 25px;
+color: white;
+border: none;
+cursor: none;
+width:60%;
+opacity: 0.8;
+position: relative;
+left: 68px;
+  
 }
 
 .art{
-  display: grid;
-  grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
-  grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 78vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 8vh ;
+display: grid;
+grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
+grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 78vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 8vh ;
 }
 /*more news section*/
 
 .moreon{
-  margin-left: 15px;
-  margin-right: 15px;
+margin-left: 15px;
+margin-right: 15px;
 }
 a{
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  cursor: pointer;
+text-decoration: none;
+color: black;
+font-size: 14px;
+cursor: pointer;
 }
 .light{
-  grid-area: 18/2/span 1/span 4 ;
-  text-decoration: underline;
-  text-decoration-color: #91bd3a ;
-  font-family: 'Domine', serif;
-  font-size:20px;
-  position: relative;
-  left: 100px;
+grid-area: 18/2/span 1/span 4 ;
+text-decoration: underline;
+text-decoration-color: #91bd3a ;
+font-family: 'Domine', serif;
+font-size:20px;
+position: relative;
+left: 100px;
 
 }
 
-  .Ost{
-      
-      font-family: 'Roboto', sans-serif;
-      font-size: 14px;
-  }
-
-.Oct{
+.Ost{
     
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
 
-.Obt{
+.Oct{
   
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
+.Obt{
+
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+}
+
+
+#footer {
+  grid-area: 22/2/span 1/span 4 ;
+  background-color: black;
+  width: 100vw;
+  height: 10vh;
+  position: relative;
+  top: 25px;
   
-  #footer {
-    grid-area: 22/2/span 1/span 4 ;
-    background-color: black;
-    width: 100vw;
-    height: 10vh;
-    position: relative;
-    top: 25px;
+}
+
+#facebook, #instagram , #twitter , #whatsapp {
+  fill: #fa4252;
+
+}
+
+#whatsapp {
+  position: absolute;
+  left: 330px;
     
-  }
-  
-  #facebook, #instagram , #twitter , #whatsapp {
-    fill: #fa4252;
-  
-  }
-  
-  #whatsapp {
-    position: absolute;
-    left: 330px;
-      
-  }
-  
-  #twitter {
-    position: absolute;
-    left: 290px;
-      
-  }
-  
-  #instagram {
-    position: absolute;
-    left: 250px;
-      
-  }
-  
-  #facebook {
-    position: absolute;
-    left: 210px;
-      
-  }
-  
-  .para {
-    color: white;
-    position: relative;
-    left: 15px;
-    top: 25px;
-  
-  }
+}
+
+#twitter {
+  position: absolute;
+  left: 290px;
+    
+}
+
+#instagram {
+  position: absolute;
+  left: 250px;
+    
+}
+
+#facebook {
+  position: absolute;
+  left: 210px;
+    
+}
+
+.para {
+  color: white;
+  position: relative;
+  left: 15px;
+  top: 25px;
+
+}
