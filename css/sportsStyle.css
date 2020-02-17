@@ -27,6 +27,8 @@ html{
   #logo{
     padding: 0 0 5px 50px;
     width: 200px;
+    position: relative;
+    left: -20px;
   }
   
   .sidenav {
@@ -298,6 +300,11 @@ a{
   font-size: 14px;
   cursor: pointer;
 }
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: black;
+}
 
 .section{
   grid-area: 2/4/ span 1/span 5;
@@ -332,6 +339,8 @@ font-family: 'Domine', serif;
   font-size: 20px;
   position: relative;
   left: 10px;
+  text-decoration: underline;
+  text-decoration-color: #91bd3a ;
 }
 .BG{
   grid-area: 9/2/span 1 / span 5;
@@ -367,6 +376,8 @@ font-family: 'Domine', serif;
   grid-area: 11/3/span 1 / span 5;
   font-family: 'Domine', serif;
   font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #91bd3a ;
 }
 .img1{
   grid-area: 13/2/span 1 / span 2;
