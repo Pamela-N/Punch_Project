@@ -19,6 +19,10 @@ font-size: 14px;
 
 }
 
+.main{
+  width: 100vw;
+  transition: 0.5s;
+} 
 /*navbar section*/
 #navbar{
 width: 100vw;
@@ -26,6 +30,8 @@ height: 10vh;
 position: fixed;
 background-color: white;
 z-index: 1;
+transition: 0.5s;
+
 
 }
 
@@ -36,34 +42,45 @@ position: relative;
 left: -20px;
 }
 
+.sidelogo{
+  position: absolute;
+  left: 60px;
+  top: 14px;
+}
+
 .sidenav {
-height: 100%;
-width: 100vw;
-position: fixed;
-z-index: 1;
-top: 0;
-left: -100vw;
-background-color: #111;
-overflow-x: hidden;
-transition: 0.5s;
-padding-top: 60px;
-text-align:center;
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(250,66,82,1) 50%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
 }
-  
-.sidenav a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 25px;
-color: white;
-display: block;
-transition: 0.3s;
 
+.sidenav svg{
+  margin-right: 15px;
+  
+}
+
+.sidenav a {
+  font-family: 'Domine', serif; 
+  padding: 8px 8px 8px 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color:white;
+  display: block;
 }
   
 .sidenav a:hover{
-color: #fa4252;
-cursor: pointer;
+  color: #91bd3a;
+  cursor: pointer;
 
 }
   
@@ -148,24 +165,34 @@ pointer-events: none;
 
 
 #update {
-color: white;
+  color: white;
+  text-align: center;
 
 }
 
+.inputSub{
+margin-left: 25px;
+width: 150px;
+padding-bottom: 9px;
+border: none;
+}
+
 #submit {
-height: 41px;
-width: 100px;
-font-size: 13px;
+height: 34px;
+width: 70px;
+font-size: 1em;
 font-weight: bold;
 background-color: #91bd3a;
 border: none;
-
+text-align: center;
 }
 
 #privacy {
 color: #91bd3a ;
 text-align: left;
-padding-left: 15px ;
+padding-left: 25px ;
+position: relative;
+bottom: 35px;
 
 }
 
@@ -237,40 +264,61 @@ height: 2em;
 }
 /*end of navbar*/
 
-    /* PopUp code inspired by W3Schools and edited */
 
 /* The popup form - hidden by default*/
+
+#myForm {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:50px;
+  left:0;
+  display: none;
+}
+
 .form-popup {
-display: none;
-position: fixed;
-bottom: 150px;
-right: 30px;
-border: 3px solid #f1f1f1;
-z-index: 9;
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  /* border: 3px solid #f1f1f1; */
+  z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
-max-width: 300px;
-padding: 10px;
-background-color: #91bd3a;
+  max-width: 300px;
+  position: fixed;
+  top: 115px;
+  left: 20px;
+  padding: 10px;
+  background-color: #91bd3a;
+  background: rgb(203,231,148);
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  color: white;
 }
 
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=cellphone] {
-width: 100%;
-padding: 15px;
-margin: 5px 0 22px 0;
-border: none;
-background: #f1f1f1;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
 } 
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
-background-color: #ddd;
-outline: none;
+  background-color: #ddd;
+  outline: none;
 }
 
+.form-container h3 {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 25px;
+}
 
 .form-container .btn {
 background-color: #ffa259;
@@ -285,9 +333,23 @@ opacity: 0.8;
 
 /* close button option */
 #close {
-position: absolute;
-left: 270px;
-top: 08px;
+  position: absolute;
+  left: 270px;
+  top: 07px;
+  fill: white;
+}
+
+#female {
+  position: relative;
+  left: 200px; 
+  fill: white;
+  
+}
+
+#male {
+  position: relative;
+  fill: white;
+  
 }
 
 /*working on the sport section*/
@@ -295,8 +357,10 @@ top: 08px;
     grid-area: 3/2/span 1/span 3;
     font-family: 'Domine', serif;
 }  
-img{
+.SoccerImg{
   grid-area: 5/2/span 1/span 3;
+  height: 242px;
+  width: 325px;
 }
 .write{
   grid-area: 7/2/span 1/span 3;
@@ -570,8 +634,9 @@ left: 68px;
 .art{
 display: grid;
 grid-template-columns: 5vw 43.5vw  3vw 43.5vw 5vw;
-grid-template-rows:0vh 1vh 5vh 2vh 30vh 2vh 78vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 8vh ;
+grid-template-rows:0vh 1vh 0vh 2vh 38vh 2vh 42vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 8vh ;
 }
+
 /*more news section*/
 
 .moreon{
@@ -611,6 +676,106 @@ left: 100px;
 
 font-family: 'Roboto', sans-serif;
 font-size: 14px;
+}
+
+#notification{
+  fill: white;
+  position: fixed;
+  top: 520px;
+  left: 280px;
+  width:60px;
+    height: 60px;
+  background-color: #fa4252;
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0.8;
+  cursor: pointer ;
+}
+
+/*made it in a way that when you click on it, it allows you to fill in your infomation*/
+/*styling for the notification bell*/
+
+.rapper {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:50px;
+  left:0;
+  display: none;
+  z-index: 1;
+}
+
+.sign{
+  font-weight: 700;
+  background: rgb(203,231,148);
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  border: none;
+  position: fixed;
+  top: 180px;
+  left: 35px;
+  width: 80vw;
+  height: 40vh;
+  display: none;
+  color: whitesmoke;
+  text-align: left;
+  margin-left: 3px;
+}
+
+.not{
+  position: relative;
+  text-align: left;
+  margin-left: 10px;
+  top:10px;
+  left:0;
+}
+
+#q {
+  font-size: 26px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+#acc {
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+#log{
+  font-weight: bolder;
+  position: relative;
+  left: 170px;
+  bottom: 18.3px;
+}
+
+input[type=number] {
+  background-color:#91bd3a;
+  background: rgb(203,231,148);
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  border: none;
+  border-bottom: 2px solid white;
+  text-align: left;
+  margin-left: 12px;
+  padding-left:70px;
+}
+
+.mini {
+  background-color: white;
+  border: none;
+  color: #91bd3a;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 100px;
+  position: absolute;
+  left: 20px;
+  bottom: 90px;
+  width: 50px;
+  height: 25px;
+
+}
+
+.mini p {
+  padding-top: 4.5px;
 }
 
 
