@@ -9,8 +9,11 @@ body{
 }
 
 a:hover{
-  color: #91bd3a;
+  color: #fa4252;
+}
 
+.sidenav a:hover{
+  color: #91bd3a;
 }
 
 h1, h2{

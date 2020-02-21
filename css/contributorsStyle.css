@@ -32,6 +32,10 @@ a{
 }
 
 a:hover{
+    color: #fa4252;
+}
+
+.sidenav a:hover{
     color: #91bd3a;
 }
 
@@ -105,10 +109,6 @@ a:hover{
     font-size: 1.2em;
     color:white;
     display: block;
-}
-
-.sidenav a:hover{
-    color: #fa4252;
 }
 
 .sidenav .closebtn {
