@@ -81,8 +81,3 @@ const bell = document.querySelector(".notification");
   })
 
 
-const soccer = document.querySelector('.olive');
-
-soccer.addEventListener('click', e => {
-  location.href = 'SoccerSportArticle.html';
-})
