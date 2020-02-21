@@ -32,6 +32,10 @@ a{
 }
 
 a:hover{
+    color: #fa4252;
+}
+
+.sidenav a:hover{
     color: #91bd3a;
 }
 
