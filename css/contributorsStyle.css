@@ -1,7 +1,10 @@
 *{
     margin: 0;
-    overflow-x: hidden;
     padding: 0;
+}
+*, html{
+    overflow-x: hidden!important;
+    max-width: 100vw!important;
 }
 
 h1 , h2{
@@ -44,6 +47,7 @@ a:hover{
     position: fixed;
     background-color: white;
     z-index: 1;
+    overflow-y: hidden;
 }
 
 /* sidenav bars */
@@ -255,17 +259,15 @@ label > input {
     display: none;
     position: fixed;
     top: 100px;
-    right: 15px;
-    /* border: 3px solid #f1f1f1; */
+    right: 10px;
     z-index: 9;
 }
   
   /* Add styles to the form container */
 .form-container {
-    max-width: 300px;
     position: fixed;
     top: 115px;
-    left: 20px;
+    left: 15px;
     padding: 10px;
     background-color: #91bd3a;
     background: rgb(203,231,148);
@@ -345,34 +347,13 @@ label > input {
 .editer{
     margin-left: 10px;
     border-radius: 50%;
+    width: 40vw;
 }
 
 .writer-name{
-    position: absolute;
-    top: 855px;
-    left: 180px;
-    width: 180px;
-    transition: 10s;
-    margin-right:50px;
-}
-
-.writer-name2{
-    position: absolute;
-    top: 1020px;
-    left: 180px;
-    padding-right: 10px;
-    width: 180px;
-    transition: 5s;
-}
-
-.writer-name3{
-    position: absolute;
-    top: 1190px;
-    left: 180px;
-    font-size: 1em;
-    padding-right: 8px;
-    width: 180px;
-    transition: 1s; 
+    margin-left: 4vw;
+    width: 45vw;
+    display: inline-block;
 }
 
 /* this is the bell */
