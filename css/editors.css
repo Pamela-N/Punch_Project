@@ -80,7 +80,7 @@ h1{
 }
     
 a:hover{
-  color: #fa4252;
+  color: #91bd3a;
 }
     
 .sidenav .closebtn {
@@ -245,10 +245,16 @@ label > input {
 }
 
  /* Add styles to the form container */
-.form-container {
+ .form-container {
   max-width: 300px;
+  position: fixed;
+  top: 115px;
+  left: 20px;
   padding: 10px;
   background-color: #91bd3a;
+  background: rgb(203,231,148);
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  color: white;
 }
 
 .form-container label::before{
@@ -288,6 +294,19 @@ label > input {
   top: 08px;
 }
 
+#female {
+  position: relative;
+  left: 200px; 
+  fill: white;
+  
+}
+
+#male {
+  position: relative;
+  fill: white;
+  
+}
+
 /* styling of the page */
 .editor{
   border-radius: 50%;
@@ -324,40 +343,90 @@ label > input {
 /* signup popup bell */
 .sign{
   font-weight: 700;
-  background-color:#91bd3a;
-  border: 3px solid rgb(255, 255, 255);
+  background: rgb(203,231,148);
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  border: none;
   position: fixed;
-  bottom: 250px;
-  right: 35px;
+  bottom: 185px;
+  left: 32px;
   width: 80vw;
   height: 40vh;
   display: none;
+  color: whitesmoke;
+  text-align: left;
+  margin-left: 3px;
 }
 
 .not{
   position: relative;
+  text-align: left;
   left: 60px;
   top:10px;
 }
 
-.sign input{
-  align-items: center;
-  margin-left: 35px;
+input[type=number] {
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  border: none;
+  border-bottom: 2px solid white;
+  text-align: left;
+  margin-left: 12px;
+  padding-left:75px;
+  cursor: inherit;
+}
+
+.mini {
+  background-color: white;
+  border: none;
+  color: #91bd3a;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 100px;
+  position: absolute;
+  right: 215px;
+  bottom: 90px;
+  width: 50px;
+  height: 25px;
+}
+
+.mini p {
+  color: #91bd3a;
+  margin-top: 4px;
+}
+
+#q {
+  font-size: 26px;
+  font-weight: lighter;
+  margin-left: 10px;
+  color: white;
+}
+
+#acc {
+  margin-left: 6px;
+  font-size: 14px;
+  color: white;
+}
+
+#log{
+  font-weight: bolder;
+  position: relative;
+  left: 160px;
+  bottom: 27px;
+  color: white;
 }
 
 /*when you click on the button it automatically hides back the info*/
-.signB{
-  background-color: #ffa259;
-  padding:16px 20px;
-  color: white;
-  border: none;
-  cursor: none;
-  width:60%;
-  opacity: 0.8;
-  position: relative;
-  left: 60px;
+
+.wrapper {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top:50px;
+  left:0;
+  display: none;
 }
 
+/* this is the footer and the icons*/
 #footer {
   background-color: black;
   width: 100vw;
