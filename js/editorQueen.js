@@ -103,7 +103,7 @@ const getArticle = async()=>{
     const data = await response.json().then(data=>{
        //return(data);
 
-       for (i = 0; i< 1; i++){
+       for (i = 0; i< 3; i++){
       artrticle.innerHTML +=`
       <img id="writer-work1"src="${data.photos[i].img_src}" width="100%" height="50%" alt="Picture on the moon.">
       <a href="#">
