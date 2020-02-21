@@ -6,7 +6,7 @@
 
 h1 , h2{
     font-family: 'Domine', serif; 
-    text-align: center;
+    /* text-align: center; */
 }
 
 h3{
@@ -16,6 +16,7 @@ h3{
 
 body{
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 p{
@@ -28,7 +29,7 @@ a{
 }
 
 a:hover{
-    color: #fa4252;
+    color: #91bd3a;
 }
 
 .main{
@@ -253,17 +254,23 @@ label > input {
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 150px;
-    right: 20px;
-    border: 3px solid #f1f1f1;
+    top: 100px;
+    right: 15px;
+    /* border: 3px solid #f1f1f1; */
     z-index: 9;
 }
   
   /* Add styles to the form container */
 .form-container {
     max-width: 300px;
+    position: fixed;
+    top: 115px;
+    left: 20px;
     padding: 10px;
     background-color: #91bd3a;
+    background: rgb(203,231,148);
+    background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+    color: white;
 }
 
 .form-container label::before{
@@ -301,7 +308,21 @@ label > input {
 #close {
     position: absolute;
     left: 285px;
-    top: 08px;
+    top: 08px; 
+    fill: white;
+}
+
+#female {
+    position: relative;
+    left: 200px; 
+    fill: white;
+    
+}
+
+#male {
+    position: relative;
+    fill: white;
+    
 }
 
 /* first heading of the page */
@@ -317,6 +338,10 @@ label > input {
     text-align: center;
 }
 
+.hero{
+    text-align: center;
+}
+
 .editer{
     margin-left: 10px;
     border-radius: 50%;
@@ -324,16 +349,16 @@ label > input {
 
 .writer-name{
     position: absolute;
-    top: 830px;
+    top: 855px;
     left: 180px;
-    padding-right: 10px;
     width: 180px;
     transition: 10s;
+    margin-right:50px;
 }
 
 .writer-name2{
     position: absolute;
-    top: 1000px;
+    top: 1020px;
     left: 180px;
     padding-right: 10px;
     width: 180px;
@@ -342,7 +367,7 @@ label > input {
 
 .writer-name3{
     position: absolute;
-    top: 1170px;
+    top: 1190px;
     left: 180px;
     font-size: 1em;
     padding-right: 8px;
@@ -364,39 +389,89 @@ label > input {
 
 /* signup popup bell */
 .sign{
-    font-weight: 700;
-    background-color:#91bd3a;
-    border: 3px solid rgb(255, 251, 251);
-    position: fixed;
-    bottom: 250px;
-    right: 35px;
-    width: 80vw;
-    height: 40vh;
-    display: none;
-}
-  
-.not{
-    position: relative;
-    left: 60px;
-    top:10px;
-}
-  
-.sign input{
-    align-items: center;
-    margin-left: 35px;
+  font-weight: 700;
+  background: rgb(203,231,148);
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  border: none;
+  position: fixed;
+  bottom: 185px;
+  left: 32px;
+  width: 80vw;
+  height: 40vh;
+  display: none;
+  color: whitesmoke;
+  text-align: left;
+  margin-left: 3px;
 }
 
-  /*when you click on the button it automatically hides back the info*/
-.signB{
-    background-color: #ffa259;
-    padding:16px 20px;
-    color: white;
-    border: none;
-    cursor: none;
-    width:60%;
-    opacity: 0.8;
-    position: relative;
-    left: 60px;
+/* sign in styling */
+.not{
+  position: relative;
+  text-align: left;
+  left: 60px;
+  top:10px;
+}
+
+/* input styling */
+input[type=number] {
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  border: none;
+  border-bottom: 2px solid white;
+  text-align: left;
+  margin-left: 12px;
+  padding-left:70px;
+}
+
+/* the white circle with numbers */
+.mini {
+  background-color: white;
+  border: none;
+  color: #91bd3a;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 100px;
+  position: absolute;
+  right: 215px;
+  bottom: 90px;
+  width: 50px;
+  height: 25px;
+
+}
+
+/* the numbers in the white circle */
+.mini p {
+  padding-top: 4.5px;
+}
+
+/* p tag of whats your phone number styling */
+#q {
+  font-size: 26px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+/* p tag of already have an account */
+#acc {
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+/* p tag of the log in */
+#log{
+  font-weight: bolder;
+  position: relative;
+  left: 170px;
+  bottom: 18.3px;
+}
+
+.wrapper {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  top:50px;
+  left:0;
+  display: none;
 }
 
 /* this is the footer and the icons*/
@@ -405,7 +480,7 @@ label > input {
     width: 100vw;
     height: 10vh;
     position: relative;
-    bottom: 0;
+    bottom: -10px;
 }
 
 #facebook, #instagram , #twitter , #whatsapp {
