@@ -57,7 +57,8 @@ form.addEventListener('click', e =>{
   form.style.display = "none";
   wrapper.style.display = "none";
   alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
-})
+}
+// notification bell comands for the bell to disappear
 
 // selection of gender this makes you pick wheather you a girl or boy by changing colour
 girl.addEventListener('click', () =>{
@@ -71,7 +72,7 @@ boy.addEventListener('click', () =>{
   girl.style.fill ="white";
 })
 
-// notification bell comands for the bell to dissappear
+
 setTimeout( () => {
   notification.style.display = "none";
 }, 10000 )

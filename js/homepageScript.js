@@ -1,32 +1,45 @@
-// sidenav opening and closing code 
+// let notification = document.querySelector('#notification');
+let slideIndex = 1;
+let sbmit = document.querySelector(".signB");
+const form = document.querySelector('.sign');
 
+// how the side nav opens and close
 function openNav() {
-  document.getElementById("mySidenav").style.left = "0vw";
+  document.getElementById("mySidenav").style.width = "265px";
+  document.querySelector(".main").style.marginLeft = "265px";
+  document.querySelector("#footer").style.marginLeft = "265px";
+  document.querySelector('#logo').style.display = "none";
+
+
 }
 function closeNav() {
-  document.getElementById("mySidenav").style.left = "-100vw";
+  document.getElementById("mySidenav").style.width = "0";
+  document.querySelector(".main").style.marginLeft = "0";
+  document.querySelector("#footer").style.marginLeft = "0";
+  document.querySelector('#logo').style.display = "block";
 }
-
 
 // Subscription PopUp code inspired by W3Schools and edited
 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
   document.getElementById("mySidenav").style.display = "none";
-  document.getElementsByClassName("one").style.display = "none";
+  document.querySelector('#logo').style.display = "block";
+  document.querySelector(".main").style.marginLeft = "0px";
+  document.querySelector("#footer").style.marginLeft = "0";
 
 }
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
   document.getElementById("mySidenav").style.display = "block";
-  document.getElementsByClassName("one").style.display = "block";
+  document.querySelector(".main").style.marginLeft = "260px";
 
 }
 
   // Notifications PopUp Onclick Code
 
-const form = document.querySelector('.sign');
+// const form = document.querySelector('.sign');
 const notification = document.querySelector(".notification");
 const wrapper = document.querySelector(".wrapper")
 // const submit = document.querySelector(".signB")
@@ -58,9 +71,18 @@ const bell = document.querySelector(".notification");
 
   girl.addEventListener('click', e =>{
     girl.style.fill = "palevioletred";
+    boy.style.fill = "white";
+
   })
 
   boy.addEventListener('click', e =>{
     boy.style.fill = "blue";
+    girl.style.fill = "white";
   })
 
+
+const soccer = document.querySelector('.olive');
+
+soccer.addEventListener('click', e => {
+  location.href = 'SoccerSportArticle.html';
+})
