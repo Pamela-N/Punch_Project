@@ -9,6 +9,12 @@
     font-size: 1em;
   }
 
+  
+  .main{
+    width: 100vw;
+    transition: 0.5s;
+  }
+
   #notification{
     fill: white;
     position: fixed;
@@ -21,16 +27,30 @@
     
 }
 
-.sign{
-  font-weight: 700;
-  background-color:#91bd3a;
-  border: 3px solid white;
+.wrapper {
+  background-color: rgba(0,0,0,0.5);
   position: fixed;
-  bottom: 250px;
-  right: 35px;
-  width: 80vw;
-  height: 40vh;
+  width: 100%;
+  height: 100vh;
+  top:50px;
+  left:0;
   display: none;
+}
+
+.sign{
+    font-weight: 700;
+    background: rgb(203,231,148);
+    background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+    border: none;
+    position: fixed;
+    bottom: 185px;
+    left: 32px;
+    width: 80vw;
+    height: 40vh;
+    display: none;
+    color: whitesmoke;
+    text-align: left;
+    margin-left: 3px;
 }
 
 .not{
@@ -104,32 +124,44 @@
   
   .sidenav {
     height: 100%;
-    width: 100vw;
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -100vw;
-    background-color: #111;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(250,66,82,1) 50%);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    text-align:center;
+    overflow-y: hidden;
+    overflow-x: hidden;
   
+  }
+
+  .sidenav svg{
+    margin-right: 15px;
+    
   }
     
   .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
+  font-family: 'Domine', serif;
+  padding: 8px 8px 8px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color:white;
+  display: block;
   
   }
     
   .sidenav a:hover{
-    color: #fa4252;
+    color: #91bd3a;
   
+  }
+
+  .sidelogo{
+    position: absolute;
+    left: 60px;
+    top: 14px;
   }
     
   .sidenav .closebtn {
@@ -157,7 +189,7 @@
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: black;
     margin: 6px 0 0 6px;
   }
   
@@ -178,10 +210,6 @@
     transition: 0.24s;
     }
   
-    .expandSearch i:hover{
-    color: #0bf;
-  
-    }
   
   .expandSearch input{
     border:none;
@@ -218,15 +246,22 @@
 
   
   }
+
+  .inputSub{
+    margin-left: 25px;
+    width: 140px;
+    padding-bottom: 8px;
+    border: none;
+  }
   
   #submit {
-      height: 41px;
-      width: 100px;
-      font-size: 13px;
-      font-weight: bold;
-      background-color: #91bd3a;
-      border: none;
-  
+    height: 34px;
+    width: 80px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #91bd3a;
+    border: none;
+    text-align: center;
   }
   
   #privacy {
@@ -358,27 +393,6 @@
   
   }
   
-  #update {
-    color: white;
-  
-  }
-  
-  #submit {
-    height: 41px;
-    width: 100px;
-    font-size: 13px;
-    font-weight: bold;
-    background-color: #91bd3a;
-    border: none;
-  
-  }
-  
-  #privacy {
-    color: #91bd3a ;
-    text-align: left;
-    padding-left: 15px ;
-  
-  }
   
   /*new icons*/
   label {
@@ -455,12 +469,6 @@
   
   }
   
-  #footer {
-    background-color: black;
-    width: 100vw;
-    height: 10vh;
-
-  }
     
   .icon {
     display: inline-block;
@@ -489,6 +497,9 @@
     background-color: black;
     width: 100vw;
     height: 10vh;
+    position: relative;
+    bottom: 0;
+    transition: 0.5s;
     
   }
   
@@ -542,17 +553,23 @@
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 150px;
-  right: 50px;
-  border: 3px solid #f1f1f1;
+  top: 100px;
+  right: 15px;
+  /* border: 3px solid #f1f1f1; */
   z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
   max-width: 300px;
+  position: fixed;
+  top: 115px;
+  left: 20px;
   padding: 10px;
   background-color: #91bd3a;
+  background: rgb(203,231,148);
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  color: white;
 }
 
 /* Full-width input fields */
@@ -568,6 +585,12 @@
 .form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
   background-color: #ddd;
   outline: none;
+}
+
+.form-container h3 {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 25px;
 }
 
 
@@ -587,4 +610,17 @@
   position: absolute;
   left: 285px;
   top: 08px;
+}
+
+#female {
+  position: relative;
+  left: 200px; 
+  fill: white;
+  
+}
+
+#male {
+  position: relative;
+  fill: white;
+  
 }

@@ -51,7 +51,7 @@ sbmit.addEventListener('click', e =>{
   alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
 })
 
-// notification bell comands for the bell to dissappear
+// notification bell comands for the bell to disappear
 setTimeout( () => {
   notification.style.display = "none";
 }, 10000 )
