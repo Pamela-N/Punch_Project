@@ -49,12 +49,12 @@ const wrapper = document.querySelector(".wrapper")
     form.style.display = "block";
     wrapper.style.display = "block";
 })
-  form.addEventListener('sumbit', e =>{
-  e.preventDefault();
-  form.style.display="none";
-  wrapper.style.display = "none"; 
-  alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
-})
+//   form.addEventListener('sumbit', e =>{
+//   e.preventDefault();
+//   form.style.display="none";
+//   wrapper.style.display = "none"; 
+//   alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
+// })
 
 // Timeout for the Bell
 
@@ -80,4 +80,51 @@ const bell = document.querySelector(".notification");
     girl.style.fill = "white";
   })
 
+  //1st Sign in form
+  
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Get the modal
+var model = document.getElementById('In');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == model) {
+        model.style.display = "none";
+    }
+}
+
+const logged = document.querySelector('.logged');
+const loggedIn  = document.querySelector('.loggedIn');
+
+// logged.addEventListener('click', e =>{
+//   loggedIn.style.display="block";
+// })
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Get the modal
+var modals = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modals) {
+    modals.style.display = "none";
+  }
+}
 
