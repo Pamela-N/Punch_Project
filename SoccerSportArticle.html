@@ -233,11 +233,11 @@
 <br><br>
 
         <label id="bel" for="name"><b>Name</b></label>
-        <input type="text" placeholder="Enter Name" name="name" required>
+        <input type="text" placeholder="Enter Name" name="name" id="SubName" required>
         <label id="bel" for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <input type="text" placeholder="Enter Email" name="email" id= "SubEmail" required>
         <label id="bel" for="cphone"><b>Cellphone Number</b></label>
-        <input type="cellphone" placeholder="Enter Cellphone" name="cphone" required>
+        <input type="cellphone" placeholder="Enter Cellphone" id= "subNumber" name="cphone" required>
 
         <button type="submit" class="btn">Subscribe</button>
       
@@ -277,15 +277,22 @@
             <p class="number">1</p>
           </div>
 
-        <h3 class="own">More Comments</h3>
-        <br><br>
-
-        <div class="newie3">
+          <div class="newie3">
             <img src="Assets/queenie/us.jpg" alt="us" width= "100%" class="newCom3" alt="us.jpg">
             <h4 class='Us'>Lerato Love</h4>
             <p class='UsT'>I just like my sports <br> anything to do with them just <br> excites. Keep updating us <br> thank you</p>
             <p class= "nako1">7:20</p>
           </div>
+
+         <div class="newie4">
+            <div class="each">
+                <h4 class='Mpho1'></h4>
+                <p class='MphoT1'></p>
+                <p class= "time1">12:45</p>
+                <p class="numbre1"></p>
+            </div>
+          </div>
+    
 
           <div class="addMore">
             <p><?xml version="1.0" encoding="UTF-8"?>
@@ -295,24 +302,24 @@
           </div>
         
           <!--form for the addmore icon on the comments section-->
-    
 
     <div class="popupWrapper" style="display:none">
         <div class="popUp">
              <div class='vala'>X</div>
                 <div class='popuContent'>
-                    <form action="say">
+                    <form action="say" class="addForm" id = "ComForm">
                          <p class="cam"><?xml version="1.0" encoding="UTF-8"?>
                          <svg width="50px" height="50px" enable-background="new 0 0 488.455 488.455" viewBox="0 0 488.46 488.46" xmlns="http://www.w3.org/2000/svg">
                          <path d="m244.24 137.37c-67.335 0-122.12 54.783-122.12 122.12s54.784 122.12 122.12 122.12 122.12-54.783 122.12-122.12-54.783-122.12-122.12-122.12zm0 213.71c-50.505 0-91.588-41.083-91.588-91.588s41.083-91.588 91.588-91.588 91.588 41.083 91.588 91.588-41.083 91.588-91.588 91.588z"/>
                          <path d="m488.29 137.29c-0.015-25.214-20.572-45.733-45.794-45.733h-66.888l-26.326-52.603c-2.594-5.171-7.871-8.434-13.655-8.434h-183.18c-5.784 0-11.076 3.263-13.655 8.434l-26.296 52.618-66.782 0.089c-25.208 0.045-45.72 20.58-45.72 45.779v274.71c0 25.244 20.542 45.778 45.794 45.778h396.87c25.252 0 45.794-20.55 45.794-45.808zm-45.63 290.12h-396.87c-8.422 0-15.265-6.84-15.265-15.259v-274.71c0-8.405 6.842-15.244 15.235-15.259l76.204-0.104c5.784-0.015 11.061-3.278 13.64-8.434l26.281-52.604h164.3l26.326 52.603c2.594 5.171 7.871 8.434 13.655 8.434h76.324c8.408 0 15.444 6.84 15.444 15.244v274.82c-1e-3 8.419-6.859 15.274-15.281 15.274z"/>
                          </svg></p>
                          <br>
-                         <input type="text" name="firstname" placeholder="Name">
+                         <input type="text" name="firstname" placeholder="Name" class="gama" id= "ComName">
                         <br><br>
-                        <input type="text" name="lastname" placeholder="Title">
-                        <br><br>                
-                        <textarea name="say" id="say" placeholder="comments here" cols="29" rows="10"></textarea>
+                        <input type="text" name="Title" placeholder="Paste URL" id = "ComImg">
+                        <br><br> 
+                        <input type="text" name="Title" placeholder="one digit" id = "ComNum">               <br><br>
+                        <textarea name="say" id="say" class="content" placeholder="comments here" cols="29" rows="10"></textarea>
                         <br><br>
                         <input type="submit" value="Submit" class="senda">
                     </form>
@@ -329,23 +336,20 @@
         
         <!--form for notification-->
         <!-- pop up to sign up for notifications only -->
-        <div class="rapper">
-            <div class="sign">
-                <form>
-                    <h5 class="not">SIGN-UP</h5>
-                    <br><br>
-                    <p id="q">What's your phone number??</p>
-            
-                    <br>
-                    <input type="number" name="contact" >
-                    <div class="mini"><p>+234</p></div>
-                    <br><br><br>
-                    <p id="acc">Already have an account?<p id="log">Log In</p></p>
-                  </form>
-            </div>
-            </div> 
+        <!-- pop up to sign up for notifications only -->
+<div class="rapper">
+    <div class="sign">
+        <form id="SubForm">
+            <h2 class="not">Subscribe To Punch</h2>
+            <br>
+            <p id="q">Email</p>
+            <input type="text" id="emailInput" name="email" placeholder="Enter your email">
+            <br> <br>
+            <button class="subbtnEmail">Submit</button>
+          </form>
+    </div>
+  </div> 
 
-    
         <div class="moreon">
         <h3 class="light">More News</h3>
         <br>
@@ -356,7 +360,7 @@
         <p class="Ost">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, aut. Ipsum tempora maiores necessitatibus.</p>
         <br>
 
-        <img src="assets/images/SoccerImages/cricket 1.jpeg" alt="cricket"width="100%" class="Oc" >
+        <img src="assets/images/SoccerImages/cricket 1.jpeg" alt="cricket"width="100%" class="Oc" id="ball" >
         <br><br>
         <p class="Oct">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, aut. Ipsum tempora maiores necessitatibus.</p>
         <br>
@@ -366,13 +370,19 @@
         <p class="Obt">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
         <br>
 
-        <img src="assets/images/SoccerImages/basketball.jpeg" alt="basketball" width="100%" class="Od">
+        <img src="assets/images/SoccerImages/basketball.jpeg" alt="basketball" width="100%" class="Od" id="basket">
         <br><br>
         <p class="Odt">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p></a>
         </div> 
-          
-    
-    
+        <br>
+
+        <div class="DataNews">
+            
+            <br><br>
+            
+            <br>
+        </div>
+ 
         <div id="footer">
             <p class="para">	&copy; 1971 - 2020</p>
             <?xml version="1.0" encoding="UTF-8"?>
@@ -398,7 +408,35 @@
     </div>
  </div>
 </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCVsdaxVdQ8fgemZ4G1p2X5MvsSOlDxL2o",
+    authDomain: "punchsportcomments.firebaseapp.com",
+    databaseURL: "https://punchsportcomments.firebaseio.com",
+    projectId: "punchsportcomments",
+    storageBucket: "punchsportcomments.appspot.com",
+    messagingSenderId: "685636792875",
+    appId: "1:685636792875:web:7c74dcef5db7184d87b06e",
+    measurementId: "G-SL1FYLXMRE"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  firebase.analytics();
+</script>
     
-   <script src="js/sportsScript.js"></script>   
+   <script src="js/sportsScript.js"></script>  
+   <script src="js/SportDataBase.js"></script> 
+   <script src="js/SportDataEvents.js"></script>
 </body>
 </html>

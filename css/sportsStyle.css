@@ -5,16 +5,341 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-family: 'Domine', serif;
-    overflow-x: none;
+    
      
 }
 /* didnt want html have the x-axis*/
-html{
+body,html{
+  margin:0;
     overflow-x: hidden;
 }
+/*stylig for the 1st page you see when you log on to the punch website*/
+.optionPage{
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(250,66,82,1) 50%);
+  height: 100%;
+  display: none;
+}
+
+.optionPage img{
+  width:60%;
+  position: relative;
+  left: 18%;
+  top: 20px;
+}
+.also{
+  font-size: 10px;
+  margin-top: 0;
+  padding-top: 0;
+  color: red;
+}
+
+.you{
+  font-weight: 700;
+  color: white;
+  position: relative;
+  top:50px;
+  left: 50px;
+}
+.Up{
+  padding:20px;
+  width: 250px;
+  position:relative;
+  top:100px;
+  left: 50px;
+  border: thick double #91bd3a;
+  color: #91bd3a;
+  background-color: #f1f1f1;
+  font-weight: 700;
+  
+}
+
+.In{
+  padding:20px;
+  width: 250px;
+  position:relative;
+  border: thick double #91bd3a;
+  top:100px;
+  left: 50px;
+  color: #91bd3a;
+  background-color: #f1f1f1;
+  font-weight: 700;
+}
+.logoutbtn{
+  padding:20px;
+  width: 250px;
+  position:relative;
+  border: thick double #91bd3a;
+  top:100px;
+  left: 50px;
+  color: #91bd3a;
+  background-color: #f1f1f1;
+  font-weight: 700;
+}
+
+#fuel1{
+  position: relative;
+  top: 185px;
+  left: 93px;
+  color: white;
+  
+}
+#fuel{
+  position: relative;
+  top: 170px;
+  left: 190px;
+}
+/*styling for the 1st page login form*/
+
+.P1{
+  position: relative;
+  left: 80px;
+  top: 15px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #91bd3a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  margin-left: 15px;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+p.avatar {
+ border-radius: 50%;
+}
+
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  padding-right: 15px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(250,66,82,1) 50%);
+  padding: 16px;
+  
+}
+
+/* Modal Content/Box */
+.loginForm {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 9px;
+  bottom: 170px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/*end of styling for the login form*/
+
+/*styling for the 1st sign up form*/
+
+/* Full-width input fields */
+
+.p{
+  position: relative;
+  left: 50px;
+}
+.cam{
+  position: relative;
+  left: 85px;
+  fill:#91bd3a;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #91bd3a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtns {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtns, .signupbtns {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.containerr {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modals {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(250,66,82,1) 50%);
+  padding-top: 15px;
+}
+
+/* Modal Content/Box */
+.modals-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.closes {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.closes:hover,
+.closes:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfixs::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtns, .signupbtns {
+     width: 100%;
+
+  }
+}
+
+/* end of styling for the 1st sign up form*/
+
 .main{
   width: 100vw;
   transition: 0.5s;
+  display: block;
 }
 /* this is the navigation bar mobile */
 #navbar{
@@ -340,12 +665,7 @@ opacity: 0.8;
   fill: white;
   
 }
-.grid{
-  display: grid;
-  grid-template-columns: 5vw 20.5vw  20.5vw 8vw 20.5vw 20.5vw 5vw;
-  grid-template-rows: 1vh 2vh 6vh 42vh 2vh 45vh 3vh 5vh 32vh 2vh 5vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 25vh 2vh 10vh;
-  
-}
+
 
 a{
   text-decoration: none;
@@ -360,15 +680,19 @@ p{
 }
 
 .section{
-  grid-area: 2/4/ span 1/span 5;
-  font-family: 'Domine', serif;
   position: relative;
-  right: 40px;
+  left: 140px;
+  font-family: 'Domine', serif;
+  
   
 }
 .soccer{
   grid-area: 4/2/span 1 /span 2;  
   font-family: 'Domine', serif;
+  width: 40%;
+  position: relative;
+  left: 15px;
+  top: 20px;
   
 
 }
@@ -379,6 +703,10 @@ p{
 .swim{
 grid-area: 4/5/span 1/ span 2;
 font-family: 'Domine', serif;
+width: 40%;
+position: relative;
+left: 200px;
+bottom: 275px;
 height: 300px;
 }
 .swi{
@@ -388,6 +716,10 @@ height: 300px;
 .basketball{
   grid-area: 6/2/span 1 / span 2;
   font-family: 'Domine', serif;
+  width: 63%;
+  position: relative;
+  left: 10px;
+  bottom: 98px;  
 }
 .bas{
   height:100px;
@@ -396,29 +728,37 @@ height: 300px;
 .cricket{
   grid-area: 6/5/span 1 / span 2;
   font-family: 'Domine', serif;
+  width: 63%;
+  position: relative;
+  left: 190px;
+  bottom: 410px;
 }
 .ket{
     height:100px;
   }
 
 .fixtureT{
-  grid-area: 8/2/span 1 / span 5;
-  font-size: 20px;
   position: relative;
+  bottom:520px;
   left: 10px;
+  width: 500px;
+  font-size: 20px;
   text-decoration: underline;
   text-decoration-color: #91bd3a ;
 }
 .BG{
-  grid-area: 9/2/span 1 / span 5;
+  width: 340px;
   z-index: -10;
+  position: relative;
+  bottom: 250px;
   
 }
 .fix{
   position: relative;
-  top: 760px;
+  bottom: 420px;
   left: 120px;
-  height: 30px;
+  width: 80px;
+  text-align: center;
   border-radius: 25%;
   text-transform: uppercase;
   background: rgb(145,189,58);
@@ -429,10 +769,12 @@ height: 300px;
 }
 .soc{
   position: relative;
-  top:760px;
-  left: 55px;
+  bottom:420px;
+  left: 60px;
+  text-align: top;
   height: 30px;
-   width:70px;
+  width:80px;
+  padding:20px;
   border-radius: 25%;
   text-transform: uppercase;
   background: rgb(145,189,58);
@@ -442,49 +784,95 @@ height: 300px;
 
 }
 .otherNews{
-  grid-area: 11/3/span 1 / span 5;
+  position: relative;
+  bottom: 310px;
+  left: 90px;
   font-family: 'Domine', serif;
   font-size: 20px;
   text-decoration: underline;
   text-decoration-color: #91bd3a ;
 }
 .img1{
-  grid-area: 13/2/span 1 / span 2;
+  width: 140px;
+  position: relative;
+  bottom: 280px;
 
 }
 .img1t{
-  grid-area: 13/5/span 1 / span 2;
+  
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  position: relative;
+  bottom: 440px;
+  left: 180px;
+  width: 60%;
 }
 
 .img2{
-    grid-area: 15/2/span 1 / span 2;
+  width: 140px;
+  position: relative;
+  bottom: 390px;
 }
     
 .img2t{
     grid-area: 15/5/span 1 / span 2;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    position: relative;
+    bottom: 560px;
+    left: 180px;
+    width: 60%;
 }
 
 .img3{
-    grid-area: 17/2/span 1 / span 2;
+  width: 140px;
+  position: relative;
+  bottom: 510px;
 }
 .img3t{
     grid-area: 17/5/span 1 / span 2;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    position: relative;
+    bottom: 680px;
+    left: 180px;
+    width: 70%;
 }
 
 
 .img4{
-    grid-area: 19/2/span 1 / span 2;
+  width: 140px;
+  position: relative;
+  bottom: 630px;
 }
 .img4t{
     grid-area: 19/5/span 1 / span 2;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    position: relative;
+    bottom: 800px;
+    left: 180px;
+    width: 70%;
+    
+}
+
+
+html,body{
+  margin: 0;
+}
+.img5{
+  width: 150px;
+  position: relative;
+  bottom: 370px;
+}
+.img5t{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  position: relative;
+  bottom: 500px;
+  left: 180px;
+  margin-bottom: -100px;
+  
 }
 
 #notification{
@@ -493,7 +881,7 @@ height: 300px;
   top: 520px;
   left: 280px;
   width:60px;
-    height: 60px;
+  height: 60px;
   background-color: #fa4252;
   padding: 10px;
   border-radius: 50%;
@@ -503,99 +891,69 @@ height: 300px;
 /*made it in a way that when you click on it, it allows you to fill in your infomation*/
 /*styling for the notification bell*/
 
-.rapper {
-  background-color: rgba(0,0,0,0.5);
+/* signup popup bell */
+.sign{
+  font-weight: 700;
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
   position: fixed;
-  width: 100%;
-  height: 100vh;
+  top: 190px;
+  left: 35px;
+  width: 80vw;
+  display: none;
+  color: white;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* sign in styling */
+.not{
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* input styling */
+input#emailInput{
+  border: none;
+  margin-left: 12px;
+  padding:10px 5px;
+  width: 250px;
+}
+
+.subbtnEmail{
+    border: none;
+    width: 260px;
+    padding: 10px;
+    margin-left: 12px;
+    background-color: #ffa259;
+    margin-bottom: 15px; 
+}
+
+/* p tag of whats your phone number styling */
+#q {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+.rapper {
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100%;
   top:50px;
   left:0;
   display: none;
 }
 
-.sign{
-  font-weight: 700;
-  background: rgb(203,231,148);
-  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
-  border: none;
-  position: fixed;
-  bottom: 185px;
-  left: 32px;
-  width: 80vw;
-  height: 40vh;
-  display: none;
-  color: whitesmoke;
-  text-align: left;
-  margin-left: 3px;
-}
-
-.not{
-  position: relative;
-  text-align: left;
-  margin-left: 10px;
-  top:10px;
-}
-
-#q {
-  font-size: 26px;
-  font-weight: lighter;
-  margin-left: 10px;
-  color: white;
-}
-
-#acc {
-  margin-left: 6px;
-  font-size: 14px;
-  color: white;
-}
-
-#log{
-  font-weight: bolder;
-  position: relative;
-  left: 170px;
-  bottom: 18.3px;
-  color: white;
-}
-
-input[type=number] {
-  background-color:#91bd3a;
-  background: rgb(203,231,148);
-  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
-  border: none;
-  border-bottom: 2px solid white;
-  text-align: left;
-  margin-left: 12px;
-  padding-left:70px;
-}
-
-.mini {
-  background-color: white;
-  border: none;
-  color: #91bd3a;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 100px;
-  position: absolute;
-  left: 20px;
-  bottom: 90px;
-  width: 50px;
-  height: 25px;
-
-}
-
-.mini p {
-  padding-top: 4.5px;
-
-}
-
 #footer {
+  position:fixed;
   background-color: black;
   width: 100vw;
   height: 10vh;
-  grid-area: 21/1/span 1 / span 7;
   position: relative;
-  bottom: 0;
-    
+  top: 160px;
+  right: 10px;
+     
 }
   
 #facebook, #instagram , #twitter , #whatsapp {

@@ -26,11 +26,11 @@ notification.addEventListener('click', e =>{
   form.style.display = "block";
   rapper.style.display = "block";
 })
-form.addEventListener('click', e =>{
+form.addEventListener('submit', e =>{
 e.preventDefault();
 form.style.display="none";
 rapper.style.display = "none"; 
-alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
+
 })
 
 // selection of gender
@@ -69,6 +69,7 @@ const bell = document.querySelector("#notification");
 
 setTimeout( () => {
   bell.style.display = "none";
+  
 }, 10000 )
 
 //popup for plus icon clicked to show commenting option 
@@ -82,7 +83,8 @@ const btn2 = document.querySelector('.senda');
 
 
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', e  => {
+  e.preventDefault();
   wrapper.style.display ='block'; 
 });
 close.addEventListener('click', ()=> {
@@ -180,7 +182,27 @@ articleContent.innerHTML =
 })
 .catch(err => console.log(err));
 
+//functionality for the 1st login page
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 
+//functionality for 1st signup form
+
+var modals = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modals) {
+    modals.style.display = "none";
+  }
+}
 
 

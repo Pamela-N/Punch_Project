@@ -39,8 +39,8 @@ articleC.innerHTML =
           
         
         title1.innerHTML = `
-        <h3 id="kobe">${moreData1.articles[2].title}</h3>`
-        picture1.setAttribute('src', moreData1.articles[2].urlToImage );
+        <h3 id="kobe">${moreData1.articles[6].title}</h3>`
+        picture1.setAttribute('src', moreData1.articles[6].urlToImage );
                 
         })
         SoccerNews().then(data => {
