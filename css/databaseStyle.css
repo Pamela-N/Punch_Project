@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0px;
+  
+  }
+  
+  body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+  }
+  
+  .main{
+    width: 100vw;
+    transition: 0.5s;
+  }
+  
+  #navbar{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+  
+  }
+  
+  #logo{
+    position: fixed;
+      left: 110px;
+      top: 10px;
+  }
+  
+  .search {
+    position: relative;
+    left: 310px;
+  }
+  
+ /* signup popup bell */
+.sign{
+  font-weight: 700;
+  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+  position: fixed;
+  top: 190px;
+  left: 35px;
+  width: 80vw;
+  display: none;
+  color: white;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* sign in styling */
+.not{
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* input styling */
+input#emailInput{
+  border: none;
+  margin-left: 12px;
+  padding:10px 5px;
+  width: 250px;
+}
+
+.subbtnEmail{
+    border: none;
+    width: 260px;
+    padding: 10px;
+    margin-left: 12px;
+    background-color: #ffa259;
+    margin-bottom: 15px; 
+}
+
+/* p tag of whats your phone number styling */
+#q {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+.wrapper {
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  top:50px;
+  left:0;
+  display: none;
+}
+  
+  #acc {
+    margin-left: 6px;
+    font-size: 14px;
+  }
+  
+  #log{
+    font-weight: bolder;
+    position: relative;
+    left: 170px;
+    bottom: 18.3px;
+  }
+  
+  input[type=number] {
+    background-color:#91bd3a;
+    background: rgb(203,231,148);
+    background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+    border: none;
+    border-bottom: 2px solid white;
+    text-align: left;
+    margin-left: 12px;
+    padding-left:70px;
+  }
+  
+  .mini {
+    background-color: white;
+    border: none;
+    color: #91bd3a;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 100px;
+    position: absolute;
+    right: 215px;
+    bottom: 90px;
+    width: 50px;
+    height: 25px;
+  
+  }
+  
+  .mini p {
+    padding-top: 4.5px;
+  }
+  
+  #myForm {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:50px;
+    left:0;
+    display: none;
+  }
+  
+  
+  .sign input{
+    align-items: center;
+    margin-left: 35px;
+  
+  }
+  /*when you click on the button it automatically hides back the info*/
+  .signB{
+    background-color: #ffa259;
+    padding:16px 20px;
+    color: white;
+    border: none;
+    cursor: none;
+    width:60%;
+    opacity: 0.8;
+    position: relative;
+    left: 60px;
+  }
+  
+  .sidenav {
+    height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(250,66,82,1) 50%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  
+  }
+  
+  .sidenav svg{
+    margin-right: 15px;
+    
+  }
+    
+  .sidenav a {
+    font-family: 'Domine', serif;
+  padding: 8px 8px 8px 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color:white;
+  display: block;
+  
+  }
+    
+  .sidenav a:hover{
+    color: #91bd3a;
+  
+  }
+  
+  .sidelogo{
+    position: absolute;
+    left: 60px;
+    top: 14px;
+  }
+    
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  
+  }
+    
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  
+  }
+  
+  /* sidenav bar */
+  .container {
+    display: inline-block;
+    margin: 15px;
+  
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0 0 6px;
+  }
+  
+  .expandSearch{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  
+    }
+    .expandSearch i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 4px 8px 8px ;
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.24s;
+    }
+  
+  
+  .expandSearch input{
+    border:none;
+    background: transparent;
+    font:14px/1.4 sans-serif;
+    padding-left: 26px;
+    background:#fff;
+    border: 2px solid white;
+    border-radius: 4px;
+    transition: 0.24s;
+    width: 0px;
+    padding: 8px 0px 8px 34px;
+  
+  }
+  .expandSearch input:focus{
+    border-color: #aaa;
+    outline: none;
+    width:200px;
+    padding: 8px 12px 8px 34px;
+    border-color: #91bd3a;
+  
+  }
+  .expandSearch input:focus + i{
+    /*padding: 8px 4px 8px 8px ;*/
+    color: #ddd;
+    pointer-events: none;
+  
+  }
+  
+  .notification{
+    fill: white;
+    position: fixed;
+    top: 530px;
+    left: 290px;
+    background-color: #fa4252;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0.8;
+    display: block;
+  }
+  
+  
+  #update {
+      color: white;
+  
+  }
+  
+  h1 , h2 {
+    font-family: 'Domine', serif;
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  a {
+    color: #fa4252;
+    text-decoration: none;
+  }
+  
+  .uno {
+      text-align: center;
+  }
+
+  .joke {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  
+  .by, .posted {
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .joker {
+    position: relative;
+    bottom: 30px;
+    border-radius: 20px;
+    background: rgb(255,162,89);
+    background: linear-gradient(56deg, rgba(255,162,89,1) 4%, rgba(145,189,58,1) 50%, rgba(254,104,69,1) 81%);
+    opacity: 0.9;
+    color:  whitesmoke;
+  }
+
+  #laugh {
+    position: relative;
+    left: 110px;
+    bottom: 43px;
+  }
+
+  #hot {
+    position: relative;
+    left: 110px;
+    bottom: 50px;
+
+  }
+
+  .third {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 22px;
+    text-decoration: underline;
+  }
+
+  .headline {
+    color: #91bd3a;
+    font-size: 15px;
+  }
+
+  
+
+  .second {
+    text-align: center;
+}
+
+.read {
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.author {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.reader {
+  position: relative;
+  bottom: 30px;
+  border-radius: 20px;
+  background: rgb(255,162,89);
+  background: linear-gradient(56deg, rgba(255,162,89,1) 4%, rgba(145,189,58,1) 50%, rgba(254,104,69,1) 81%);
+  opacity: 0.9;
+  color:  whitesmoke;
+  margin: 15px;
+}
+
+#reads {
+  position: relative;
+    left: 120px;
+    bottom: 40px;
+}
+  
+  #update {
+    font-family: 'Domine', serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+  }
+  
+  .inputSub{
+    margin-left: 25px;
+    width: 160px;
+    height: 32.8px;
+    padding-bottom: 8px;
+    border: none;
+  }
+  
+  
+  #submit {
+    height: 34px;
+    width: 80px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #91bd3a;
+    border: none;
+    text-align: center;
+  }
+  
+  #privacy {
+    color: #91bd3a ;
+    text-align: left;
+    padding-left: 23px ;
+  }
+  
+  
+  label {
+    position: relative;
+  
+  }
+    
+  label:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;  
+  }
+  
+  
+  label.expandSearch:before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+  }
+    
+  input {
+    padding: 10px 30px;
+  
+  }
+    
+    
+  label > .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: silver;
+  
+  }
+    
+  label > input {
+    padding-left: calc(1em + 10px + 8px); /* icon width + icon padding-left + desired separation*/
+    height: 2em;
+  
+  }
+    
+    /*
+      SVG SpriteSheet
+    */
+    
+  .spritesheet {
+    display: none;
+  
+  }
+    
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  
+  }
+  
+  .search{
+      position: absolute;
+      right: 25px;
+      top: 15px;
+  
+  }
+  
+  
+  #footer {
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    bottom: 0;
+    transition: 0.5s;
+  
+    }
+  
+  #facebook, #instagram , #twitter , #whatsapp {
+    fill: #fa4252;
+  
+  }
+  
+  #whatsapp {
+    position: absolute;
+    left: 330px;
+      
+  }
+  
+  #twitter {
+    position: absolute;
+    left: 290px;
+      
+  }
+  
+  #instagram {
+    position: absolute;
+    left: 250px;
+      
+  }
+  
+  #facebook {
+    position: absolute;
+    left: 210px;
+      
+  }
+  
+  .para {
+    color: white;
+    position: relative;
+    left: 15px;
+    top: 25px;
+  
+  
+  
+  }
+  
+  /* scroller code supported by create */
+  .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+  }
+  
+    .card {
+      display: inline-block;
+      width: 60vw;
+      height: 70vw;
+      overflow: hidden;
+    }
+  
+  
+  
+  
+  
+    /* PopUp code inspired by W3Schools and edited */
+  
+  /* The popup form - hidden by default*/
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: 15px;
+    /* border: 3px solid #f1f1f1; */
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    position: fixed;
+    top: 115px;
+    left: 20px;
+    padding: 10px;
+    background-color: #91bd3a;
+    background: rgb(203,231,148);
+    background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+    color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=cellphone] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  } 
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=cellphone]:focus {
+  background-color: #ddd;
+  outline: none;
+  }
+  
+  .form-container h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 25px;
+  }
+  
+  
+  .form-container .btn {
+  background-color: #ffa259;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: none;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  } 
+  
+  
+  
+  /* close button option */
+  #close {
+    position: absolute;
+    left: 280px;
+    top: 07px;
+    fill: white;
+  }
+  
+  #female {
+    position: relative;
+    left: 200px; 
+    fill: white;
+    
+  }
+  
+  #male {
+    position: relative;
+    fill: white;
+    
+  }
