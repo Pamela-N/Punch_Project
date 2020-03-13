@@ -147,7 +147,7 @@ a:hover{
 .expandSearch input:focus{
   border-color: #aaa;
   outline: none;
-  width:200px;
+  width:160px;
   padding: 8px 12px 8px 34px;
   border-color: #91bd3a;
 }

@@ -264,6 +264,52 @@
             <p id="graph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos nostrum voluptatem est dolorem reprehenderit eum, commodi doloremque, enim ducimus unde asperiores ex obcaecati eius tempora. Assumenda repellendus distinctio iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis commodi ipsam magnam totam eos quisquam, illo consequatur assumenda tempora nulla iste modi distinctio ipsum libero maiores ut id quis reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus. Lorem ipsum dolor sit amet consectetur.</p>
 
         </div>
+        <div class="popupWrapper">
+            <div class="popUp">
+                <form class="addYourHero">
+                    <p class='vala'>X</p>
+                    <br>
+                    <div class="popuContent">
+                            <h3>Comment About The Hero Of The Week</h3>
+
+                            <br>
+
+                            <p>Name</p>
+                            <input type="text" name="name" placeholder="Paste your URL image here">
+                            <br> <br>
+        
+                            <p>Email</p>
+                            <input type="email" name="email" placeholder="Type your email here">
+                            <br><br>
+        
+                            <p>Comment</p>
+                            <textarea name="comments" placeholder="Type your comment here" cols="40" rows="10"></textarea>
+                            <br><br>
+        
+                            <button type="submit" value="Submit" class="senda">Submit</button>
+                    </div> 
+                </form>
+            </div>
+        </div>
+        <br>
+        <h2>Comments About The Hero Of The Week</h2>
+
+        <br>
+        <h3>Add Your Comment</h3>
+        <br>
+        
+        <!-- this is the div that adds from the database -->
+        <div class="newie3">
+            
+        </div>
+        <div class="addMore">
+            <p><?xml version="1.0" encoding="UTF-8"?>
+                <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                    <path d="m492 236h-216v-216c0-11.046-8.954-20-20-20s-20 8.954-20 20v216h-216c-11.046 0-20 8.954-20 20s8.954 20 20 20h216v216c0 11.046 8.954 20 20 20s20-8.954 20-20v-216h216c11.046 0 20-8.954 20-20s-8.954-20-20-20z"/>               
+                </svg>
+            </p>
+        </div>
+        <br>
             
     <!-- this is the sign-up for notification   -->
         <div>
@@ -315,7 +361,32 @@
             
         </div>
     
-    </div>    
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBhNl81UsYOYAnzFbeN095ksqaanL5HbyY",
+            authDomain: "mosa-scontributors.firebaseapp.com",
+            databaseURL: "https://mosa-scontributors.firebaseio.com",
+            projectId: "mosa-scontributors",
+            storageBucket: "mosa-scontributors.appspot.com",
+            messagingSenderId: "622570925961",
+            appId: "1:622570925961:web:b3d10afec905fbf5d77b58",
+            measurementId: "G-9EP1BV8M56"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        firebase.analytics();
+    </script>    
 
 <script src="js/column.js"></script>    
     

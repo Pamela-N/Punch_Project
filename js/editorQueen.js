@@ -77,18 +77,19 @@ const getArticle1 = async()=>{
   const base ='https://api.nasa.gov/planetary/apod?api_key=8KbhchpfXXmADH2A1XraNuDiQCZwX0VI7vxTf1Vo';
   const response = await fetch(base);
   const data = await response.json().then(data=>{
+    //return(data);
     artrticle1.innerHTML=`
     <br>
     <a href="#">
-      <h2>${data.title}</h2>
+      <h2 class="heading">${data.title}</h2>
     </a>
-    <p>Date: ${data.date}</p>
-    <p>Copyright: ${data.copyright}</p>
-    <p>${data.explanation}</p>
+    <p>Date: <br> ${data.date}</p>
+    <p>Copyright:<br> ${data.copyright}</p>
     `
 
     pic.setAttribute('src' , data.url);
   }).catch(err => console.log(err));
+  //console.log(data);
   
  
 
@@ -103,15 +104,15 @@ const getArticle = async()=>{
     const data = await response.json().then(data=>{
        //return(data);
 
-       for (i = 0; i< 1; i++){
+       for (i = 0; i< 3; i++){
       artrticle.innerHTML +=`
-      <img id="writer-work1"src="${data.photos[i].img_src}" width="100%" height="50%" alt="Picture on the moon.">
       <a href="#">
         <h2 class="heading">${data.photos[i].rover.name}</h2>
       </a>
-      <p id="text1" class="content">Image release date: ${data.photos[i].earth_date}</p>
-      <p id="text1" class="content">Camera name: ${data.photos[i].camera.full_name}</p>
-      <p id="text1" class="content">Landing date: ${data.photos[i].rover.landing_date}</p>
+      <img id="writer-work1"src="${data.photos[i].img_src}" alt="Picture on the moon.">
+      <p id="text1" class="content">Image release date:<br> ${data.photos[i].earth_date}</p>
+      <p id="text1" class="content">Camera name:<br> ${data.photos[i].camera.full_name}</p>
+      <p id="text1" class="content">Landing date:<br> ${data.photos[i].rover.landing_date}</p>
       <br>
       `
        }
@@ -134,9 +135,9 @@ const getArticle3 = async()=>{
     <a href="#">
     <h2 class="heading">${data.photos[1].rover.name}</h2>
     </a>
-    <p>Earth date: ${data.photos[1].earth_date}</p>
-    <p>Camera: ${data.photos[1].camera.full_name}</p>
-    <p>Landing date: ${data.photos[1].rover.landing_date}</p>
+    <p id="text1">Earth date: <br> ${data.photos[1].earth_date}</p>
+    <p id="text1">Camera: ${data.photos[1].camera.full_name}</p>
+    <p id="text1">Landing date:<br> ${data.photos[1].rover.landing_date}</p>
     `
 
     pic2.setAttribute('src' , data.photos[1].img_src);
