@@ -538,13 +538,14 @@ background-color: #91bd3a
   background: rgb(203,231,148);
   background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
   font-family: 'Roboto', sans-serif;
-  text-align: center;
+  /* text-align: center; */
   width: 100%;
   max-width: 300px;
-  margin: 10% auto;
+  /* margin: 10% auto; */
   position: relative;
   padding: 5%;
-  top:80px
+  top:80px;
+  left: 10px;
 }
 
 .popUp a{

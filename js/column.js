@@ -44,14 +44,6 @@ notification.addEventListener('click', e =>{
   wrapper.style.display = "block";
 })
 
-// notification bell comands for the popup this is the way it closes.
-form.addEventListener('click', e =>{
-  e.preventDefault();
-  form.style.display = "none";
-  wrapper.style.display = "none";
-  alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
-})
-
 // selection of gender this makes you pick wheather you a girl or boy by changing colour
 girl.addEventListener('click', () =>{
   girl.style.fill = "palevioletred";
@@ -68,3 +60,93 @@ boy.addEventListener('click', () =>{
 setTimeout( () => {
   notification.style.display = "none";
 }, 10000 )
+
+//popup for plus icon clicked to show commenting option 
+
+const btn = document.querySelector('.addMore');
+const wrapper2 = document.querySelector('.popupWrapper');
+const close = document.querySelector('.vala');
+const btn2 = document.querySelector('.senda');
+
+btn.addEventListener('click', () => {
+  wrapper2.style.display ='block'; 
+});
+
+close.addEventListener('click', ()=> {
+  wrapper2.style.display  ="none";
+});
+
+const commentDiv = document.querySelector(".newie3");
+const formCon = document.querySelector(".addYourHero");
+
+const addComment = (comment)=>{
+  let time = (comment.timedate.toDate());
+  let html =
+  `
+  <img src="${comment.image}" alt="us" width= "100px" class="newCom3" alt="us.jpg">
+  <div class="commentLeft">
+      
+      <h4 class='Us'>${comment.name}</h4>
+      <p class='UsT'>${comment.comment}</p>
+      <br>
+      <p class= "nako1"><b>${time}<b></p>
+  </div>
+  
+  <br>
+  `
+  commentDiv.innerHTML += html;
+}
+
+
+db.collection('heroComment').get().then((snapshot)=>{
+    //do something when we have data
+    //console.log(snapshot.docs[0].data());
+    snapshot.docs.forEach(doc => {
+        //console.log(doc.id); //check the ids
+        addComment(doc.data());
+        // console.log(doc.data());
+    });
+}).catch(err=>{
+    console.log(err);
+});
+
+formCon.addEventListener('submit',e =>{
+  e.preventDefault();
+
+  const now = new Date(); //creat a new date
+  const recipe ={
+      title: form.userRecipe.value,
+      created_at: firebase.firestore.Timestamp.fromDate(now)
+  };
+
+  db.collection('recipes').add(recipe).then(()=>{
+
+      console.log('recipe added');
+  }).catch(err=>{
+      console.log(err);
+  })
+
+})
+
+//subscribe call to acton button
+const formsign = document.querySelector(".formsign");
+const subbtnEmail = document.querySelector(".subbtnEmail");
+//adding a document
+subbtnEmail.addEventListener('click',e =>{
+  e.preventDefault();
+  const mail ={
+      email: formsign.emailInput.value
+  };
+
+  db.collection('Subscribers').add(mail).then(()=>{
+      if(mail === " "){
+        alert('You have not subcribed to Punch :(');
+      }else{
+        alert("You will get email update ;)");
+      }
+      
+  }).catch(err=>{
+      console.log(err);
+  })
+   wrapper.style.display = "none";
+})
