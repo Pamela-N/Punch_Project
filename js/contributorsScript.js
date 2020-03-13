@@ -44,6 +44,9 @@ notification.addEventListener('click', e =>{
   wrapper.style.display = "block";
 });
 
+// notification bell comands for the popup this is the way it closes.
+
+
 // selection of gender this makes you pick wheather you a girl or boy by changing colour
 girl.addEventListener('click', () =>{
   girl.style.fill = "palevioletred";
@@ -253,23 +256,23 @@ const subbtnEmail = document.querySelector(".subbtnEmail");
 //adding a document
 subbtnEmail.addEventListener('click',e =>{
   e.preventDefault();
-  const mail ={
+  const hero ={
       email: formsign.emailInput.value
   };
 
-  db.collection('Subscribers').add(mail).then(()=>{
-      if(mail === " "){
-        alert('You have not subcribed to Punch :(');
-      }else{
-        alert("You will get email update ;)");
-      }
-      
+  db.collection('Subscribers').add(hero).then(()=>{
+
+      console.log('email added');
   }).catch(err=>{
       console.log(err);
   })
-   wrapper.style.display = "none";
+  
+  wrapper.style.display = "none";
 })
-
+// form.addEventListener('click', e =>{
+//   e.preventDefault();
+//   console.log("jnhbgfd");
+// });
 
 // this whole code was suppose to add the username to be able to log in with local Storage but now it does not work and i dont wanna delete it yet.
 

@@ -139,12 +139,7 @@ subbtnEmail.addEventListener('click',e =>{
   };
 
   db.collection('Subscribers').add(mail).then(()=>{
-      if(mail === " "){
-        alert('You have not subcribed to Punch :(');
-      }else{
-        alert("You will get email update ;)");
-      }
-      
+      console.log("mail was added");      
   }).catch(err=>{
       console.log(err);
   })
