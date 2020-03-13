@@ -344,87 +344,49 @@ label > input {
 /* signup popup bell */
 .sign{
   font-weight: 700;
-  background: rgb(203,231,148);
   background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
-  border: none;
   position: fixed;
-  bottom: 185px;
-  left: 32px;
+  top: 190px;
+  left: 35px;
   width: 80vw;
-  height: 40vh;
   display: none;
-  color: whitesmoke;
+  color: white;
   text-align: left;
-  margin-left: 3px;
+  overflow: hidden;
 }
 
+/* sign in styling */
 .not{
-  position: relative;
-  text-align: left;
-  left: 60px;
-  top:10px;
+    margin-top: 15px;
+    text-align: center;
 }
 
-input[type=number] {
-  background: linear-gradient(56deg, rgba(203,231,148,1) 9%, rgba(145,189,58,1) 68%);
+/* input styling */
+input#emailInput{
   border: none;
-  border-bottom: 2px solid white;
-  text-align: left;
   margin-left: 12px;
-  padding-left:70px;
-}
-.mini {
-  background-color: white;
-  border: none;
-  color: #91bd3a;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 100px;
-  position: absolute;
-  right: 215px;
-  bottom: 90px;
-  width: 50px;
-  height: 25px;
-
+  padding:10px 5px;
+  width: 250px;
 }
 
-.mini p {
-  padding-top: 4.5px;
+.subbtnEmail{
+    border: none;
+    width: 260px;
+    padding: 10px;
+    margin-left: 12px;
+    background-color: #ffa259;
+    margin-bottom: 15px; 
 }
 
+/* p tag of whats your phone number styling */
 #q {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: lighter;
   margin-left: 10px;
 }
 
-#acc {
-  margin-left: 6px;
-  font-size: 14px;
-}
-
-#log{
-  font-weight: bolder;
-  position: relative;
-  left: 170px;
-  bottom: 18.3px;
-}
-
-/*when you click on the button it automatically hides back the info*/
-.signB{
-  background-color: #ffa259;
-  padding:16px 20px;
-  color: white;
-  border: none;
-  cursor: none;
-  width:60%;
-  opacity: 0.8;
-  position: relative;
-  left: 60px;
-}
-
 .wrapper {
-  background-color: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5);
   position: fixed;
   width: 100vw;
   height: 100%;

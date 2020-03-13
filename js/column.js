@@ -44,14 +44,6 @@ notification.addEventListener('click', e =>{
   wrapper.style.display = "block";
 })
 
-// notification bell comands for the popup this is the way it closes.
-form.addEventListener('click', e =>{
-  e.preventDefault();
-  form.style.display = "none";
-  wrapper.style.display = "none";
-  alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
-})
-
 // selection of gender this makes you pick wheather you a girl or boy by changing colour
 girl.addEventListener('click', () =>{
   girl.style.fill = "palevioletred";
@@ -134,4 +126,27 @@ formCon.addEventListener('submit',e =>{
       console.log(err);
   })
 
+})
+
+//subscribe call to acton button
+const formsign = document.querySelector(".formsign");
+const subbtnEmail = document.querySelector(".subbtnEmail");
+//adding a document
+subbtnEmail.addEventListener('click',e =>{
+  e.preventDefault();
+  const mail ={
+      email: formsign.emailInput.value
+  };
+
+  db.collection('Subscribers').add(mail).then(()=>{
+      if(mail === " "){
+        alert('You have not subcribed to Punch :(');
+      }else{
+        alert("You will get email update ;)");
+      }
+      
+  }).catch(err=>{
+      console.log(err);
+  })
+   wrapper.style.display = "none";
 })
