@@ -1,7 +1,7 @@
 // let notification = document.querySelector('#notification');
 let slideIndex = 1;
 let sbmit = document.querySelector(".signB");
-const form = document.querySelector('.sign');
+// const form = document.querySelector('.sign');
 
 // how the side nav opens and close
 function openNav() {
@@ -39,22 +39,22 @@ function closeForm() {
 
   // Notifications PopUp Onclick Code
 
-// const form = document.querySelector('.sign');
+const form = document.querySelector('.sign');
 const notification = document.querySelector(".notification");
 const wrapper = document.querySelector(".wrapper")
-// const submit = document.querySelector(".signB")
+const submit = document.querySelector(".signB")
 
   notification.addEventListener('click', e =>{
     e.preventDefault();
     form.style.display = "block";
     wrapper.style.display = "block";
+});
+  form.addEventListener('sumbit', e =>{
+  e.preventDefault();
+  form.style.display="none";
+  wrapper.style.display = "none"; 
+  alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
 })
-//   form.addEventListener('sumbit', e =>{
-//   e.preventDefault();
-//   form.style.display="none";
-//   wrapper.style.display = "none"; 
-//   alert('Thank you for subscribing to Punch notifications, we will be sending you exciting updates on your cellphone number everyday from now on.')
-// })
 
 // Timeout for the Bell
 
@@ -104,9 +104,9 @@ window.onclick = function(event) {
 const logged = document.querySelector('.logged');
 const loggedIn  = document.querySelector('.loggedIn');
 
-// logged.addEventListener('click', e =>{
-//   loggedIn.style.display="block";
-// })
+logged.addEventListener('click', e =>{
+  loggedIn.style.display="block";
+})
 
 // Get the modal
 var modal = document.getElementById('id01');
